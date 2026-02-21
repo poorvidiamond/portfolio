@@ -1,0 +1,163 @@
+[
+    {
+        "id": 1,
+        "role": "Firmware Engineer",
+        "company": "Eaton - E-mobility",
+        "location": "Tualatin, Oregon",
+        "startDate": "July 2025",
+        "endDate": "Present",
+        "type": "Professional",
+        "bullets": [
+            "Built Qt/C++ flash tool for automated PDU firmware updates.",
+            "Maintain Python/CANoe HIL rigs and validate EEPROM fault coverage.",
+            "Verified isoSPI battery management IC communication for EV safety compliance."
+        ],
+        "url": "https://www.eaton.com/us/en-us/catalog/emobility/flex-pdu-ev.html",
+        "image": "/logos/eaton.svg",
+        "video": "/videos/eaton-pdu.mp4",
+        "metrics": [
+            "30–50% fewer flashing steps",
+            "40+ fault types validated",
+            "US + Poland team adoption"
+        ],
+        "projects": []
+    },
+    {
+        "id": 2,
+        "role": "Embedded Software Engineer",
+        "company": "Eaton - Electrical Sector Systems Engineering Team",
+        "location": "Raleigh, NC",
+        "startDate": "July 2024",
+        "endDate": "June 2025",
+        "type": "Professional",
+        "bullets": [
+            "Pioneered Rust for embedded development, creating mixed-language workflows.",
+            "Eliminated hardware dependencies by deploying Renode virtual test platforms.",
+            "Scaled TDD practices across global firmware teams through hands-on workshops."
+        ],
+        "url": "https://github.com/antmicro/renode-board-visualization",
+        "image": "/logos/eaton.svg",
+        "video": "/videos/Renode.mp4",
+        "linkLabel": "Click to view the open source",
+        "metrics": [
+            "20–30% faster adoption",
+            "$5K–$7K annual savings",
+            "30 participants (US+India)"
+        ],
+        "projects": []
+    },
+    {
+        "id": 3,
+        "role": "Embedded Design Co-op",
+        "company": "Eaton - Residential Wiring Devices",
+        "location": "Peachtree City, GA",
+        "startDate": "August 2023",
+        "endDate": "May 2024",
+        "type": "Internship",
+        "bullets": [
+            "Tested Wi-Fi dimmers, switches, and outlets against Google/Alexa voice ecosystems.",
+            "Compared Matter/Thread implementations to guide product roadmap decisions.",
+            "Centralized tribal knowledge into searchable Confluence documentation."
+        ],
+        "url": "https://www.eaton.com/us/en-us/catalog/wiring-devices-and-connectivity/wi-fi-smart-devices.html",
+        "image": "/logos/eaton.svg",
+        "video": "/videos/eaton-wifi.mp4",
+        "linkLabel": "Click to learn more",
+        "metrics": [
+            "~50 devices tested",
+            "30% faster info lookup",
+            "US+China team collaboration"
+        ],
+        "projects": []
+    },
+    {
+        "id": 4,
+        "role": "Embedded Systems Design Intern",
+        "company": "Eaton - Residential Circuit Breakers",
+        "location": "Pittsburgh, PA",
+        "startDate": "May 2023",
+        "endDate": "August 2023",
+        "type": "Internship",
+        "bullets": [
+            "Prototyped fault recorder capturing breaker trips missed by traditional methods.",
+            "Streamed real-time data to cloud dashboards via Raspberry Pi + Node-RED gateway.",
+            "Demonstrated ROI potential by eliminating truck rolls for intermittent issues."
+        ],
+        "url": "https://www.eaton.com/us/en-us/catalog/electrical-circuit-protection/br-circuit-breakers.html",
+        "image": "/logos/eaton.svg",
+        "video": "/videos/eaton-gfci.mp4",
+        "linkLabel": "Click to view the breakers",
+        "metrics": [
+            "~15% hard-to-diagnose faults addressed",
+            "$3K/visit cost savings"
+        ],
+        "projects": []
+    },
+    {
+        "id": 5,
+        "role": "Entrepreneurship Assistant",
+        "company": "Georgia Tech - Venture Lab",
+        "location": "Atlanta, GA",
+        "startDate": "January 2023",
+        "endDate": "May 2023",
+        "type": "Part-time",
+        "bullets": [
+            "Conducted customer discovery across RTLS vendors and end users.",
+            "Bridged engineering and business perspectives during lean startup sprints.",
+            "Shaped feature prioritization based on field feedback from potential customers."
+        ],
+        "url": "https://dl.acm.org/doi/pdf/10.1145/3495243.3560542",
+        "image": "/logos/wavetag.png",
+        "metrics": [
+            "40+ customer interviews",
+            "15+ RTLS companies engaged"
+        ],
+        "linkLabel": "Click to view the product",
+        "projects": []
+    },
+    {
+        "id": 6,
+        "role": "Guest Service Manager",
+        "company": "Georgia Tech - Student Center",
+        "location": "Atlanta, GA",
+        "startDate": "January 2023",
+        "endDate": "May 2023",
+        "type": "Student Job",
+        "bullets": [
+            "Earned Student Employee of the Year managing event operations.",
+            "Configured meeting spaces and coordinated equipment for campus events.",
+            "Partnered with campus security to enforce facility access protocols."
+        ],
+        "url": "https://studentcenter.gatech.edu/student-team-opportunities",
+        "image": "/logos/scec-award.jpg",
+        "metrics": [
+            "Student Employee of the Year 2023",
+            "100+ events managed"
+        ],
+        "linkLabel": "Click to view job description",
+        "projects": []
+    },
+    {
+        "id": 7,
+        "role": "FPGA Design Intern",
+        "company": "Sion Semiconductors",
+        "location": "Bangalore, India",
+        "startDate": "June 2021",
+        "endDate": "Dec 2021",
+        "type": "Internship",
+        "bullets": [
+            "Debugged Verilog RTL and wrote testbenches for IP verification workflows.",
+            "Tuned Xilinx floor plans to meet timing and area requirements.",
+            "Supported synthesis optimization for FPGA-based client designs."
+        ],
+        "url": "https://sionsemi.ai/services/semiconductor-design-service",
+        "image": "/logos/fpga-board.png",
+        "linkLabel": "View Sion FPGA services",
+        "metrics": [
+            "Verilog RTL",
+            "Xilinx Artix-7",
+            "Synthesis & Timing"
+        ],
+        "projects": []
+    }
+]

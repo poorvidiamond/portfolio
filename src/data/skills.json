@@ -1,0 +1,274 @@
+{
+    "Stack": [
+        {
+            "layer": "Core Firmware Development",
+            "subtitle": "Languages & Runtime",
+            "icon": "Code2",
+            "skills": [
+                {
+                    "name": "C/C++",
+                    "logo": "https://cdn.simpleicons.org/cplusplus",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Python",
+                    "logo": "https://cdn.simpleicons.org/python",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Rust",
+                    "logo": "https://cdn.simpleicons.org/rust",
+                    "proficiency": 2.5
+                },
+                {
+                    "name": "Linux",
+                    "logo": "https://cdn.simpleicons.org/linux",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Zephyr RTOS",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Zephyr_RTOS_logo_2015.svg",
+                    "proficiency": 2.5
+                }
+            ]
+        },
+        {
+            "layer": "Hardware & MCUs",
+            "subtitle": "Target Hardware",
+            "icon": "Cpu",
+            "skills": [
+                {
+                    "name": "STM32",
+                    "logo": "https://cdn.simpleicons.org/stmicroelectronics",
+                    "proficiency": 5
+                },
+                {
+                    "name": "ESP32",
+                    "logo": "https://cdn.simpleicons.org/espressif",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Silicon Labs",
+                    "logo": "https://news.silabs.com/download/silicon-labs-logo-red-2014-256x128px.png",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Microchip",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Microchip-Logo.svg",
+                    "proficiency": 2.5
+                },
+                {
+                    "name": "TI",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Texas_Instruments_logo_2024.svg",
+                    "proficiency": 2.5
+                },
+                {
+                    "name": "Raspberry Pi",
+                    "logo": "https://cdn.simpleicons.org/raspberrypi",
+                    "proficiency": 2.5
+                },
+                {
+                    "name": "Arduino / Teensy",
+                    "logo": "https://cdn.simpleicons.org/arduino",
+                    "proficiency": 2.5
+                }
+            ]
+        },
+        {
+            "layer": "Protocols & Communication",
+            "subtitle": "Connectivity",
+            "icon": "Wifi",
+            "skills": [
+                {
+                    "name": "CAN / CANoe",
+                    "logo": "",
+                    "proficiency": 5
+                },
+                {
+                    "name": "UART / SPI / I2C",
+                    "logo": "",
+                    "proficiency": 5
+                },
+                {
+                    "name": "isoSPI",
+                    "logo": "",
+                    "proficiency": 2.5
+                },
+                {
+                    "name": "Matter / Thread",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Matter_logo.jpg",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Wi-Fi",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/WiFi_Logo.svg",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Bluetooth",
+                    "logo": "https://cdn.simpleicons.org/bluetooth",
+                    "proficiency": 5
+                }
+            ]
+        },
+        {
+            "layer": "Automotive & E-Mobility",
+            "subtitle": "Domain Expertise",
+            "icon": "Car",
+            "skills": [
+                {
+                    "name": "Analog devices BMS",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Battery_icon_discharging_100.svg",
+                    "proficiency": 5
+                },
+                {
+                    "name": "PDU Systems",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Eaton_Corporation_logo.svg",
+                    "proficiency": 5
+                },
+                {
+                    "name": "CAN Bus / UDS / J1939",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Vector_Informatik_Logo.svg",
+                    "proficiency": 5
+                },
+                {
+                    "name": "EEPROM Diagnostics",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/68/Microchip_Technology_logo.svg",
+                    "proficiency": 2.5
+                },
+                {
+                    "name": "Automotive Safety",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e8/ISO_Logo_%28Red_square%29.svg",
+                    "proficiency": 2.5
+                }
+            ]
+        },
+        {
+            "layer": "Testing & Validation",
+            "subtitle": "Quality Assurance",
+            "icon": "TestTube",
+            "skills": [
+                {
+                    "name": "HIL Testing",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Vector_Informatik_Logo.svg",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Pytest",
+                    "logo": "https://cdn.simpleicons.org/pytest",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Robot Framework",
+                    "logo": "https://cdn.simpleicons.org/robotframework",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Renode",
+                    "logo": "https://avatars.githubusercontent.com/u/11813517?s=200&v=4",
+                    "proficiency": 5
+                },
+                {
+                    "name": "TDD",
+                    "logo": "https://cdn.simpleicons.org/githubactions",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Testbenches (HDL)",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Verilog_Logo.svg",
+                    "proficiency": 2.5
+                },
+                {
+                    "name": "CI-CD",
+                    "logo": "https://cdn.simpleicons.org/githubactions",
+                    "proficiency": 5
+                }
+            ]
+        },
+        {
+            "layer": "GUI & Tooling",
+            "subtitle": "Interface & DevOps",
+            "icon": "Monitor",
+            "skills": [
+                {
+                    "name": "Qt (C++)",
+                    "logo": "https://cdn.simpleicons.org/qt",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Python (PyQt)",
+                    "logo": "https://cdn.simpleicons.org/python",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Git",
+                    "logo": "https://cdn.simpleicons.org/git",
+                    "proficiency": 5
+                },
+                {
+                    "name": "STM32CubeIDE",
+                    "logo": "https://cdn.simpleicons.org/stmicroelectronics",
+                    "proficiency": 5
+                },
+                {
+                    "name": "VS Code",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Docker",
+                    "logo": "https://cdn.simpleicons.org/docker",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Node-RED",
+                    "logo": "https://cdn.simpleicons.org/nodered",
+                    "proficiency": 2.5
+                }
+            ]
+        },
+        {
+            "layer": "RTL & FPGA",
+            "subtitle": "Background Experience",
+            "icon": "CircuitBoard",
+            "skills": [
+                {
+                    "name": "Verilog HDL",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Verilog_Logo.svg",
+                    "proficiency": 2.5
+                },
+                {
+                    "name": "VHDL",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/VHDL_Logo.svg",
+                    "proficiency": 2.5
+                },
+                {
+                    "name": "Xilinx Vivado",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/63/AMD_Logo.svg",
+                    "proficiency": 2.5
+                },
+                {
+                    "name": "Artix-7 FPGA",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/63/AMD_Logo.svg",
+                    "proficiency": 2.5
+                }
+            ]
+        }
+    ],
+    "_logo_notes": {
+        "simpleicons": "cdn.simpleicons.org — works for: cplusplus, python, rust, linux, stmicroelectronics, espressif, raspberrypi, bluetooth, pytest, robotframework, qt, git, visualstudiocode, docker, nodered, githubactions, arduino",
+        "wikipedia_svg": "Reliable public SVGs for: Zephyr, Microchip, TI, Vector (CANoe), Matter, WiFi, ISO, AMD/Xilinx, VS Code",
+        "silabs_logo": "Official Silicon Labs logo from news.silabs.com press resources",
+        "github_avatar": "Renode org avatar from GitHub — stable URL",
+        "no_logo": [
+            "CAN / CANoe — logo removed per request",
+            "UART / SPI / I2C — logo removed per request",
+            "isoSPI — logo removed per request"
+        ],
+        "fallback_needed": [
+            "BMS — generic battery icon used, consider a custom SVG",
+            "PDU Systems — Eaton logo used as proxy",
+            "HIL Testing — Vector logo used as proxy since Vector/CANoe is primary HIL tool"
+        ]
+    }
+}

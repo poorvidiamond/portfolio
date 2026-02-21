@@ -1,0 +1,94 @@
+{
+    "pillars": [
+        {
+            "id": "missingmaps",
+            "emoji": "🗺️",
+            "title": "MissingMaps: Technical Impact",
+            "subtitle": "Organizer, Dec 5th International Volunteer Day",
+            "hours": 6,
+            "color": "#8b5cf6",
+            "highlights": [
+                "Coordinated distributed engineers across time zones",
+                "6 total hours of remote mapping sessions"
+            ],
+            "whyItMatters": [
+                "Engineers deploy actual technical skills for humanitarian impact",
+                "No financial barriers or geographic constraints"
+            ],
+            "photos": [
+                {
+                    "src": "/images/volunteering/missing-maps-event.png",
+                    "caption": "Dec 5th International Volunteer Day"
+                },
+                {
+                    "src": "/images/volunteering/missing-maps-event-2.png",
+                    "caption": "OpenStreetMap Remote Mapping"
+                },
+                {
+                    "src": "/images/volunteering/missing-maps.png",
+                    "caption": "Missing Maps Online Session"
+                }
+            ]
+        },
+        {
+            "id": "wellness",
+            "emoji": "🏃‍♀️",
+            "title": "Wellness-to-Impact",
+            "subtitle": "5K Run/Walk Charity Participation",
+            "hours": 5,
+            "color": "#eab308",
+            "highlights": [
+                "3 events of 5K Run/Walk",
+                "Personal fitness aligned with community causes"
+            ],
+            "whyItMatters": [
+                "Dual benefit: personal wellness + community support",
+                "Registration and participation fees offset by rewards program"
+            ],
+            "photos": [
+                {
+                    "src": "/images/volunteering/5k-portland.jpg",
+                    "caption": "Ladybug CDH Foundation,Portland"
+                },
+                {
+                    "src": "/images/volunteering/5k-raleigh.jpg",
+                    "caption": "American Cancer Society,Raleigh"
+                },
+                {
+                    "src": "/images/volunteering/5k-tualatin.jpg",
+                    "caption": "Rotary Club of Tualatin Foundation,Tualatin"
+                }
+            ]
+        },
+        {
+            "id": "corporate",
+            "emoji": "🤝",
+            "title": "Corporate Team Initiatives",
+            "subtitle": "Humanitarian + Community + Education",
+            "hours": 15.5,
+            "color": "#06b6d4",
+            "highlights": [
+                "15.5 hours across humanitarian, community, education",
+                "Cross-functional relationship building"
+            ],
+            "whyItMatters": [
+                "Builds social capital beyond formal work",
+                "Demonstrates organizational cultural alignment"
+            ],
+            "photos": [
+                {
+                    "src": "/images/volunteering/food-bank.png",
+                    "caption": "Food Bank,Peachtree City"
+                },
+                {
+                    "src": "/images/volunteering/community-event.jpg",
+                    "caption": "No Woman No Girl,Raleigh"
+                },
+                {
+                    "src": "/images/volunteering/volunteer-activity.jpg",
+                    "caption": "Cleaning Event,Pittsburgh"
+                }
+            ]
+        }
+    ]
+}

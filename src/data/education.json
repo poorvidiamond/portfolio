@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "school": "Georgia Institute of Technology",
+        "degree": "Master's degree",
+        "major": "Electrical and Computer Engineering",
+        "location": "Atlanta, USA",
+        "startDate": "Aug 2022",
+        "endDate": "May 2024",
+        "gpa": "4.0/4.0",
+        "logo": "gt-masters.jpeg"
+    },
+    {
+        "id": 2,
+        "school": "Georgia Tech Scheller College of Business",
+        "degree": "Management of Technology for Graduate Students",
+        "major": "",
+        "location": "Atlanta, USA",
+        "startDate": "Jan 2023",
+        "endDate": "May 2024",
+        "gpa": "4.0/4.0",
+        "logo": "scheller.png"
+    },
+    {
+        "id": 3,
+        "school": "SRM IST Chennai",
+        "degree": "Bachelor of Technology",
+        "major": "Electronics and Communication Enginnering",
+        "location": "Chennai, India",
+        "startDate": "Jul 2018",
+        "endDate": "May 2022",
+        "gpa": "9.84/10",
+        "logo": "srm-logo.png"
+    }
+]

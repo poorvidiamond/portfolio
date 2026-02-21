@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "title": "Rust Enablement Initiative",
+        "description": [
+            "Spearheaded Rust adoption for STM32 embedded development across Eaton",
+            "Built mixed C/Rust workflows and reusable templates for cross-team use",
+            "Validated memory-safe firmware patterns for production embedded targets"
+        ],
+        "type": "Technical",
+        "metrics": [
+            "20–30% faster team onboarding",
+            "Multi-team adoption"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Renode + Robot Framework Automation",
+        "description": [
+            "Built virtual HIL test platform eliminating physical hardware dependencies",
+            "Enabled parallel CI testing pipelines across embedded firmware teams",
+            "Unblocked 4+ teams with limited hardware access"
+        ],
+        "type": "Technical",
+        "metrics": [
+            "$5K–$7K annual hardware savings",
+            "2–5× faster test cycles"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Flex PDU Flashing GUI",
+        "description": [
+            "Architected Qt/C++ cross-platform tool for automated PDU firmware updates",
+            "Implemented error-proofing and config-driven validation logic",
+            "Enabling non-engineers to perform firmware updates independently"
+        ],
+        "type": "Technical",
+        "metrics": [
+            "30–50% fewer flashing steps",
+            "US + Poland deployment"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Rapid Improvement Events (RIE)",
+        "description": [
+            "Organized and facilitated TDD and CI/CD workshops for firmware teams",
+            "Drove cross-functional alignment on embedded testing best practices",
+            "Created reusable workshop course in Eaton University"
+        ],
+        "type": "Technical",
+        "metrics": [
+            "40+ engineers trained",
+            "Global teams engaged"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "President - Eastern NC Toastmasters",
+        "description": [
+            "Led strategic planning and weekly operations for 15–25 member club",
+            "Coordinated officer transitions and maintained Distinguished club status",
+            "Grew member engagement through structured speaking programs"
+        ],
+        "type": "Organizational",
+        "metrics": [
+            "Distinguished club status maintained",
+            "15–25 active members"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Co-Lead - LDP Engagement Committee",
+        "description": [
+            "Organized quarterly cross-functional sessions across regions",
+            "Managed monthly LDP Spotlight series highlighting program participants",
+            "Built engagement framework adopted across LDP cohort"
+        ],
+        "type": "Organizational",
+        "metrics": [
+            "4 functional areas engaged",
+            "100+ participants per quarter"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Co-Lead - SWE West Coast",
+        "description": [
+            "Represented Eaton at regional Society of Women Engineers events",
+            "Connected engineers with professional development opportunities",
+            "Facilitated sessions bridging technical skills and career growth"
+        ],
+        "type": "Organizational",
+        "metrics": [
+            "3+ regional events",
+            "4+ mentorship connections"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Design Thinking Facilitator",
+        "description": [
+            "Certified facilitator leading cross-functional innovation sessions at Eaton",
+            "Guided teams through structured ideation to generate strategic themes",
+            "Translated workshop outputs into actionable engineering roadmap items"
+        ],
+        "type": "Organizational",
+        "metrics": [
+            "9 innovation ideas generated",
+            "4 strategic themes identified"
+        ]
+    }
+]
