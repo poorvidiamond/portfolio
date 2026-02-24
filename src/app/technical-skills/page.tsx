@@ -1,11 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Cpu, Code2, Wifi, TestTube, Wrench, Monitor, Car, CircuitBoard, type LucideIcon } from 'lucide-react';
+import { Cpu, Code2, Wifi, TestTube, Wrench, Monitor, Car, CircuitBoard, ShieldCheck, Terminal, type LucideIcon } from 'lucide-react';
 import skillsData from '@/data/skills.json';
 
 const iconMap: Record<string, LucideIcon> = {
-    Cpu, Code2, Wifi, TestTube, Wrench, Monitor, Car, CircuitBoard,
+    Cpu, Code2, Wifi, TestTube, Wrench, Monitor, Car, CircuitBoard, ShieldCheck, Terminal,
 };
 
 /* ── Per-layer accent colors ── */
@@ -61,6 +61,11 @@ export default function SkillsPage() {
                         // Width grows linearly from 36% at top to 100% at bottom
                         const widthPercent = 36 + (64 * index) / (totalLayers - 1);
 
+                        // Sort skills: highest proficiency first
+                        const sortedSkills = [...item.skills].sort(
+                            (a, b) => b.proficiency - a.proficiency
+                        );
+
                         return (
                             <motion.div
                                 key={item.layer}
@@ -90,7 +95,7 @@ export default function SkillsPage() {
                                     style={{ borderColor: `${color}30` }}
                                 >
                                     <div className="pyramid-skills-grid">
-                                        {item.skills.map((skill, sIdx) => (
+                                        {sortedSkills.map((skill, sIdx) => (
                                             <motion.div
                                                 key={skill.name}
                                                 initial={{ opacity: 0, scale: 0.85 }}
@@ -114,6 +119,16 @@ export default function SkillsPage() {
                                                     </div>
                                                 )}
                                                 <span className="pyramid-skill-name">{skill.name}</span>
+                                                {/* Proficiency bar */}
+                                                <div className="pyramid-proficiency-bar">
+                                                    <div
+                                                        className="pyramid-proficiency-fill"
+                                                        style={{
+                                                            width: `${(skill.proficiency / 5) * 100}%`,
+                                                            background: color,
+                                                        }}
+                                                    />
+                                                </div>
                                             </motion.div>
                                         ))}
                                     </div>
