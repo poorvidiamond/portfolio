@@ -177,90 +177,88 @@ body {
   outline-offset: 2px;
 }
 
-/* ─── Pyramid — Triangle Layer Visualization ─── */
+/* ─── Skills — Box Grid Layout ─── */
 
-.pyramid-container {
+.skills-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Individual category box */
+.skills-box {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skills-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Header */
+.skills-box-header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 10px;
+  padding: 14px 18px;
+  border-bottom: 1px solid;
 }
 
-/* ── Each pyramid row ── */
-.pyramid-row {
-  width: 100%;
+.skills-box-header>div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 6px;
 }
 
-/* Label badge */
-.pyramid-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 16px;
-  border-radius: 6px;
-  border: 1px solid;
-  white-space: nowrap;
+.skills-box-title {
   font-family: var(--font-mono), monospace;
-}
-
-.pyramid-layer-name {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
-.pyramid-layer-sub {
-  font-size: 0.6rem;
+.skills-box-subtitle {
+  font-size: 0.65rem;
   color: var(--foreground-secondary);
   opacity: 0.7;
+  margin-top: 1px;
 }
 
-/* ── Skills card ── */
-.pyramid-skills-card {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 18px 24px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-}
-
-.pyramid-skills-grid {
+/* Skill items container */
+.skills-box-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px;
-  align-items: center;
+  gap: 16px;
+  padding: 18px;
 }
 
 /* Individual skill */
-.pyramid-skill-item {
+.skills-box-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   min-width: 68px;
   cursor: default;
   transition: transform 0.2s ease;
 }
 
-.pyramid-skill-item:hover {
+.skills-box-item:hover {
   transform: translateY(-2px);
 }
 
-.pyramid-skill-logo {
+.skills-box-logo {
   width: 32px;
   height: 32px;
   object-fit: contain;
 }
 
-.pyramid-skill-logo-placeholder {
+.skills-box-logo-placeholder {
   width: 32px;
   height: 32px;
   display: flex;
@@ -271,7 +269,7 @@ body {
   background: var(--background-secondary);
 }
 
-.pyramid-skill-name {
+.skills-box-name {
   font-family: var(--font-mono), monospace;
   font-size: 0.7rem;
   color: var(--foreground-secondary);
@@ -282,16 +280,16 @@ body {
 }
 
 /* Proficiency bar */
-.pyramid-proficiency-bar {
+.skills-box-proficiency {
   width: 100%;
-  max-width: 60px;
+  max-width: 54px;
   height: 3px;
   border-radius: 2px;
   background: var(--border);
   overflow: hidden;
 }
 
-.pyramid-proficiency-fill {
+.skills-box-proficiency-fill {
   height: 100%;
   border-radius: 2px;
   transition: width 0.6s ease;
@@ -299,35 +297,31 @@ body {
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
-  .pyramid-row {
-    max-width: 100% !important;
+  .skills-grid-container {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
-  .pyramid-skills-card {
-    padding: 14px 12px;
-    border-radius: 8px;
-  }
-
-  .pyramid-skills-grid {
+  .skills-box-content {
     gap: 12px;
+    padding: 14px 12px;
   }
 
-  .pyramid-skill-logo,
-  .pyramid-skill-logo-placeholder {
+  .skills-box-logo,
+  .skills-box-logo-placeholder {
     width: 24px;
     height: 24px;
   }
 
-  .pyramid-skill-name {
+  .skills-box-name {
     font-size: 0.6rem;
   }
 
-  .pyramid-layer-name {
-    font-size: 0.65rem;
+  .skills-box-title {
+    font-size: 0.7rem;
   }
 }
 
-/* Selection Color */
 ::selection {
   background: var(--primary);
   color: var(--background);
