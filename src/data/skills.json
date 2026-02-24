@@ -186,6 +186,58 @@
             ]
         },
         {
+            "layer": "Debug & Test",
+            "subtitle": "Hardware Debug Tools",
+            "icon": "Wrench",
+            "skills": [
+                {
+                    "name": "SWD",
+                    "logo": "",
+                    "proficiency": 5
+                },
+                {
+                    "name": "ST-Link V3",
+                    "logo": "https://cdn.simpleicons.org/stmicroelectronics",
+                    "proficiency": 5
+                },
+                {
+                    "name": "OpenOCD",
+                    "logo": "",
+                    "proficiency": 5
+                },
+                {
+                    "name": "GDB",
+                    "logo": "https://cdn.simpleicons.org/gnu",
+                    "proficiency": 5
+                },
+                {
+                    "name": "JTAG",
+                    "logo": "",
+                    "proficiency": 5
+                },
+                {
+                    "name": "CANoe",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Vector_Informatik_Logo.svg",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Kvaser",
+                    "logo": "",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Oscilloscope",
+                    "logo": "",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Logic Analyzer",
+                    "logo": "",
+                    "proficiency": 5
+                }
+            ]
+        },
+        {
             "layer": "GUI & Tooling",
             "subtitle": "Interface & DevOps",
             "icon": "Monitor",
