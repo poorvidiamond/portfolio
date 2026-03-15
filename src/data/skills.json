@@ -6,14 +6,9 @@
             "icon": "Code2",
             "skills": [
                 {
-                    "name": "C",
+                    "name": "C/C++",
                     "logo": "https://cdn.simpleicons.org/c",
                     "proficiency": 4
-                },
-                {
-                    "name": "C++",
-                    "logo": "https://cdn.simpleicons.org/cplusplus",
-                    "proficiency": 3
                 },
                 {
                     "name": "Python",
@@ -62,7 +57,6 @@
                     "logo": "https://news.silabs.com/download/silicon-labs-logo-red-2014-256x128px.png",
                     "proficiency": 5
                 },
-
                 {
                     "name": "TI",
                     "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Texas_Instruments_logo_2024.svg",
@@ -169,7 +163,6 @@
                     "logo": "https://cdn.simpleicons.org/githubactions",
                     "proficiency": 5
                 },
-
                 {
                     "name": "CI-CD",
                     "logo": "https://cdn.simpleicons.org/githubactions",
@@ -239,7 +232,6 @@
                     "logo": "https://cdn.simpleicons.org/qt",
                     "proficiency": 5
                 },
-
                 {
                     "name": "Git",
                     "logo": "https://cdn.simpleicons.org/git",
