@@ -81,27 +81,22 @@
             "skills": [
                 {
                     "name": "UART / SPI / I2C",
-                    "logo": "",
                     "proficiency": 5
                 },
                 {
                     "name": "isoSPI",
-                    "logo": "",
                     "proficiency": 2.5
                 },
                 {
                     "name": "Matter / Thread",
-                    "logo": "",
                     "proficiency": 5
                 },
                 {
                     "name": "Wi-Fi",
-                    "logo": "",
                     "proficiency": 5
                 },
                 {
                     "name": "Bluetooth",
-                    "logo": "",
                     "proficiency": 5
                 }
             ]

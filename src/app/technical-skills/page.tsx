@@ -22,7 +22,7 @@ const LAYER_COLORS = [
 
 interface Skill {
     name: string;
-    logo: string;
+    logo?: string;
     proficiency: number;
 }
 
