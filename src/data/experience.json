@@ -31,9 +31,9 @@
         "endDate": "June 2025",
         "type": "Professional",
         "bullets": [
-            "Pioneered Rust for embedded development, creating mixed-language workflows.",
-            "Eliminated hardware dependencies by deploying Renode virtual test platforms.",
-            "Scaled TDD practices across global firmware teams through hands-on workshops."
+            "Developed STM32 Rust prototypes and validated C/C++ FFI interop on real hardware.",
+            "Built Renode machine configs and debugged missing peripheral models for STM32G0 targets.",
+            "Supported firmware teams with test-driven development integration into existing CI pipelines."
         ],
         "url": "https://github.com/antmicro/renode-board-visualization",
         "image": "/logos/eaton.svg",
@@ -66,7 +66,7 @@
         "metrics": [
             "~50 devices tested",
             "30% faster info lookup",
-            "US+China team collaboration"
+            "Cross-functional team collaboration"
         ],
         "projects": []
     },
@@ -98,7 +98,7 @@
         "role": "Entrepreneurship Assistant",
         "company": "Georgia Tech - Venture Lab",
         "location": "Atlanta, GA",
-        "startDate": "January 2023",
+        "startDate": "February 2023",
         "endDate": "May 2023",
         "type": "Part-time",
         "bullets": [
@@ -131,8 +131,7 @@
         "url": "https://studentcenter.gatech.edu/student-team-opportunities",
         "image": "/logos/scec-award.jpg",
         "metrics": [
-            "Student Employee of the Year 2023",
-            "100+ events managed"
+            "Student Employee of the Year 2023"
         ],
         "linkLabel": "Click to view job description",
         "projects": []
