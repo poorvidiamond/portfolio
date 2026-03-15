@@ -103,7 +103,7 @@ export default function SkillsPage() {
                                                     <img
                                                         src={skill.logo}
                                                         alt={skill.name}
-                                                        className="skills-box-logo dark:invert"
+                                                        className="skills-box-logo"
                                                         loading="lazy"
                                                     />
                                                 ) : (
