@@ -6,29 +6,39 @@
             "icon": "Code2",
             "skills": [
                 {
-                    "name": "C/C++",
+                    "name": "C",
+                    "logo": "https://cdn.simpleicons.org/c",
+                    "proficiency": 4
+                },
+                {
+                    "name": "C++",
                     "logo": "https://cdn.simpleicons.org/cplusplus",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "Python",
                     "logo": "https://cdn.simpleicons.org/python",
-                    "proficiency": 5
+                    "proficiency": 4
                 },
                 {
                     "name": "Rust",
                     "logo": "https://cdn.simpleicons.org/rust",
-                    "proficiency": 2.5
+                    "proficiency": 3
                 },
                 {
-                    "name": "Linux",
-                    "logo": "https://cdn.simpleicons.org/linux",
-                    "proficiency": 5
+                    "name": "FreeRTOS",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Logo_fridge_FreeRTOS.png",
+                    "proficiency": 2
                 },
                 {
                     "name": "Zephyr RTOS",
                     "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Zephyr_RTOS_logo_2015.svg",
-                    "proficiency": 2.5
+                    "proficiency": 2
+                },
+                {
+                    "name": "Linux",
+                    "logo": "https://cdn.simpleicons.org/linux",
+                    "proficiency": 2
                 }
             ]
         },
@@ -52,11 +62,7 @@
                     "logo": "https://news.silabs.com/download/silicon-labs-logo-red-2014-256x128px.png",
                     "proficiency": 5
                 },
-                {
-                    "name": "Microchip",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Microchip-Logo.svg",
-                    "proficiency": 2.5
-                },
+
                 {
                     "name": "TI",
                     "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Texas_Instruments_logo_2024.svg",
@@ -80,11 +86,6 @@
             "icon": "Wifi",
             "skills": [
                 {
-                    "name": "CAN / CANoe",
-                    "logo": "",
-                    "proficiency": 5
-                },
-                {
                     "name": "UART / SPI / I2C",
                     "logo": "",
                     "proficiency": 5
@@ -96,17 +97,17 @@
                 },
                 {
                     "name": "Matter / Thread",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Matter_logo.jpg",
+                    "logo": "",
                     "proficiency": 5
                 },
                 {
                     "name": "Wi-Fi",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/WiFi_Logo.svg",
+                    "logo": "",
                     "proficiency": 5
                 },
                 {
                     "name": "Bluetooth",
-                    "logo": "https://cdn.simpleicons.org/bluetooth",
+                    "logo": "",
                     "proficiency": 5
                 }
             ]
@@ -122,11 +123,6 @@
                     "proficiency": 5
                 },
                 {
-                    "name": "PDU Systems",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Eaton_Corporation_logo.svg",
-                    "proficiency": 5
-                },
-                {
                     "name": "CAN Bus / UDS / J1939",
                     "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Vector_Informatik_Logo.svg",
                     "proficiency": 5
@@ -137,8 +133,8 @@
                     "proficiency": 2.5
                 },
                 {
-                    "name": "Automotive Safety",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e8/ISO_Logo_%28Red_square%29.svg",
+                    "name": "Microchip",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Microchip-Logo.svg",
                     "proficiency": 2.5
                 }
             ]
@@ -173,11 +169,7 @@
                     "logo": "https://cdn.simpleicons.org/githubactions",
                     "proficiency": 5
                 },
-                {
-                    "name": "Testbenches (HDL)",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Verilog_Logo.svg",
-                    "proficiency": 2.5
-                },
+
                 {
                     "name": "CI-CD",
                     "logo": "https://cdn.simpleicons.org/githubactions",
@@ -247,11 +239,7 @@
                     "logo": "https://cdn.simpleicons.org/qt",
                     "proficiency": 5
                 },
-                {
-                    "name": "Python (PyQt)",
-                    "logo": "https://cdn.simpleicons.org/python",
-                    "proficiency": 5
-                },
+
                 {
                     "name": "Git",
                     "logo": "https://cdn.simpleicons.org/git",
