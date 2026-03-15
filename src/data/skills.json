@@ -7,22 +7,22 @@
             "skills": [
                 {
                     "name": "C/C++",
-                    "logo": "https://cdn.simpleicons.org/c",
+                    "logo": "/logos/skills/c.svg",
                     "proficiency": 4
                 },
                 {
                     "name": "Python",
-                    "logo": "https://cdn.simpleicons.org/python",
+                    "logo": "/logos/skills/python.svg",
                     "proficiency": 4
                 },
                 {
                     "name": "Rust",
-                    "logo": "https://cdn.simpleicons.org/rust",
+                    "logo": "/logos/skills/rust.svg",
                     "proficiency": 3
                 },
                 {
                     "name": "FreeRTOS",
-                    "logo": "https://www.mediawiki.compulab.com/w/images/thumb/b/b9/FreeRTOS-Logo.png/120px-FreeRTOS-Logo.png",
+                    "logo": "/logos/skills/freertos.svg",
                     "proficiency": 2
                 },
                 {
@@ -32,7 +32,7 @@
                 },
                 {
                     "name": "Linux",
-                    "logo": "https://cdn.simpleicons.org/linux",
+                    "logo": "/logos/skills/linux.svg",
                     "proficiency": 2
                 }
             ]
@@ -44,32 +44,32 @@
             "skills": [
                 {
                     "name": "STM32",
-                    "logo": "https://cdn.simpleicons.org/stmicroelectronics",
+                    "logo": "/logos/skills/stm32.svg",
                     "proficiency": 5
                 },
                 {
                     "name": "ESP32",
-                    "logo": "https://cdn.simpleicons.org/espressif",
+                    "logo": "/logos/skills/espressif.svg",
                     "proficiency": 5
                 },
                 {
                     "name": "Silicon Labs",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Silicon_Laboratories_Logo.svg",
+                    "logo": "/logos/skills/siliconlabs.svg",
                     "proficiency": 5
                 },
                 {
                     "name": "TI",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Texas_Instruments_logo_2024.svg",
+                    "logo": "/logos/skills/ti.svg",
                     "proficiency": 2.5
                 },
                 {
                     "name": "Raspberry Pi",
-                    "logo": "https://cdn.simpleicons.org/raspberrypi",
+                    "logo": "/logos/skills/raspberrypi.svg",
                     "proficiency": 2.5
                 },
                 {
-                    "name": "Arduino / Teensy",
-                    "logo": "https://cdn.simpleicons.org/arduino",
+                    "name": "Arduino",
+                    "logo": "/logos/skills/arduino.svg",
                     "proficiency": 2.5
                 }
             ]
@@ -160,17 +160,17 @@
                 },
                 {
                     "name": "Pytest",
-                    "logo": "https://cdn.simpleicons.org/pytest",
+                    "logo": "/logos/skills/pytest.svg",
                     "proficiency": 5
                 },
                 {
                     "name": "Robot Framework",
-                    "logo": "https://cdn.simpleicons.org/robotframework",
+                    "logo": "/logos/skills/robotframework.svg",
                     "proficiency": 5
                 },
                 {
                     "name": "Renode",
-                    "logo": "https://avatars.githubusercontent.com/u/11813517?s=200&v=4",
+                    "logo": "/logos/skills/renode.svg",
                     "proficiency": 5
                 },
                 {
@@ -180,7 +180,7 @@
                 },
                 {
                     "name": "CI/CD",
-                    "logo": "https://cdn.simpleicons.org/githubactions",
+                    "logo": "/logos/skills/githubactions.svg",
                     "proficiency": 5
                 }
             ]
@@ -197,7 +197,7 @@
                 },
                 {
                     "name": "ST-Link V3",
-                    "logo": "https://cdn.simpleicons.org/stmicroelectronics",
+                    "logo": "/logos/skills/stm32.svg",
                     "proficiency": 5
                 },
                 {
@@ -207,7 +207,7 @@
                 },
                 {
                     "name": "GDB",
-                    "logo": "https://cdn.simpleicons.org/gnu",
+                    "logo": "/logos/skills/gnu.svg",
                     "proficiency": 5
                 },
                 {
@@ -244,32 +244,32 @@
             "skills": [
                 {
                     "name": "Qt (C++)",
-                    "logo": "https://cdn.simpleicons.org/qt",
+                    "logo": "/logos/skills/qt.svg",
                     "proficiency": 5
                 },
                 {
                     "name": "Git",
-                    "logo": "https://cdn.simpleicons.org/git",
+                    "logo": "/logos/skills/git.svg",
                     "proficiency": 5
                 },
                 {
                     "name": "STM32CubeIDE",
-                    "logo": "https://cdn.simpleicons.org/stmicroelectronics",
+                    "logo": "/logos/skills/stm32.svg",
                     "proficiency": 5
                 },
                 {
                     "name": "VS Code",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
+                    "logo": "/logos/skills/vscode.svg",
                     "proficiency": 5
                 },
                 {
                     "name": "Docker",
-                    "logo": "https://cdn.simpleicons.org/docker",
+                    "logo": "/logos/skills/docker.svg",
                     "proficiency": 5
                 },
                 {
                     "name": "Node-RED",
-                    "logo": "https://cdn.simpleicons.org/nodered",
+                    "logo": "/logos/skills/nodered.svg",
                     "proficiency": 2.5
                 }
             ]
@@ -291,12 +291,12 @@
                 },
                 {
                     "name": "Xilinx Vivado",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Xilinx.svg",
+                    "logo": "/logos/skills/xilinx.svg",
                     "proficiency": 2.5
                 },
                 {
                     "name": "Artix-7 FPGA",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Xilinx.svg",
+                    "logo": "/logos/skills/xilinx.svg",
                     "proficiency": 2.5
                 }
             ]
