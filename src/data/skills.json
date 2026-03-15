@@ -80,7 +80,15 @@
             "icon": "Wifi",
             "skills": [
                 {
-                    "name": "UART / SPI / I2C",
+                    "name": "UART",
+                    "proficiency": 5
+                },
+                {
+                    "name": "SPI",
+                    "proficiency": 5
+                },
+                {
+                    "name": "I2C",
                     "proficiency": 5
                 },
                 {
@@ -88,7 +96,11 @@
                     "proficiency": 2.5
                 },
                 {
-                    "name": "Matter / Thread",
+                    "name": "Matter",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Thread",
                     "proficiency": 5
                 },
                 {
