@@ -22,12 +22,12 @@
                 },
                 {
                     "name": "FreeRTOS",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Logo_fridge_FreeRTOS.png",
+                    "logo": "https://www.mediawiki.compulab.com/w/images/thumb/b/b9/FreeRTOS-Logo.png/120px-FreeRTOS-Logo.png",
                     "proficiency": 2
                 },
                 {
                     "name": "Zephyr RTOS",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Zephyr_RTOS_logo_2015.svg",
+                    "logo": "",
                     "proficiency": 2
                 },
                 {
@@ -54,7 +54,7 @@
                 },
                 {
                     "name": "Silicon Labs",
-                    "logo": "https://news.silabs.com/download/silicon-labs-logo-red-2014-256x128px.png",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Silicon_Laboratories_Logo.svg",
                     "proficiency": 5
                 },
                 {
@@ -81,34 +81,42 @@
             "skills": [
                 {
                     "name": "UART",
+                    "logo": "",
                     "proficiency": 5
                 },
                 {
                     "name": "SPI",
+                    "logo": "",
                     "proficiency": 5
                 },
                 {
                     "name": "I2C",
+                    "logo": "",
                     "proficiency": 5
                 },
                 {
-                    "name": "isoSPI",
-                    "proficiency": 2.5
-                },
-                {
                     "name": "Matter",
+                    "logo": "",
                     "proficiency": 5
                 },
                 {
                     "name": "Thread",
+                    "logo": "",
                     "proficiency": 5
                 },
                 {
                     "name": "Wi-Fi",
+                    "logo": "",
                     "proficiency": 5
                 },
                 {
                     "name": "Bluetooth",
+                    "logo": "",
+                    "proficiency": 5
+                },
+                {
+                    "name": "isoSPI",
+                    "logo": "",
                     "proficiency": 5
                 }
             ]
@@ -119,23 +127,23 @@
             "icon": "Car",
             "skills": [
                 {
-                    "name": "Analog devices BMS",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Battery_icon_discharging_100.svg",
+                    "name": "Analog Devices BMS",
+                    "logo": "",
                     "proficiency": 5
                 },
                 {
                     "name": "CAN Bus / UDS / J1939",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Vector_Informatik_Logo.svg",
+                    "logo": "",
                     "proficiency": 5
                 },
                 {
                     "name": "EEPROM Diagnostics",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/68/Microchip_Technology_logo.svg",
+                    "logo": "",
                     "proficiency": 2.5
                 },
                 {
                     "name": "Microchip",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Microchip-Logo.svg",
+                    "logo": "",
                     "proficiency": 2.5
                 }
             ]
@@ -147,7 +155,7 @@
             "skills": [
                 {
                     "name": "HIL Testing",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Vector_Informatik_Logo.svg",
+                    "logo": "",
                     "proficiency": 5
                 },
                 {
@@ -167,11 +175,11 @@
                 },
                 {
                     "name": "TDD",
-                    "logo": "https://cdn.simpleicons.org/githubactions",
+                    "logo": "",
                     "proficiency": 5
                 },
                 {
-                    "name": "CI-CD",
+                    "name": "CI/CD",
                     "logo": "https://cdn.simpleicons.org/githubactions",
                     "proficiency": 5
                 }
@@ -209,7 +217,7 @@
                 },
                 {
                     "name": "CANoe",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Vector_Informatik_Logo.svg",
+                    "logo": "",
                     "proficiency": 5
                 },
                 {
@@ -273,41 +281,25 @@
             "skills": [
                 {
                     "name": "Verilog HDL",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Verilog_Logo.svg",
+                    "logo": "",
                     "proficiency": 2.5
                 },
                 {
                     "name": "VHDL",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/VHDL_Logo.svg",
+                    "logo": "",
                     "proficiency": 2.5
                 },
                 {
                     "name": "Xilinx Vivado",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/63/AMD_Logo.svg",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Xilinx.svg",
                     "proficiency": 2.5
                 },
                 {
                     "name": "Artix-7 FPGA",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/63/AMD_Logo.svg",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Xilinx.svg",
                     "proficiency": 2.5
                 }
             ]
         }
-    ],
-    "_logo_notes": {
-        "simpleicons": "cdn.simpleicons.org — works for: cplusplus, python, rust, linux, stmicroelectronics, espressif, raspberrypi, bluetooth, pytest, robotframework, qt, git, visualstudiocode, docker, nodered, githubactions, arduino",
-        "wikipedia_svg": "Reliable public SVGs for: Zephyr, Microchip, TI, Vector (CANoe), Matter, WiFi, ISO, AMD/Xilinx, VS Code",
-        "silabs_logo": "Official Silicon Labs logo from news.silabs.com press resources",
-        "github_avatar": "Renode org avatar from GitHub — stable URL",
-        "no_logo": [
-            "CAN / CANoe — logo removed per request",
-            "UART / SPI / I2C — logo removed per request",
-            "isoSPI — logo removed per request"
-        ],
-        "fallback_needed": [
-            "BMS — generic battery icon used, consider a custom SVG",
-            "PDU Systems — Eaton logo used as proxy",
-            "HIL Testing — Vector logo used as proxy since Vector/CANoe is primary HIL tool"
-        ]
-    }
+    ]
 }
