@@ -90,7 +90,7 @@ export default function SkillsPage() {
                                 {/* Skills list */}
                                 <div className="skills-box-content">
                                     {sortedSkills.map((skill, sIdx) =>
-                                        skill.logo !== undefined ? (
+                                        skill.logo ? (
                                             <motion.div
                                                 key={skill.name}
                                                 initial={{ opacity: 0, scale: 0.85 }}
@@ -99,20 +99,12 @@ export default function SkillsPage() {
                                                 transition={{ delay: index * 0.07 + sIdx * 0.04 + 0.15 }}
                                                 className="skills-box-item"
                                             >
-                                                {skill.logo ? (
-                                                    <img
-                                                        src={skill.logo}
-                                                        alt={skill.name}
-                                                        className="skills-box-logo"
-                                                        loading="lazy"
-                                                    />
-                                                ) : (
-                                                    <div className="skills-box-logo-placeholder" style={{ borderColor: `${color}40` }}>
-                                                        <span style={{ color, fontSize: '0.6rem', fontWeight: 700 }}>
-                                                            {skill.name.slice(0, 2).toUpperCase()}
-                                                        </span>
-                                                    </div>
-                                                )}
+                                                <img
+                                                    src={skill.logo}
+                                                    alt={skill.name}
+                                                    className="skills-box-logo"
+                                                    loading="lazy"
+                                                />
                                                 <span className="skills-box-name">{skill.name}</span>
                                                 {/* Proficiency bar */}
                                                 <div className="skills-box-proficiency">
