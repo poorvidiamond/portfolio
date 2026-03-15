@@ -7,32 +7,32 @@
             "skills": [
                 {
                     "name": "C/C++",
-                    "logo": "/logos/skills/c.svg",
+                    "logo": "/logos/skills/c.png",
                     "proficiency": 4
                 },
                 {
                     "name": "Python",
-                    "logo": "/logos/skills/python.svg",
+                    "logo": "/logos/skills/python.png",
                     "proficiency": 4
                 },
                 {
                     "name": "Rust",
-                    "logo": "/logos/skills/rust.svg",
+                    "logo": "/logos/skills/rust.png",
                     "proficiency": 3
                 },
                 {
                     "name": "FreeRTOS",
-                    "logo": "/logos/skills/freertos.svg",
+                    "logo": "/logos/skills/freertos.png",
                     "proficiency": 2
                 },
                 {
                     "name": "Zephyr RTOS",
-                    "logo": "",
+                    "logo": "/logos/skills/zephyr.png",
                     "proficiency": 2
                 },
                 {
                     "name": "Linux",
-                    "logo": "/logos/skills/linux.svg",
+                    "logo": "/logos/skills/linux.png",
                     "proficiency": 2
                 }
             ]
@@ -44,32 +44,32 @@
             "skills": [
                 {
                     "name": "STM32",
-                    "logo": "/logos/skills/stm32.svg",
+                    "logo": "/logos/skills/STM32.png",
                     "proficiency": 5
                 },
                 {
                     "name": "ESP32",
-                    "logo": "/logos/skills/espressif.svg",
+                    "logo": "/logos/skills/esp.png",
                     "proficiency": 5
                 },
                 {
                     "name": "Silicon Labs",
-                    "logo": "/logos/skills/siliconlabs.svg",
+                    "logo": "/logos/skills/silicon labs.png",
                     "proficiency": 5
                 },
                 {
                     "name": "TI",
-                    "logo": "/logos/skills/ti.svg",
+                    "logo": "/logos/skills/ti.png",
                     "proficiency": 2.5
                 },
                 {
                     "name": "Raspberry Pi",
-                    "logo": "/logos/skills/raspberrypi.svg",
+                    "logo": "/logos/skills/raspberry.png",
                     "proficiency": 2.5
                 },
                 {
                     "name": "Arduino",
-                    "logo": "/logos/skills/arduino.svg",
+                    "logo": "/logos/skills/ardunio.png",
                     "proficiency": 2.5
                 }
             ]
@@ -197,7 +197,7 @@
                 },
                 {
                     "name": "ST-Link V3",
-                    "logo": "/logos/skills/stm32.svg",
+                    "logo": "/logos/skills/STM32.png",
                     "proficiency": 5
                 },
                 {
@@ -254,7 +254,7 @@
                 },
                 {
                     "name": "STM32CubeIDE",
-                    "logo": "/logos/skills/stm32.svg",
+                    "logo": "/logos/skills/STM32.png",
                     "proficiency": 5
                 },
                 {
