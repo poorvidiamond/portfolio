@@ -122,7 +122,7 @@
             "icon": "Car",
             "skills": [
                 {
-                    "name": "Analog Devices BMS",
+                    "name": "Analog Devices",
                     "logo": "/logos/skills/analog devices.png",
                     "proficiency": 5
                 },
@@ -156,32 +156,32 @@
                 {
                     "name": "HIL Testing",
                     "logo": "/logos/skills/HIL.png",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "Pytest",
                     "logo": "/logos/skills/pytest.png",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "Robot Framework",
                     "logo": "/logos/skills/robot .png",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "Renode",
                     "logo": "/logos/skills/renode.png",
-                    "proficiency": 5
+                    "proficiency": 4
                 },
                 {
                     "name": "TDD",
                     "logo": "/logos/skills/tdd.png",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "CI/CD",
                     "logo": "/logos/skills/github actions ci.png",
-                    "proficiency": 5
+                    "proficiency": 4
                 }
             ]
         },
@@ -193,32 +193,32 @@
                 {
                     "name": "ST-Link V3",
                     "logo": "/logos/skills/STM32.png",
-                    "proficiency": 5
+                    "proficiency": 4
                 },
                 {
                     "name": "OpenOCD",
                     "logo": "/logos/skills/open ocd.png",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "GDB",
                     "logo": "/logos/skills/gdb.png",
-                    "proficiency": 5
+                    "proficiency": 4
                 },
                 {
                     "name": "JTAG",
                     "logo": "/logos/skills/jtag.png",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "Oscilloscope",
                     "logo": "/logos/skills/oscillosocpe.png",
-                    "proficiency": 5
+                    "proficiency": 4
                 },
                 {
                     "name": "Logic Analyzer",
                     "logo": "/logos/skills/logic analyzer.png",
-                    "proficiency": 5
+                    "proficiency": 4
                 }
             ]
         },
@@ -230,32 +230,32 @@
                 {
                     "name": "Qt (C++)",
                     "logo": "/logos/skills/qt.png",
-                    "proficiency": 5
+                    "proficiency": 4
                 },
                 {
                     "name": "Git",
                     "logo": "/logos/skills/git.png",
-                    "proficiency": 5
+                    "proficiency": 4
                 },
                 {
                     "name": "STM32CubeIDE",
                     "logo": "/logos/skills/STM32.png",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "VS Code",
                     "logo": "/logos/skills/vs code.png",
-                    "proficiency": 5
+                    "proficiency": 4
                 },
                 {
                     "name": "Docker",
                     "logo": "/logos/skills/docker.png",
-                    "proficiency": 5
+                    "proficiency": 2
                 },
                 {
-                    "name": "MATLAB",
+                    "name": "Simulink",
                     "logo": "/logos/skills/matlab.png",
-                    "proficiency": 2.5
+                    "proficiency": 3
                 }
             ]
         },
