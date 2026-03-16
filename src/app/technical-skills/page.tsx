@@ -89,57 +89,35 @@ export default function SkillsPage() {
 
                                 {/* Skills list */}
                                 <div className="skills-box-content">
-                                    {sortedSkills.map((skill, sIdx) =>
-                                        skill.logo ? (
-                                            <motion.div
-                                                key={skill.name}
-                                                initial={{ opacity: 0, scale: 0.85 }}
-                                                whileInView={{ opacity: 1, scale: 1 }}
-                                                viewport={{ once: true }}
-                                                transition={{ delay: index * 0.07 + sIdx * 0.04 + 0.15 }}
-                                                className="skills-box-item"
-                                            >
+                                    {sortedSkills.map((skill, sIdx) => (
+                                        <motion.div
+                                            key={skill.name}
+                                            initial={{ opacity: 0, scale: 0.85 }}
+                                            whileInView={{ opacity: 1, scale: 1 }}
+                                            viewport={{ once: true }}
+                                            transition={{ delay: index * 0.07 + sIdx * 0.04 + 0.15 }}
+                                            className="skills-box-item"
+                                        >
+                                            {skill.logo && (
                                                 <img
                                                     src={skill.logo}
                                                     alt={skill.name}
                                                     className="skills-box-logo"
                                                     loading="lazy"
                                                 />
-                                                <span className="skills-box-name">{skill.name}</span>
-                                                {/* Proficiency bar */}
-                                                <div className="skills-box-proficiency">
-                                                    <div
-                                                        className="skills-box-proficiency-fill"
-                                                        style={{
-                                                            width: `${(skill.proficiency / 5) * 100}%`,
-                                                            background: color,
-                                                        }}
-                                                    />
-                                                </div>
-                                            </motion.div>
-                                        ) : (
-                                            <motion.div
-                                                key={skill.name}
-                                                initial={{ opacity: 0, scale: 0.85 }}
-                                                whileInView={{ opacity: 1, scale: 1 }}
-                                                viewport={{ once: true }}
-                                                transition={{ delay: index * 0.07 + sIdx * 0.04 + 0.15 }}
-                                                className="skills-text-chip"
-                                                style={{ borderColor: `${color}40` }}
-                                            >
-                                                <span className="skills-box-name">{skill.name}</span>
-                                                <div className="skills-box-proficiency">
-                                                    <div
-                                                        className="skills-box-proficiency-fill"
-                                                        style={{
-                                                            width: `${(skill.proficiency / 5) * 100}%`,
-                                                            background: color,
-                                                        }}
-                                                    />
-                                                </div>
-                                            </motion.div>
-                                        )
-                                    )}
+                                            )}
+                                            <span className="skills-box-name">{skill.name}</span>
+                                            <div className="skills-box-proficiency">
+                                                <div
+                                                    className="skills-box-proficiency-fill"
+                                                    style={{
+                                                        width: `${(skill.proficiency / 5) * 100}%`,
+                                                        background: color,
+                                                    }}
+                                                />
+                                            </div>
+                                        </motion.div>
+                                    ))}
                                 </div>
                             </motion.div>
                         );
