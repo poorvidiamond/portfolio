@@ -146,7 +146,7 @@
         {
             "layer": "Testing & Validation",
             "subtitle": "Quality Assurance",
-            "icon": "TestTube",
+            "icon": "ShieldCheck",
             "skills": [
                 {
                     "name": "HIL Testing",

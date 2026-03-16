@@ -1,11 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Cpu, Code2, Wifi, TestTube, Wrench, Monitor, Car, CircuitBoard, type LucideIcon } from 'lucide-react';
+import { Cpu, Code2, Wifi, ShieldCheck, Wrench, Monitor, Car, CircuitBoard, type LucideIcon } from 'lucide-react';
 import skillsData from '@/data/skills.json';
 
 const iconMap: Record<string, LucideIcon> = {
-    Cpu, Code2, Wifi, TestTube, Wrench, Monitor, Car, CircuitBoard,
+    Cpu, Code2, Wifi, ShieldCheck, Wrench, Monitor, Car, CircuitBoard,
 };
 
 /* ── Per-layer accent colors ── */
