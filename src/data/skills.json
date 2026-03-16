@@ -82,7 +82,7 @@
                 {
                     "name": "UART",
                     "logo": "",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "SPI",
@@ -113,11 +113,6 @@
                     "name": "Bluetooth",
                     "logo": "",
                     "proficiency": 5
-                },
-                {
-                    "name": "isoSPI",
-                    "logo": "",
-                    "proficiency": 5
                 }
             ]
         },
@@ -132,19 +127,24 @@
                     "proficiency": 5
                 },
                 {
-                    "name": "CAN Bus / UDS / J1939",
+                    "name": "CAN Bus",
                     "logo": "/logos/skills/CAN.png",
                     "proficiency": 5
-                },
-                {
-                    "name": "EEPROM Diagnostics",
-                    "logo": "",
-                    "proficiency": 2.5
                 },
                 {
                     "name": "Microchip",
                     "logo": "/logos/skills/microchip.png",
                     "proficiency": 2.5
+                },
+                {
+                    "name": "Kvaser",
+                    "logo": "/logos/skills/kvaser.png",
+                    "proficiency": 5
+                },
+                {
+                    "name": "Vector",
+                    "logo": "/logos/skills/vector.png",
+                    "proficiency": 5
                 }
             ]
         },
@@ -191,11 +191,6 @@
             "icon": "Wrench",
             "skills": [
                 {
-                    "name": "SWD",
-                    "logo": "",
-                    "proficiency": 5
-                },
-                {
                     "name": "ST-Link V3",
                     "logo": "/logos/skills/STM32.png",
                     "proficiency": 5
@@ -213,16 +208,6 @@
                 {
                     "name": "JTAG",
                     "logo": "/logos/skills/jtag.png",
-                    "proficiency": 5
-                },
-                {
-                    "name": "CANoe",
-                    "logo": "/logos/skills/vector.png",
-                    "proficiency": 5
-                },
-                {
-                    "name": "Kvaser",
-                    "logo": "/logos/skills/kvaser.png",
                     "proficiency": 5
                 },
                 {
@@ -268,8 +253,8 @@
                     "proficiency": 5
                 },
                 {
-                    "name": "Node-RED",
-                    "logo": "/logos/skills/nodered.svg",
+                    "name": "MATLAB",
+                    "logo": "/logos/skills/matlab.png",
                     "proficiency": 2.5
                 }
             ]
@@ -281,7 +266,7 @@
             "skills": [
                 {
                     "name": "Verilog HDL",
-                    "logo": "",
+                    "logo": "/logos/skills/verilog.png",
                     "proficiency": 2.5
                 },
                 {
