@@ -50,27 +50,27 @@
                 {
                     "name": "ESP32",
                     "logo": "/logos/skills/esp.png",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "Silicon Labs",
                     "logo": "/logos/skills/silicon labs.png",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "TI",
                     "logo": "/logos/skills/ti.png",
-                    "proficiency": 2.5
+                    "proficiency": 3
                 },
                 {
                     "name": "Raspberry Pi",
                     "logo": "/logos/skills/raspberry.png",
-                    "proficiency": 2.5
+                    "proficiency": 4
                 },
                 {
                     "name": "Arduino",
                     "logo": "/logos/skills/ardunio.png",
-                    "proficiency": 2.5
+                    "proficiency": 4
                 }
             ]
         },
@@ -128,12 +128,12 @@
             "skills": [
                 {
                     "name": "Analog Devices BMS",
-                    "logo": "",
+                    "logo": "/logos/skills/analog devices.png",
                     "proficiency": 5
                 },
                 {
                     "name": "CAN Bus / UDS / J1939",
-                    "logo": "",
+                    "logo": "/logos/skills/CAN.png",
                     "proficiency": 5
                 },
                 {
@@ -143,7 +143,7 @@
                 },
                 {
                     "name": "Microchip",
-                    "logo": "",
+                    "logo": "/logos/skills/microchip.png",
                     "proficiency": 2.5
                 }
             ]
@@ -155,32 +155,32 @@
             "skills": [
                 {
                     "name": "HIL Testing",
-                    "logo": "",
+                    "logo": "/logos/skills/HIL.png",
                     "proficiency": 5
                 },
                 {
                     "name": "Pytest",
-                    "logo": "/logos/skills/pytest.svg",
+                    "logo": "/logos/skills/pytest.png",
                     "proficiency": 5
                 },
                 {
                     "name": "Robot Framework",
-                    "logo": "/logos/skills/robotframework.svg",
+                    "logo": "/logos/skills/robot .png",
                     "proficiency": 5
                 },
                 {
                     "name": "Renode",
-                    "logo": "/logos/skills/renode.svg",
+                    "logo": "/logos/skills/renode.png",
                     "proficiency": 5
                 },
                 {
                     "name": "TDD",
-                    "logo": "",
+                    "logo": "/logos/skills/tdd.png",
                     "proficiency": 5
                 },
                 {
                     "name": "CI/CD",
-                    "logo": "/logos/skills/githubactions.svg",
+                    "logo": "/logos/skills/github actions ci.png",
                     "proficiency": 5
                 }
             ]
@@ -202,37 +202,37 @@
                 },
                 {
                     "name": "OpenOCD",
-                    "logo": "",
+                    "logo": "/logos/skills/open ocd.png",
                     "proficiency": 5
                 },
                 {
                     "name": "GDB",
-                    "logo": "/logos/skills/gnu.svg",
+                    "logo": "/logos/skills/gdb.png",
                     "proficiency": 5
                 },
                 {
                     "name": "JTAG",
-                    "logo": "",
+                    "logo": "/logos/skills/jtag.png",
                     "proficiency": 5
                 },
                 {
                     "name": "CANoe",
-                    "logo": "",
+                    "logo": "/logos/skills/vector.png",
                     "proficiency": 5
                 },
                 {
                     "name": "Kvaser",
-                    "logo": "",
+                    "logo": "/logos/skills/kvaser.png",
                     "proficiency": 5
                 },
                 {
                     "name": "Oscilloscope",
-                    "logo": "",
+                    "logo": "/logos/skills/oscillosocpe.png",
                     "proficiency": 5
                 },
                 {
                     "name": "Logic Analyzer",
-                    "logo": "",
+                    "logo": "/logos/skills/logic analyzer.png",
                     "proficiency": 5
                 }
             ]
@@ -244,12 +244,12 @@
             "skills": [
                 {
                     "name": "Qt (C++)",
-                    "logo": "/logos/skills/qt.svg",
+                    "logo": "/logos/skills/qt.png",
                     "proficiency": 5
                 },
                 {
                     "name": "Git",
-                    "logo": "/logos/skills/git.svg",
+                    "logo": "/logos/skills/git.png",
                     "proficiency": 5
                 },
                 {
@@ -259,12 +259,12 @@
                 },
                 {
                     "name": "VS Code",
-                    "logo": "/logos/skills/vscode.svg",
+                    "logo": "/logos/skills/vs code.png",
                     "proficiency": 5
                 },
                 {
                     "name": "Docker",
-                    "logo": "/logos/skills/docker.svg",
+                    "logo": "/logos/skills/docker.png",
                     "proficiency": 5
                 },
                 {
@@ -286,17 +286,17 @@
                 },
                 {
                     "name": "VHDL",
-                    "logo": "",
+                    "logo": "/logos/skills/vhdl.png",
                     "proficiency": 2.5
                 },
                 {
                     "name": "Xilinx Vivado",
-                    "logo": "/logos/skills/xilinx.svg",
+                    "logo": "/logos/skills/xilinx.png",
                     "proficiency": 2.5
                 },
                 {
                     "name": "Artix-7 FPGA",
-                    "logo": "/logos/skills/xilinx.svg",
+                    "logo": "/logos/skills/fpga.png",
                     "proficiency": 2.5
                 }
             ]
