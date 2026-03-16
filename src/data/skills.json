@@ -87,32 +87,32 @@
                 {
                     "name": "SPI",
                     "logo": "",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "I2C",
                     "logo": "",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "Matter",
                     "logo": "",
-                    "proficiency": 5
+                    "proficiency": 4
                 },
                 {
                     "name": "Thread",
                     "logo": "",
-                    "proficiency": 5
+                    "proficiency": 4
                 },
                 {
                     "name": "Wi-Fi",
                     "logo": "",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "Bluetooth",
                     "logo": "",
-                    "proficiency": 5
+                    "proficiency": 3
                 }
             ]
         },

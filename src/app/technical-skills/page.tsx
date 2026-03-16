@@ -118,7 +118,7 @@ export default function SkillsPage() {
                                                 </div>
                                             </motion.div>
                                         ) : (
-                                            <motion.span
+                                            <motion.div
                                                 key={skill.name}
                                                 initial={{ opacity: 0, scale: 0.85 }}
                                                 whileInView={{ opacity: 1, scale: 1 }}
@@ -127,8 +127,17 @@ export default function SkillsPage() {
                                                 className="skills-text-chip"
                                                 style={{ borderColor: `${color}40` }}
                                             >
-                                                {skill.name}
-                                            </motion.span>
+                                                <span className="skills-box-name">{skill.name}</span>
+                                                <div className="skills-box-proficiency">
+                                                    <div
+                                                        className="skills-box-proficiency-fill"
+                                                        style={{
+                                                            width: `${(skill.proficiency / 5) * 100}%`,
+                                                            background: color,
+                                                        }}
+                                                    />
+                                                </div>
+                                            </motion.div>
                                         )
                                     )}
                                 </div>

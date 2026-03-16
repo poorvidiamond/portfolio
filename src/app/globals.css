@@ -271,15 +271,15 @@ body {
 
 /* Text-only chip (no logo) */
 .skills-text-chip {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 5px;
+  min-width: 68px;
   padding: 6px 14px;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--background-secondary);
-  font-family: var(--font-mono), monospace;
-  font-size: 0.75rem;
-  color: var(--foreground-secondary);
   cursor: default;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
