@@ -83,7 +83,7 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
                                         textAnchor="middle"
                                         fontSize="13"
                                         fontWeight="bold"
-                                        fill="white"
+                                        fill="var(--color-foreground)"
                                     >
                                         {pillar.hours}h
                                     </text>
@@ -92,7 +92,7 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
                                         y={labelPos.y + 10}
                                         textAnchor="middle"
                                         fontSize="11"
-                                        fill="rgba(255,255,255,0.85)"
+                                        fill="var(--color-foreground-secondary)"
                                     >
                                         {Math.round(percentage)}%
                                     </text>
