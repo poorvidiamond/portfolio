@@ -44,7 +44,7 @@ export default function ProfileHero() {
                             Poorvi Bhaskar
                         </h1>
                         <h2 className="text-xl md:text-2xl text-foreground-secondary terminal-text">
-                            <span className="text-primary">$</span> who am i
+                            who am i
                         </h2>
 
                         <div className="prose prose-invert max-w-none text-foreground-secondary space-y-4 text-justify">

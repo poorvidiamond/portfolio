@@ -7,14 +7,10 @@ import { Menu, X, Sun, Moon, Terminal } from 'lucide-react';
 import { useTheme } from '@/lib/ThemeProvider';
 
 const navLinks = [
-    { href: '/', label: '~/about' },
-    { href: '/experience', label: '~/experience' },
-    { href: '/technical-skills', label: '~/skills' },
-    { href: '/projects', label: '~/projects' },
-    { href: '/leadership', label: '~/leadership' },
-    { href: '/volunteering', label: '~/volunteering' },
-    { href: '/resume.pdf', label: '~/resume' },
-    { href: '/contact', label: '~/contact' },
+    { href: '/', label: 'About' },
+    { href: '/experience', label: 'Experience' },
+    { href: '/technical-skills', label: 'Skills' },
+    { href: '/projects', label: 'Projects' },
 ];
 
 export default function Navbar() {
