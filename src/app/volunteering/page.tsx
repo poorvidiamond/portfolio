@@ -1,4 +1,4 @@
-import ImpactGrid from '@/components/volunteer/ImpactGrid';
+import VolunteerPieChart from '@/components/volunteer/VolunteerPieChart';
 import PhotoGrid from '@/components/volunteer/PhotoGrid';
 import volunteerData from '@/data/volunteer.json';
 import pillarData from '@/data/volunteer-pillars.json';
@@ -13,6 +13,7 @@ export default function VolunteeringPage() {
     const activities = volunteerData as VolunteerActivity[];
     const data = pillarData as VolunteerPillarData;
     const pillars = data.pillars;
+    const grandTotal = activities.reduce((sum, a) => sum + a.hours, 0);
 
     return (
         <section className="py-20 px-4">
@@ -28,13 +29,12 @@ export default function VolunteeringPage() {
                     </p>
                 </div>
 
-                {/* Three Pillars label */}
-                <p className="text-foreground-secondary mb-3 text-sm font-medium">
-                    Three pillars:
-                </p>
-
-                {/* Pillar Cards + Total Impact Bar */}
-                <ImpactGrid activities={activities} pillars={pillars} />
+                {/* Pie Chart + Details */}
+                <VolunteerPieChart
+                    pillars={pillars}
+                    totalHours={grandTotal}
+                    totalActivities={activities.length}
+                />
 
                 {/* Photo Highlights */}
                 <div className="mt-14">
