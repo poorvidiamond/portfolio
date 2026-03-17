@@ -9,8 +9,7 @@
         ],
         "type": "Technical",
         "metrics": [
-            "20\u201330% faster onboarding for new language adoption",
-            "Adoption across multiple embedded teams"
+            "20\u201330% faster onboarding for new language adoption"
         ]
     },
     {
@@ -23,7 +22,6 @@
         ],
         "type": "Technical",
         "metrics": [
-            "Unblocked 4+ embedded teams",
             "$5K\u2013$7K estimated annual cost savings",
             "2\u20115\u00d7 faster test cycles"
         ]
@@ -39,7 +37,7 @@
         "type": "Technical",
         "metrics": [
             "30\u201350% reduction in firmware flashing steps",
-            "Adopted by global engineering teams"
+            "Adopted by global teams"
         ]
     },
     {
