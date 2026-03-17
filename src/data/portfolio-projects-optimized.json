@@ -21,12 +21,12 @@
             "ownership": "Individually Owned",
             "ownershipIcon": "🔧",
             "type": "Eaton",
-            "description": "Qt/C++ GUI tool that automates multi-MCU firmware flashing for Eaton's Flex PDU, making firmware updates accessible to non-engineers and OEM technicians across the U.S. and Poland.",
+            "description": "Designed and developed a Qt/C++ desktop GUI application to automate firmware flashing for a multi-controller embedded system used in an enterprise EV power distribution product. The tool simplified complex firmware update workflows and enabled safe, repeatable updates by non-firmware users.",
             "cardOutcome": "Replaced 4 separate CLI scripts with one GUI — field technicians now flash firmware without engineering support.",
-            "situation": "Firmware flashing for the Flex PDU required direct CLI expertise — OEMs and field technicians had no way to update four separate MCUs (Lead, Breaktor, Isolation, Precharge) without firmware engineering support. Each MCU required separate handling with no unified interface.",
-            "task": "Design and develop a user-friendly Flash Tool GUI that automates firmware updates, integrates error-proofing logic, and enables non-engineers to flash PDUs without CLI knowledge.",
-            "action": "Created GUI_Flex_PDU_Flash_Tool from the ground up using Qt and C++, integrating CAN-based protocols (UDS/J1939) via Kvaser and Vector interfaces. Added config.ini-driven setup, validation logic, real-time logging, and error-proofing. Incorporated Poland team feedback before publishing repos and documentation for cross-site deployment.",
-            "result": "Flashing time reduced significantly — non-engineers and OEM technicians could now flash all four MCUs independently through a single GUI, eliminating the need for firmware engineering support on every update.",
+            "situation": "Firmware updates previously required command-line expertise and direct firmware engineering support, making updates time-consuming and error-prone for manufacturing, validation, and field teams. Updating multiple embedded controllers lacked a unified, user-friendly interface.",
+            "task": "Create a production-grade flashing tool that abstracts low-level firmware update complexity, prevents incorrect sequencing or configuration errors, enables non-engineers to perform firmware updates independently, and improves reliability, efficiency, and scalability.",
+            "action": "Designed and implemented a Qt/C++ GUI application from the ground up. Integrated CAN-based diagnostic workflows using industry-standard interfaces. Built configuration-driven flashing logic with validation and safety checks. Added real-time logging and error-proofing to reduce manual mistakes. Incorporated cross-site feedback to standardize workflows and usability.",
+            "result": "30–50% reduction in firmware flashing time. Enabled independent firmware updates by non-engineers. Eliminated common manual flashing errors. Reduced dependency on firmware engineers for routine updates.",
             "cardMetrics": [
               {
                 "label": "EFFICIENCY",
@@ -41,7 +41,7 @@
                 "value": "Eliminated manual flashing errors"
               }
             ],
-            "impact": "Standardized firmware update workflows across U.S. and Poland teams. Freed firmware engineers from routine flashing support. Strengthened OEM readiness and Flex PDU program serviceability for global deployment.",
+            "impact": "Standardized firmware update workflows across teams. Improved manufacturing and service readiness. Freed firmware engineers to focus on higher-value development work.",
             "technicalSkills": [
               "C++",
               "Qt",
@@ -73,12 +73,12 @@
             "ownership": "Individual Contributor",
             "ownershipIcon": "👤",
             "type": "Eaton",
-            "description": "Hardware-in-Loop verification of the Flex PDU for a new OEM customer pursuit, validating firmware changes across switching, sensing, HVIL behavior, safety diagnostics, and CAN-based control.",
+            "description": "Performed Hardware-in-Loop (HiL) firmware validation for an enterprise EV power distribution system in support of a new OEM customer program. The work focused on validating safety diagnostics, fault handling, and firmware behavior using automated and manual HiL test methodologies.",
             "cardOutcome": "Resolved setup blockers stalling a new OEM program — 40+ fault types verified and regression suite running.",
-            "situation": "A new OEM customer pursuit required Flex PDU firmware changes beyond the existing Ford eRigid baseline. New software releases needed structured HiL verification before deployment, but remote engineering teams were blocked by test setup issues — incorrect USB mapping and missing preconditions — causing regression delays.",
-            "task": "Support HiL verification for the new OEM customer pursuit by executing regression and requirements-based test suites, validating firmware changes, and ensuring fault-handling and safety diagnostics met the new program requirements.",
-            "action": "Ran Python/pytest-based automated HiL test suites, manually flashed ECUs, configured relay board communication, and resolved setup blockers for global teams. Validated EEPROM fault logging by injecting hardware faults (HVIL, crash, switch faults) and analyzing behavior across 40+ monitored fault types.",
-            "result": "Regression tests ran to completion — 40+ fault types verified, setup blockers removed for remote teams, and EEPROM fault logging confirmed accurate for all monitored fault codes with zero missed diagnostics.",
+            "situation": "A new OEM customer program required firmware updates beyond an existing baseline. These changes needed structured HiL verification before release. However, global engineering teams were blocked by test setup issues, causing regression delays and preventing automated test execution.",
+            "task": "Support HiL verification for the new OEM program by executing regression and requirements-based test suites, validating firmware changes related to safety diagnostics and fault handling, and removing test setup blockers impacting distributed engineering teams.",
+            "action": "Executed Python/pytest-based automated HiL test suites. Performed manual firmware flashing as part of validation workflows. Configured HiL communication interfaces and resolved setup issues blocking automation. Injected hardware-level faults to validate diagnostic detection and logging. Analyzed firmware behavior across 40+ monitored fault conditions. Unblocked remote teams by resolving preconditions preventing long-running test execution.",
+            "result": "Regression test suites ran to completion without setup failures. 40+ fault types successfully validated. Confirmed reliable fault logging and diagnostic coverage. Eliminated setup issues that were preventing automated test runs.",
             "cardMetrics": [
               {
                 "label": "QUALITY",
@@ -93,7 +93,7 @@
                 "value": "Removed setup blockers for global engineering teams"
               }
             ],
-            "impact": "Enabled Flex PDU software releases to proceed with confidence for the new OEM program. Reduced remote team downtime by resolving setup blockers that were stalling 3-4 hour automated test runs. Validated safety diagnostics critical for electric commercial vehicle deployment.",
+            "impact": "Enabled firmware releases to proceed with confidence for a new OEM program. Reduced downtime caused by failed or blocked automated test runs. Validated safety-critical diagnostics essential for EV deployment. Improved HiL readiness for globally distributed engineering teams.",
             "technicalSkills": [
               "Python",
               "Pytest",
@@ -128,12 +128,12 @@
             "ownership": "Individually Owned",
             "ownershipIcon": "🔧",
             "type": "Eaton",
-            "description": "Validated isoSPI communication between a Teensy 4.1 and Analog Devices ADBMS6822/2950/2951 ICs for Eaton's eMobility BDU programs, covering EEPROM access, GPIO configuration, overcurrent protection, and daisy-chain reliability.",
+            "description": "Validated isoSPI-based communication and diagnostics for a high-voltage battery monitoring system used in enterprise eMobility applications. The work focused on enabling reproducible validation workflows for safety-critical battery monitoring ICs and unblocking teams stalled by ambiguous test procedures.",
             "cardOutcome": "Turned a blocking isoSPI ambiguity into a repeatable workflow — engineers now validate independently without SME support.",
-            "situation": "No reproducible test workflow existed for validating ADBMS ICs in safety-critical HV battery systems. Engineers were blocked on isoSPI sequencing, GPIO multiplexing behavior, and EEPROM memory mapping — slowing BDU program development with no clear path forward.",
-            "task": "Develop, test, and document the isoSPI communication flow between a Teensy 4.1, ADBMS6822, and ADBMS2950/2951 evaluation boards. Validate EEPROM read/write, GPIO configuration, and overcurrent protection behavior.",
-            "action": "Implemented isoSPI communication sequences (WRCOMM/STCOMM/RDCOMM) using BMS Browser GUI. Validated EEPROM write/read with ADBMS2950, configured GPIO multiplexing and OCA/OCB overcurrent behavior. Created a detailed README and engineering documentation covering wiring, hardware setup, and GUI workflow. Served as SME for cross-team questions on isoSPI and EEPROM behavior.",
-            "result": "Engineers could run isoSPI tests independently without SME support — EEPROM read/write validated end-to-end, GPIO and overcurrent behavior confirmed, and memory map ambiguities in updated GUI versions resolved.",
+            "situation": "No reproducible or well-documented workflow existed for validating isoSPI communication in a safety-critical battery management context. Engineers were blocked by unclear sequencing, GPIO behavior, and non-obvious memory interactions, slowing development and creating dependency on subject-matter experts.",
+            "task": "Develop, validate, and document a reliable isoSPI validation flow that enables independent execution by other engineers, confirms safety-critical communication paths, and removes ambiguity around configuration and memory behavior.",
+            "action": "Validated isoSPI communication flows between a host controller and battery monitoring IC evaluation hardware. Verified non-volatile memory access and configuration behavior. Evaluated GPIO configuration and protection-related behavior under controlled conditions. Resolved sequencing and configuration ambiguities blocking validation. Created clear, reproducible engineering documentation covering setup, workflow, and validation steps. Served as a technical reference point for cross-team questions on isoSPI and memory behavior.",
+            "result": "Engineers could execute isoSPI validation independently without SME support. Memory access and configuration behavior validated end-to-end. Ambiguities caused by tooling or version differences were resolved. Validation workflows became repeatable and predictable.",
             "cardMetrics": [
               {
                 "label": "UNBLOCKED",
@@ -148,7 +148,7 @@
                 "value": "Created reproducible procedures — eliminated test ambiguity"
               }
             ],
-            "impact": "Unblocked BDU program development that had stalled on isoSPI sequencing issues. Reduced dependency on SME availability for routine validation tasks. Improved confidence in safety-critical HV battery communication paths for eMobility programs.",
+            "impact": "Unblocked battery system development that had stalled on isoSPI validation issues. Reduced dependency on individual expertise for routine validation. Increased confidence in safety-critical HV battery communication paths. Improved knowledge sharing and validation consistency across teams.",
             "technicalSkills": [
               "isoSPI",
               "ADBMS6822",
@@ -190,12 +190,12 @@
             "ownership": "Individual Contributor",
             "ownershipIcon": "👤",
             "type": "Eaton",
-            "description": "Built a functional Matter + Thread ecosystem from scratch to evaluate protocol adoption readiness for Eaton's wiring device roadmap, benchmarking against competitors and delivering findings to five cross-functional teams.",
+            "description": "Conducted a hands-on evaluation of Matter and Thread protocols to assess readiness beyond Wi-Fi for enterprise smart-home applications. Built a functional multi-ecosystem test environment and translated technical findings into product and platform insights for cross-functional stakeholders.",
             "cardOutcome": "Replaced speculation with a working Matter ecosystem — concrete chip and hub guidance delivered to 5 teams.",
-            "situation": "Eaton's wiring device portfolio was built entirely around Wi-Fi. Competitors (Eve, Leviton, ELEGRP) were already shipping Matter-compatible products. Without internal hands-on experience, Eaton couldn't make informed decisions on chip selection, hub compatibility, or platform upgrade requirements.",
-            "task": "Evaluate Matter and Thread as the next innovation beyond Eaton's current Wi-Fi product line — benchmarking against competitors already shipping Matter devices and identifying what platform changes Eaton would need to adopt the standard.",
-            "action": "Built a working Matter + Thread ecosystem using Silicon Labs EFR32MG24 kits, OpenThread Border Router on Raspberry Pi, and chip-tool commissioning. Compared Wi-Fi vs Thread device behavior, ran cross-ecosystem interoperability tests with Google, Apple, and Alexa, and analyzed cybersecurity, QR-code commissioning, and platform upgrade requirements. Delivered findings to five cross-functional teams.",
-            "result": "Delivered concrete chip selection guidance (ESP32 vs Silicon Labs), hub and BLH app upgrade requirements, and cybersecurity expectations — giving Eaton's product and engineering teams a validated foundation for Matter roadmap decisions instead of speculation.",
+            "situation": "The existing smart-home product portfolio was centered on Wi-Fi-based architectures, while competitors had begun shipping Matter-compatible devices. Without internal, hands-on experience with Matter and Thread, teams lacked the technical grounding needed to evaluate adoption feasibility, platform implications, and interoperability risks.",
+            "task": "Evaluate Matter and Thread as a next-generation connectivity option by building a working Matter + Thread ecosystem, comparing behavior across ecosystems and device types, and identifying platform-level considerations required for adoption.",
+            "action": "Built a functional Matter + Thread test ecosystem using industry reference hardware and tooling. Commissioned devices and validated behavior across multiple smart-home ecosystems. Compared Wi-Fi-based and Thread-based device characteristics. Evaluated interoperability, commissioning flows, and security considerations at a system level. Benchmarked observations against competitor offerings to identify relative strengths and gaps. Synthesized findings into clear technical and strategic insights and shared them with multiple teams.",
+            "result": "Established internal, hands-on understanding of Matter and Thread capabilities. Identified key platform considerations affecting adoption readiness. Provided teams with concrete insights grounded in experimentation rather than speculation. Created a shared technical baseline across stakeholders.",
             "cardMetrics": [
               {
                 "label": "STRATEGY",
@@ -210,7 +210,7 @@
                 "value": "Benchmarked against Eve, Leviton, ELEGRP"
               }
             ],
-            "impact": "Directly informed Eaton's wiring device product roadmap for Matter compatibility across Google, Apple, Alexa, and SmartThings. Findings reached BLH, BLC, Firmware, Cybersecurity, and Product teams — 5 cross-functional stakeholders in a single engagement.",
+            "impact": "Informed product roadmap discussions related to next-generation smart-home connectivity. Enabled alignment across product, firmware, platform, and cybersecurity teams. Accelerated decision-making by replacing assumptions with validated technical data.",
             "technicalSkills": [
               "Matter",
               "Thread",
@@ -243,12 +243,12 @@
             "ownership": "Individual Contributor",
             "ownershipIcon": "👤",
             "type": "Eaton",
-            "description": "Owned test plan creation and execution for Eaton's smart Wi-Fi product line — dimmers, receptacles, switches, and fan speed controllers — covering BLE provisioning, OTA updates, Brightlayer Home App, and voice control qualification.",
+            "description": "Led end-to-end qualification testing for an enterprise smart-home Wi-Fi device portfolio, ensuring firmware readiness and system interoperability prior to product launch. The work covered provisioning, OTA updates, mobile app integration, and voice-assistant validation across a broad device lineup.",
             "cardOutcome": "Caught firmware defects across 50+ devices before launch — test plan written from scratch with no prior reference.",
-            "situation": "A new firmware release introduced changes to provisioning flow, OTA behavior, and app interoperability across Eaton's smart Wi-Fi product line. No existing test plan covered the updated firmware behavior, creating an unvalidated gap before product qualification.",
-            "task": "Validate the new firmware release across the full smart Wi-Fi product line — dimmers, receptacles, switches, and fan speed controllers — before product qualification sign-off.",
-            "action": "Created and executed a comprehensive test plan covering BLE + Wi-Fi provisioning, OTA firmware updates, device behavior, cloud communication, Brightlayer Home App interoperability, and voice control with Google Home and Amazon Alexa. Used Espressif IDE, ESP FlashTool, and FreeRTOS tooling. Documented defects and worked directly with firmware engineers to prioritize and resolve issues before release.",
-            "result": "~50 devices qualified across 4 product types — key firmware defects caught and resolved before release, with full coverage across BLE provisioning, OTA, Brightlayer App, and Google/Alexa voice control.",
+            "situation": "A new firmware release introduced changes to device provisioning, OTA behavior, and application interoperability. No existing test plan covered the updated behavior across the full smart-device portfolio, creating risk ahead of product qualification and launch.",
+            "task": "Validate the new firmware release across the complete smart-Wi-Fi product line by creating a comprehensive test strategy, executing qualification testing across multiple device categories, and ensuring app and voice-assistant interoperability prior to release.",
+            "action": "Created and executed a comprehensive test plan covering BLE-assisted provisioning and Wi-Fi onboarding, OTA firmware update flows, device behavior and cloud communication, mobile application interoperability, and voice-assistant integration across major ecosystems. Performed testing across multiple smart-device form factors. Used vendor tooling and RTOS-level debugging to validate firmware behavior. Logged defects and worked directly with firmware engineers to prioritize and resolve issues before release.",
+            "result": "~50 devices qualified across multiple product categories. Firmware defects identified and resolved prior to product launch. Full validation coverage achieved across provisioning, OTA, mobile app, and voice control flows.",
             "cardMetrics": [
               {
                 "label": "SCALE",
@@ -263,7 +263,7 @@
                 "value": "Full BLE, OTA, App, and voice control validation"
               }
             ],
-            "impact": "Prevented firmware defects from reaching customers across Eaton's connected home product line. Enabled a clean product launch with validated app-device interoperability across BLE, OTA, and voice control integrations.",
+            "impact": "Prevented firmware defects from reaching customers across the connected-home product line. Enabled a clean product launch with validated device-to-app and voice-assistant interoperability. Increased confidence in firmware quality and system readiness at scale.",
             "technicalSkills": [
               "ESP32",
               "FreeRTOS",
@@ -297,12 +297,12 @@
             "ownership": "Individual Contributor",
             "ownershipIcon": "👤",
             "type": "Eaton",
-            "description": "Embedded diagnostic prototype combining STM32 and Raspberry Pi to capture real-time breaker signals through Node-RED into CSV/JSON logs — enabling remote fault triage for a device class that previously had no remote diagnostic capability.",
+            "description": "Designed and prototyped a remote embedded diagnostic system to capture real-time signal behavior for a field-deployed device class that previously had no remote visibility. The solution enabled engineers to triage faults remotely, significantly reducing the need for recurring on-site visits.",
             "cardOutcome": "First time this device class had remote fault visibility — field engineers can now triage without a site visit.",
-            "situation": "A specific breaker device caused ~15% of miscellaneous field issues, each requiring a $3K on-site visit. Existing tools only captured fault states after they occurred — not the signal behavior leading up to failure — making it impossible for field engineers to triage root cause without physically being on site.",
-            "task": "Build a diagnostic tool that captures real-time fault behavior so field engineers can triage issues remotely without requiring an on-site visit.",
-            "action": "Developed an embedded diagnostic system integrating STM32 (via SWD/ST-Link V3/OpenOCD) with a Raspberry Pi running Node-RED for real-time signal capture and data pipeline. Automated CSV/JSON logging, built a real-time monitoring dashboard, and structured data tools for engineering analysis. Used STM Cube Monitor for live signal verification.",
-            "result": "Field engineers gained real-time visibility into pre-fault signal behavior for the first time on this device class — making remote triage possible and eliminating the need for recurring $3K on-site visits.",
+            "situation": "A specific device class was responsible for a notable portion of miscellaneous field issues. Each incident required a costly on-site visit, as existing tools only captured fault states after failure — not the signal behavior leading up to the fault — making remote root-cause analysis impossible.",
+            "task": "Build a diagnostic capability that captures real-time, pre-fault signal behavior, enables remote fault triage by engineering teams, and reduces dependency on recurring on-site visits.",
+            "action": "Developed an embedded diagnostic prototype combining a microcontroller-based data acquisition path with an edge computing node. Implemented real-time signal capture and streaming into structured data logs. Built a lightweight monitoring dashboard for live observation and post-fault analysis. Automated data export to CSV/JSON formats to support engineering workflows. Validated live signal behavior using hardware-assisted debug and monitoring tools.",
+            "result": "Enabled real-time visibility into pre-fault signal behavior for the first time on this device class. Made remote fault triage possible without requiring physical site access. Eliminated the need for recurring on-site diagnostic visits.",
             "cardMetrics": [
               {
                 "label": "COST",
@@ -317,7 +317,7 @@
                 "value": "Addressed ~15% of miscellaneous field issues"
               }
             ],
-            "impact": "Reduced recurring $3K per site visit costs across monthly field incidents. Addressed the root diagnostic gap behind ~15% of miscellaneous field issues. First time this device class had any form of remote fault capture capability.",
+            "impact": "Reduced recurring ~$3K per on-site visit costs across field incidents. Addressed the core diagnostic gap behind a significant portion of field issues. Established the first remote diagnostic capability for this class of devices.",
             "technicalSkills": [
               "STM32",
               "SWD",
@@ -360,12 +360,12 @@
             "ownership": "Individually Owned",
             "ownershipIcon": "🔧",
             "type": "Eaton",
-            "description": "Simulation-based validation infrastructure using Renode to emulate STM32 and RTOS-based Eaton platforms — enabling firmware testing without physical hardware and driving Robot Framework CI adoption across four embedded teams.",
+            "description": "Designed and enabled a simulation-based firmware validation infrastructure to eliminate dependency on physical hardware for embedded development. The platform accelerated test cycles, reduced hardware costs, and enabled CI-driven validation across multiple embedded teams.",
             "cardOutcome": "4 teams now validate firmware without hardware access — 10-20 hours of lab debugging eliminated per cycle.",
-            "situation": "Eaton embedded teams spent 10-20 hours per cycle on lab-based debugging, relying on ~3 physical prototype boards per development cycle. No software-in-the-loop testing existed — every firmware change required physical hardware access to validate, creating a constant bottleneck.",
-            "task": "Build, run, and validate Eaton firmware projects in Renode — including DTPG and Brightlayer RTOS examples — to reduce hardware dependency and enable CI-integrated automated testing.",
-            "action": "Developed Renode machine and platform configurations (.repl/.resc), executed simulations of DTPG and Brightlayer RTOS firmware, and debugged missing peripheral and IRQ behavior (e.g., STM32G0 EXTI). Identified and escalated Renode model gaps through legal and engineering channels to get open-source peripheral models contributed upstream. Built Robot Framework test hooks for CI pipeline integration and drove adoption across four embedded teams.",
-            "result": "Prototype board dependency eliminated — teams could validate firmware changes without lab access. Lab debugging time cut from 10-20 hours to near-zero per cycle through parallel simulated test runs.",
+            "situation": "Embedded teams relied heavily on physical prototype boards for firmware validation, spending significant time in lab-based debugging. No software-in-the-loop testing existed, making every firmware change dependent on hardware availability and slowing development cycles.",
+            "task": "Enable firmware validation without physical hardware by simulating embedded platforms and RTOS behavior, supporting automated, repeatable test execution, and integrating simulation into CI workflows.",
+            "action": "Developed simulation platform configurations to emulate embedded firmware behavior. Executed firmware workloads in a simulated environment to validate functionality without lab access. Identified and resolved simulation gaps blocking accurate firmware behavior. Worked through appropriate channels to improve simulation model coverage. Integrated automated test hooks to enable CI-driven firmware validation. Drove adoption by enabling other teams to independently use the simulation infrastructure.",
+            "result": "Eliminated dependency on physical prototype boards for routine firmware validation. Reduced lab-based debugging time from hours per cycle to near-zero. Enabled parallel, repeatable test execution through simulation.",
             "cardMetrics": [
               {
                 "label": "COST",
@@ -380,7 +380,7 @@
                 "value": "Adopted by 4 embedded teams"
               }
             ],
-            "impact": "$5-7K estimated annual savings across hardware and engineering time. 2x-5x faster test cycles through parallel CI execution. Renode configs, REPL/RESC scripts, and Robot Framework hooks adopted independently by 4 embedded teams.",
+            "impact": "Estimated $5-7K annual savings across hardware and engineering time. 2x-5x faster test cycles through simulation and automation. Simulation workflows adopted independently by four embedded teams. Improved firmware quality by shifting validation earlier in the development cycle.",
             "technicalSkills": [
               "Renode",
               "STM32",
@@ -418,12 +418,12 @@
             "ownership": "Individually Owned",
             "ownershipIcon": "🔧",
             "type": "Eaton",
-            "description": "Led Eaton's Rust Enablement initiative — proving memory-safe Rust firmware on STM32 hardware, building C/C++ FFI bridges, and creating the onboarding foundation (starter repo, training decks, CI templates) for team-wide adoption.",
+            "description": "Led an internal Rust enablement initiative to evaluate memory-safe embedded firmware development on STM32-class hardware. Delivered a working proof-of-concept, demonstrated interoperability with existing C/C++ code, and created onboarding assets to reduce adoption friction for embedded teams.",
             "cardOutcome": "First Rust firmware running on Eaton STM32 hardware — memory-safe embedded development proven viable for future projects.",
-            "situation": "Eaton's embedded teams relied entirely on C/C++ with no memory-safe alternatives. Leadership wanted to evaluate Rust but no internal precedent existed — no working examples on Eaton hardware, no FFI patterns for existing C codebases, and no onboarding path for engineers unfamiliar with the language.",
-            "task": "Research, prototype, and validate the feasibility of Rust for Eaton's STM32-based embedded workflows, and create the onboarding foundation needed for team-wide adoption.",
-            "action": "Built STM32 Rust prototypes from scratch, ran real hardware validation (Rust blinky on STM32), investigated C/C++ FFI integration patterns, explored CI and test frameworks for Rust, and produced a GitHub starter repo, two training presentations, and onboarding documentation to enable team adoption.",
-            "result": "First working Rust firmware on Eaton STM32 hardware delivered — C/C++ FFI integration demonstrated, reusable CI templates established, and engineers could onboard to Rust 20-30% faster using the structured documentation.",
+            "situation": "Embedded teams were primarily using C/C++ and wanted to evaluate memory-safe alternatives. There were no internal examples of Rust running on target hardware, no established patterns for mixed-language integration, and no standardized onboarding path for engineers new to Rust.",
+            "task": "Research and validate Rust feasibility for embedded workflows by prototyping Rust firmware on embedded hardware, exploring integration approaches with existing C/C++ codebases, and creating reusable onboarding and CI foundations to enable team adoption.",
+            "action": "Built embedded Rust prototypes and validated them on real hardware (proof-of-life firmware). Investigated and demonstrated C/C++ interoperability patterns to support incremental adoption rather than rewrite-everything. Created a starter repository with structured examples and setup guidance for embedded engineers. Implemented CI workflows and added unit-testing foundations to standardize repeatable validation. Delivered internal training content, including Introduction to Rust and related enablement materials.",
+            "result": "Established the first working Rust firmware proof-of-concept on embedded hardware within the team context. Demonstrated mixed-language feasibility through C/C++ + Rust integration. Enabled faster onboarding through structured documentation and examples (20-30% reduction). Provided reusable CI and testing patterns so others didn't need to start from scratch.",
             "cardMetrics": [
               {
                 "label": "ONBOARDING",
@@ -438,7 +438,7 @@
                 "value": "Established memory-safe path for future embedded projects"
               }
             ],
-            "impact": "Created the foundation for future Rust adoption across Eaton embedded teams — no one needs to start from scratch. Freed engineers from SME dependency during Rust onboarding. Established memory-safe embedded development as a viable path for future Eaton firmware projects.",
+            "impact": "Created an adoption foundation for future memory-safe embedded work by packaging examples, onboarding content, and CI templates into reusable assets. Reduced reliance on a single SME by making enablement materials self-serve for engineers. Positioned memory-safe firmware development as a viable path for selected future embedded components and experiments.",
             "technicalSkills": [
               "Rust",
               "STM32",

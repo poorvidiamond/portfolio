@@ -1,63 +1,63 @@
 [
     {
         "id": 1,
-        "role": "Firmware Engineer",
-        "company": "Eaton - E-mobility",
-        "location": "Tualatin, Oregon",
-        "startDate": "July 2025",
+        "role": "Firmware Engineer \u2013 E\u2011Mobility",
+        "company": "Eaton",
+        "location": "Tualatin, OR (Hybrid)",
+        "startDate": "Jul 2025",
         "endDate": "Present",
         "type": "Professional",
         "bullets": [
-            "Built Qt/C++ flash tool for automated PDU firmware updates.",
-            "Maintain Python/CANoe HIL rigs and validate EEPROM fault coverage.",
-            "Verified isoSPI battery management IC communication for EV safety compliance."
+            "Built a Qt/C++ firmware flashing tool to automate updates for an enterprise EV power distribution system, replacing manual, error\u2011prone workflows.",
+            "Maintained hardware\u2011in\u2011loop (HiL) regression infrastructure and validated non\u2011volatile memory fault coverage for safety\u2011critical embedded systems.",
+            "Verified battery management IC communication paths to support EV functional safety compliance."
         ],
         "url": "https://www.eaton.com/us/en-us/catalog/emobility/flex-pdu-ev.html",
         "image": "/logos/eaton.svg",
         "video": "/videos/eaton-pdu.mp4",
         "metrics": [
-            "30–50% fewer flashing steps",
-            "40+ fault types validated",
-            "US + Poland team adoption"
+            "30\u201350% reduction in firmware flashing steps",
+            "40+ fault conditions validated",
+            "Adopted by global engineering teams"
         ],
         "projects": []
     },
     {
         "id": 2,
-        "role": "Embedded Software Engineer",
-        "company": "Eaton - Electrical Sector Systems Engineering Team",
+        "role": "Embedded Software Engineer \u2013 Electrical Sector Systems Engineering",
+        "company": "Eaton",
         "location": "Raleigh, NC",
-        "startDate": "July 2024",
-        "endDate": "June 2025",
+        "startDate": "Jul 2024",
+        "endDate": "Jun 2025",
         "type": "Professional",
         "bullets": [
-            "Developed STM32 Rust prototypes and validated C/C++ FFI interop on real hardware.",
-            "Built Renode machine configs and debugged missing peripheral models for STM32G0 targets.",
-            "Supported firmware teams with test-driven development integration into existing CI pipelines."
+            "Developed Rust embedded firmware prototypes on ARM\u2011based microcontrollers and validated interoperability with existing C/C++ codebases.",
+            "Built simulation\u2011based validation infrastructure to reduce dependency on physical hardware and accelerate firmware test cycles.",
+            "Supported firmware teams with test\u2011driven development (TDD) integration into existing CI pipelines."
         ],
         "url": "https://github.com/antmicro/renode-board-visualization",
         "image": "/logos/eaton.svg",
         "video": "/videos/Renode.mp4",
         "linkLabel": "Click to view the open source",
         "metrics": [
-            "20–30% faster adoption",
-            "$5K–$7K annual savings",
-            "30 participants (US+India)"
+            "20\u201330% faster onboarding for new language adoption",
+            "$5K\u2013$7K estimated annual cost savings",
+            "Adoption across multiple embedded teams"
         ],
         "projects": []
     },
     {
         "id": 3,
-        "role": "Embedded Design Co-op",
-        "company": "Eaton - Residential Wiring Devices",
+        "role": "Embedded Design Co\u2011op \u2013 Residential Wiring Devices",
+        "company": "Eaton",
         "location": "Peachtree City, GA",
-        "startDate": "August 2023",
+        "startDate": "Aug 2023",
         "endDate": "May 2024",
         "type": "Internship",
         "bullets": [
-            "Tested Wi-Fi dimmers, switches, and outlets against Google/Alexa voice ecosystems.",
-            "Compared Matter/Thread implementations to guide product roadmap decisions.",
-            "Centralized tribal knowledge into searchable Confluence documentation."
+            "Tested smart Wi\u2011Fi dimmers, switches, and outlets across mobile app and voice\u2011assistant ecosystems.",
+            "Evaluated Matter and Thread connectivity using industry reference platforms to assess next\u2011generation smart\u2011home standards.",
+            "Centralized internal product knowledge into searchable documentation to improve onboarding efficiency."
         ],
         "url": "https://www.eaton.com/us/en-us/catalog/wiring-devices-and-connectivity/wi-fi-smart-devices.html",
         "image": "/logos/eaton.svg",
@@ -65,46 +65,45 @@
         "linkLabel": "Click to learn more",
         "metrics": [
             "~50 devices tested",
-            "30% faster info lookup",
-            "Cross-functional team collaboration"
+            "~30% faster information lookup",
+            "Cross\u2011functional collaboration across firmware, BLE, and cybersecurity teams"
         ],
         "projects": []
     },
     {
         "id": 4,
-        "role": "Embedded Systems Design Intern",
-        "company": "Eaton - Residential Circuit Breakers",
+        "role": "Embedded Systems Design Intern \u2013 Circuit Protection Devices",
+        "company": "Eaton",
         "location": "Pittsburgh, PA",
         "startDate": "May 2023",
-        "endDate": "August 2023",
+        "endDate": "Aug 2023",
         "type": "Internship",
         "bullets": [
-            "Prototyped fault recorder capturing breaker trips missed by traditional methods.",
-            "Streamed real-time data to cloud dashboards via Raspberry Pi + Node-RED gateway.",
-            "Demonstrated ROI potential by eliminating truck rolls for intermittent issues."
+            "Prototyped an embedded fault\u2011recording system enabling real\u2011time remote diagnostics for field\u2011deployed devices.",
+            "Streamed live signal data to dashboards for engineering analysis, reducing dependency on on\u2011site visits."
         ],
         "url": "https://www.eaton.com/us/en-us/catalog/electrical-circuit-protection/br-circuit-breakers.html",
         "image": "/logos/eaton.svg",
         "video": "/videos/eaton-gfci.mp4",
         "linkLabel": "Click to view the breakers",
         "metrics": [
-            "~15% hard-to-diagnose faults addressed",
-            "$3K/visit cost savings"
+            "~15% hard\u2011to\u2011diagnose field issues addressed",
+            "~$3K per\u2011visit cost savings"
         ],
         "projects": []
     },
     {
         "id": 5,
         "role": "Entrepreneurship Assistant",
-        "company": "Georgia Tech - Venture Lab",
+        "company": "Georgia Tech \u2013 Venture Lab",
         "location": "Atlanta, GA",
-        "startDate": "February 2023",
+        "startDate": "Feb 2023",
         "endDate": "May 2023",
         "type": "Part-time",
         "bullets": [
             "Conducted customer discovery across RTLS vendors and end users.",
             "Bridged engineering and business perspectives during lean startup sprints.",
-            "Shaped feature prioritization based on field feedback from potential customers."
+            "Shaped feature prioritization based on structured field feedback."
         ],
         "url": "https://dl.acm.org/doi/pdf/10.1145/3495243.3560542",
         "image": "/logos/wavetag.png",
@@ -118,7 +117,7 @@
     {
         "id": 6,
         "role": "Guest Service Manager",
-        "company": "Georgia Tech - Student Center",
+        "company": "Georgia Tech \u2013 Student Center",
         "location": "Atlanta, GA",
         "startDate": "January 2023",
         "endDate": "May 2023",
@@ -141,20 +140,20 @@
         "role": "FPGA Design Intern",
         "company": "Sion Semiconductors",
         "location": "Bangalore, India",
-        "startDate": "June 2021",
+        "startDate": "Jun 2021",
         "endDate": "Dec 2021",
         "type": "Internship",
         "bullets": [
-            "Debugged Verilog RTL and wrote testbenches for IP verification workflows.",
-            "Tuned Xilinx floor plans to meet timing and area requirements.",
-            "Supported synthesis optimization for FPGA-based client designs."
+            "Debugged Verilog RTL and developed testbenches for IP verification workflows.",
+            "Tuned Xilinx Artix\u20117 floor plans to meet timing and area constraints.",
+            "Supported synthesis optimization for FPGA\u2011based designs."
         ],
         "url": "https://sionsemi.ai/services/semiconductor-design-service",
         "image": "/logos/fpga-board.png",
         "linkLabel": "View Sion FPGA services",
         "metrics": [
             "Verilog RTL",
-            "Xilinx Artix-7",
+            "Xilinx Artix\u20117",
             "Synthesis & Timing"
         ],
         "projects": []

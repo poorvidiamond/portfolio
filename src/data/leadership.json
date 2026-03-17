@@ -1,81 +1,82 @@
 [
     {
         "id": 1,
-        "title": "Rust Enablement Initiative",
+        "title": "Embedded Firmware Enablement (Memory\u2011Safe Development)",
         "description": [
-            "Spearheaded Rust adoption for STM32 embedded development across Eaton",
-            "Built mixed C/Rust workflows and reusable templates for cross-team use",
-            "Validated memory-safe firmware patterns for production embedded targets"
+            "Led an internal firmware enablement initiative to evaluate memory\u2011safe embedded development on ARM\u2011based microcontrollers.",
+            "Built mixed\u2011language (C/Rust) workflows and reusable templates to support incremental adoption across teams.",
+            "Validated production\u2011ready firmware patterns emphasizing safety, reliability, and maintainability."
         ],
         "type": "Technical",
         "metrics": [
-            "20–30% faster team onboarding",
-            "Multi-team adoption"
+            "20\u201330% faster onboarding for new language adoption",
+            "Adoption across multiple embedded teams"
         ]
     },
     {
         "id": 2,
-        "title": "Renode + Robot Framework Automation",
+        "title": "Simulation\u2011Based Test Automation",
         "description": [
-            "Built virtual HIL test platform eliminating physical hardware dependencies",
-            "Enabled parallel CI testing pipelines across embedded firmware teams",
-            "Unblocked 4+ teams with limited hardware access"
+            "Built a virtual firmware validation platform to reduce dependency on physical hardware.",
+            "Enabled parallel CI\u2011driven testing for embedded firmware teams with constrained lab access.",
+            "Improved test coverage and iteration speed through simulation and automation."
         ],
         "type": "Technical",
         "metrics": [
-            "$5K–$7K annual hardware savings",
-            "2–5× faster test cycles"
+            "Unblocked 4+ embedded teams",
+            "$5K\u2013$7K estimated annual cost savings",
+            "2\u20135\u00d7 faster test cycles"
         ]
     },
     {
         "id": 3,
-        "title": "Flex PDU Flashing GUI",
+        "title": "Firmware Tooling & Workflow Automation",
         "description": [
-            "Architected Qt/C++ cross-platform tool for automated PDU firmware updates",
-            "Implemented error-proofing and config-driven validation logic",
-            "Enabling non-engineers to perform firmware updates independently"
+            "Architected a cross\u2011platform Qt/C++ firmware tooling solution to automate update workflows for enterprise embedded systems.",
+            "Implemented error\u2011proofing and configuration\u2011driven validation logic.",
+            "Enabled non\u2011engineers to perform firmware updates independently."
         ],
         "type": "Technical",
         "metrics": [
-            "30–50% fewer flashing steps",
-            "US + Poland deployment"
+            "30\u201350% reduction in firmware flashing steps",
+            "Adopted by global engineering teams"
         ]
     },
     {
         "id": 4,
-        "title": "Rapid Improvement Events (RIE)",
+        "title": "Engineering Enablement & Best Practices",
         "description": [
-            "Organized and facilitated TDD and CI/CD workshops for firmware teams",
-            "Drove cross-functional alignment on embedded testing best practices",
-            "Created reusable workshop course in Eaton University"
+            "Organized and facilitated embedded testing and CI/CD workshops for firmware teams.",
+            "Drove cross\u2011functional alignment on test\u2011driven development and validation best practices.",
+            "Created reusable internal training content for long\u2011term adoption."
         ],
         "type": "Technical",
         "metrics": [
-            "40+ engineers trained",
-            "Global teams engaged"
+            "40+ engineers enabled",
+            "Engagement across distributed teams"
         ]
     },
     {
         "id": 5,
-        "title": "President - Eastern NC Toastmasters",
+        "title": "President \u2013 Eastern NC Toastmasters",
         "description": [
-            "Led strategic planning and weekly operations for 15–25 member club",
-            "Coordinated officer transitions and maintained Distinguished club status",
-            "Grew member engagement through structured speaking programs"
+            "Led strategic planning and weekly operations for a 15\u201325 member professional club.",
+            "Coordinated officer transitions and maintained Distinguished Club status.",
+            "Increased member engagement through structured speaking and leadership programs."
         ],
         "type": "Organizational",
         "metrics": [
-            "Distinguished club status maintained",
-            "15–25 active members"
+            "Distinguished Club status maintained",
+            "15\u201325 active members"
         ]
     },
     {
         "id": 6,
-        "title": "Co-Lead - LDP Engagement Committee",
+        "title": "Co\u2011Lead \u2013 LDP Engagement Committee",
         "description": [
-            "Organized quarterly cross-functional sessions across regions",
-            "Managed monthly LDP Spotlight series highlighting program participants",
-            "Built engagement framework adopted across LDP cohort"
+            "Organized quarterly cross\u2011functional engagement sessions across regions.",
+            "Managed a recurring spotlight series highlighting program participants.",
+            "Built an engagement framework adopted across the LDP cohort."
         ],
         "type": "Organizational",
         "metrics": [
@@ -85,25 +86,25 @@
     },
     {
         "id": 7,
-        "title": "Co-Lead - SWE West Coast",
+        "title": "Co\u2011Lead \u2013 SWE West Coast",
         "description": [
-            "Represented Eaton at regional Society of Women Engineers events",
-            "Connected engineers with professional development opportunities",
-            "Facilitated sessions bridging technical skills and career growth"
+            "Represented Eaton at regional Society of Women Engineers events.",
+            "Connected engineers with mentorship and professional development opportunities.",
+            "Facilitated sessions bridging technical growth and career development."
         ],
         "type": "Organizational",
         "metrics": [
-            "3+ regional events",
-            "4+ mentorship connections"
+            "3+ regional events supported",
+            "4+ mentorship connections facilitated"
         ]
     },
     {
         "id": 8,
         "title": "Design Thinking Facilitator",
         "description": [
-            "Certified facilitator leading cross-functional innovation sessions at Eaton",
-            "Guided teams through structured ideation to generate strategic themes",
-            "Translated workshop outputs into actionable engineering roadmap items"
+            "Certified facilitator leading cross\u2011functional innovation workshops.",
+            "Guided teams through structured ideation to identify technical and strategic themes.",
+            "Translated workshop outputs into actionable engineering initiatives."
         ],
         "type": "Organizational",
         "metrics": [
