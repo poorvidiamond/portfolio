@@ -3,9 +3,9 @@
         "id": 1,
         "title": "Embedded Firmware Enablement (Memory\u2011Safe Development)",
         "description": [
-            "Led an internal firmware enablement initiative to evaluate memory\u2011safe embedded development on ARM\u2011based microcontrollers.",
-            "Built mixed\u2011language (C/Rust) workflows and reusable templates to support incremental adoption across teams.",
-            "Validated production\u2011ready firmware patterns emphasizing safety, reliability, and maintainability."
+            "Evaluated memory\u2011safe embedded development on ARM microcontrollers.",
+            "Built mixed C/Rust workflows and reusable templates.",
+            "Validated production\u2011ready firmware patterns for safety."
         ],
         "type": "Technical",
         "metrics": [
@@ -17,23 +17,23 @@
         "id": 2,
         "title": "Simulation\u2011Based Test Automation",
         "description": [
-            "Built a virtual firmware validation platform to reduce dependency on physical hardware.",
-            "Enabled parallel CI\u2011driven testing for embedded firmware teams with constrained lab access.",
-            "Improved test coverage and iteration speed through simulation and automation."
+            "Built virtual firmware validation reducing hardware dependency.",
+            "Enabled parallel CI\u2011driven testing for embedded teams.",
+            "Improved test coverage and iteration speed."
         ],
         "type": "Technical",
         "metrics": [
             "Unblocked 4+ embedded teams",
             "$5K\u2013$7K estimated annual cost savings",
-            "2\u20135\u00d7 faster test cycles"
+            "2\u20115\u00d7 faster test cycles"
         ]
     },
     {
         "id": 3,
         "title": "Firmware Tooling & Workflow Automation",
         "description": [
-            "Architected a cross\u2011platform Qt/C++ firmware tooling solution to automate update workflows for enterprise embedded systems.",
-            "Implemented error\u2011proofing and configuration\u2011driven validation logic.",
+            "Architected cross\u2011platform Qt/C++ firmware tooling solution.",
+            "Implemented error\u2011proofing and configuration\u2011driven validation.",
             "Enabled non\u2011engineers to perform firmware updates independently."
         ],
         "type": "Technical",
@@ -46,9 +46,9 @@
         "id": 4,
         "title": "Engineering Enablement & Best Practices",
         "description": [
-            "Organized and facilitated embedded testing and CI/CD workshops for firmware teams.",
-            "Drove cross\u2011functional alignment on test\u2011driven development and validation best practices.",
-            "Created reusable internal training content for long\u2011term adoption."
+            "Facilitated embedded testing and CI/CD workshops.",
+            "Drove cross\u2011functional alignment on test\u2011driven development.",
+            "Created reusable training content for long\u2011term adoption."
         ],
         "type": "Technical",
         "metrics": [
@@ -60,9 +60,9 @@
         "id": 5,
         "title": "President \u2013 Eastern NC Toastmasters",
         "description": [
-            "Led strategic planning and weekly operations for a 15\u201325 member professional club.",
-            "Coordinated officer transitions and maintained Distinguished Club status.",
-            "Increased member engagement through structured speaking and leadership programs."
+            "Led strategic planning for a 15\u201325 member club.",
+            "Coordinated officer transitions and maintained status.",
+            "Increased engagement through structured speaking programs."
         ],
         "type": "Organizational",
         "metrics": [
@@ -74,9 +74,9 @@
         "id": 6,
         "title": "Co\u2011Lead \u2013 LDP Engagement Committee",
         "description": [
-            "Organized quarterly cross\u2011functional engagement sessions across regions.",
-            "Managed a recurring spotlight series highlighting program participants.",
-            "Built an engagement framework adopted across the LDP cohort."
+            "Organized quarterly cross\u2011functional sessions across regions.",
+            "Managed a recurring spotlight series for participants.",
+            "Built engagement framework adopted across the cohort."
         ],
         "type": "Organizational",
         "metrics": [
@@ -88,9 +88,9 @@
         "id": 7,
         "title": "Co\u2011Lead \u2013 SWE West Coast",
         "description": [
-            "Represented Eaton at regional Society of Women Engineers events.",
-            "Connected engineers with mentorship and professional development opportunities.",
-            "Facilitated sessions bridging technical growth and career development."
+            "Represented Eaton at regional SWE events.",
+            "Connected engineers with mentorship opportunities.",
+            "Bridged technical growth and career development."
         ],
         "type": "Organizational",
         "metrics": [
@@ -102,9 +102,9 @@
         "id": 8,
         "title": "Design Thinking Facilitator",
         "description": [
-            "Certified facilitator leading cross\u2011functional innovation workshops.",
-            "Guided teams through structured ideation to identify technical and strategic themes.",
-            "Translated workshop outputs into actionable engineering initiatives."
+            "Certified facilitator leading innovation workshops.",
+            "Guided teams through structured ideation processes.",
+            "Translated outputs into actionable engineering initiatives."
         ],
         "type": "Organizational",
         "metrics": [
