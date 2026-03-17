@@ -13,7 +13,6 @@ const navLinks = [
     { href: '/projects', label: 'Projects' },
     { href: '/leadership', label: 'Leadership' },
     { href: '/volunteering', label: 'Volunteering' },
-    { href: '/resume.pdf', label: 'Resume' },
     { href: '/contact', label: 'Contact' },
 ];
 
@@ -52,7 +51,7 @@ export default function Navbar() {
                         {/* Theme Toggle */}
                         <button
                             onClick={toggleTheme}
-                            className="ml-4 p-2 rounded-md hover:bg-surface-hover transition-colors"
+                            className="ml-2 p-2 rounded-md hover:bg-surface-hover transition-colors"
                             aria-label="Toggle theme"
                         >
                             {theme === 'dark' ? (
@@ -61,6 +60,16 @@ export default function Navbar() {
                                 <Moon className="w-5 h-5 text-primary" />
                             )}
                         </button>
+
+                        {/* Resume Button */}
+                        <a
+                            href="/resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="ml-2 px-4 py-2 text-sm font-semibold rounded-full bg-gradient-to-r from-primary to-secondary text-white hover:opacity-90 hover:shadow-lg transition-all"
+                        >
+                            Resume
+                        </a>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -107,6 +116,15 @@ export default function Navbar() {
                                     {link.label}
                                 </Link>
                             ))}
+                            <a
+                                href="/resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="mx-3 mt-2 px-4 py-2 text-sm font-semibold text-center rounded-full bg-gradient-to-r from-primary to-secondary text-white hover:opacity-90 transition-all"
+                            >
+                                Resume
+                            </a>
                         </div>
                     </div>
                 )}
