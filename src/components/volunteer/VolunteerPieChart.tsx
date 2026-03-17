@@ -45,7 +45,8 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
         return { x: cx + r * Math.cos(rad), y: cy + r * Math.sin(rad) };
     }
 
-    const cx = 110, cy = 110, r = 95;
+    const cx = 130, cy = 130, r = 115;
+    const labelR = 72; // radius for label placement (between center hole and outer edge)
 
     const togglePillar = (id: string) => {
         setExpandedPillar(expandedPillar === id ? '' : id);
@@ -56,7 +57,7 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
             {/* Top section: Pie chart + summary stats */}
             <div className="flex flex-col items-center gap-6">
                 <div className="relative">
-                    <svg width="220" height="220" viewBox="0 0 220 220" className="drop-shadow-lg">
+                    <svg width="260" height="260" viewBox="0 0 260 260" className="drop-shadow-lg">
                         {segments.map(({ pillar, startAngle, endAngle }) => (
                             <path
                                 key={pillar.id}
@@ -70,6 +71,34 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
                                 }}
                             />
                         ))}
+                        {/* Labels on segments */}
+                        {segments.map(({ pillar, startAngle, endAngle, percentage }) => {
+                            const midAngle = (startAngle + endAngle) / 2;
+                            const labelPos = polarToCartesian(cx, cy, labelR, midAngle);
+                            return (
+                                <g key={`label-${pillar.id}`}>
+                                    <text
+                                        x={labelPos.x}
+                                        y={labelPos.y - 5}
+                                        textAnchor="middle"
+                                        fontSize="13"
+                                        fontWeight="bold"
+                                        fill="white"
+                                    >
+                                        {pillar.hours}h
+                                    </text>
+                                    <text
+                                        x={labelPos.x}
+                                        y={labelPos.y + 10}
+                                        textAnchor="middle"
+                                        fontSize="11"
+                                        fill="rgba(255,255,255,0.85)"
+                                    >
+                                        {Math.round(percentage)}%
+                                    </text>
+                                </g>
+                            );
+                        })}
                         <circle cx={cx} cy={cy} r="42" fill="var(--color-background)" />
                         <text x={cx} y={cy - 4} textAnchor="middle" className="fill-foreground font-bold" fontSize="20">
                             {totalHours}
@@ -111,9 +140,6 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
                                 <span className="text-lg mr-1">{pillar.emoji}</span>
                                 <div className="flex-1">
                                     <span className="font-semibold text-foreground">{pillar.title}</span>
-                                    <span className="ml-3 text-sm text-foreground-secondary">
-                                        {pillar.hours}h · {Math.round(percentage)}%
-                                    </span>
                                 </div>
                                 <ChevronDown
                                     className={`w-5 h-5 text-foreground-secondary transition-transform duration-300 ${
