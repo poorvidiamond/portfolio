@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Embedded Firmware Enablement (Memory\u2011Safe Development)",
+        "title": "New Embedded Firmware Enablement",
         "description": [
             "Evaluated memory\u2011safe embedded development on ARM microcontrollers.",
             "Built mixed C/Rust workflows and reusable templates.",
