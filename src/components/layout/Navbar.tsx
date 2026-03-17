@@ -11,6 +11,10 @@ const navLinks = [
     { href: '/experience', label: 'Experience' },
     { href: '/technical-skills', label: 'Skills' },
     { href: '/projects', label: 'Projects' },
+    { href: '/leadership', label: 'Leadership' },
+    { href: '/volunteering', label: 'Volunteering' },
+    { href: '/resume.pdf', label: 'Resume' },
+    { href: '/contact', label: 'Contact' },
 ];
 
 export default function Navbar() {
