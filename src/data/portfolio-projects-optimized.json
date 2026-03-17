@@ -10,7 +10,7 @@
         "projects": [
           {
             "id": 9,
-            "title": "Flex PDU Flash Tool",
+            "title": "Firmware Flashing Automation Tool",
             "slug": "flash-tool",
             "tagline": "Production GUI tool enabling global EV firmware updates",
             "category": [
@@ -22,7 +22,7 @@
             "ownershipIcon": "🔧",
             "type": "Eaton",
             "description": "Designed and developed a Qt/C++ desktop GUI application to automate firmware flashing for a multi-controller embedded system used in an enterprise EV power distribution product. The tool simplified complex firmware update workflows and enabled safe, repeatable updates by non-firmware users.",
-            "cardOutcome": "Replaced 4 separate CLI scripts with one GUI — field technicians now flash firmware without engineering support.",
+            "cardOutcome": "Replaced multiple CLI-based workflows with one GUI — field technicians now flash firmware without engineering support.",
             "situation": "Firmware updates previously required command-line expertise and direct firmware engineering support, making updates time-consuming and error-prone for manufacturing, validation, and field teams. Updating multiple embedded controllers lacked a unified, user-friendly interface.",
             "task": "Create a production-grade flashing tool that abstracts low-level firmware update complexity, prevents incorrect sequencing or configuration errors, enables non-engineers to perform firmware updates independently, and improves reliability, efficiency, and scalability.",
             "action": "Designed and implemented a Qt/C++ GUI application from the ground up. Integrated CAN-based diagnostic workflows using industry-standard interfaces. Built configuration-driven flashing logic with validation and safety checks. Added real-time logging and error-proofing to reduce manual mistakes. Incorporated cross-site feedback to standardize workflows and usability.",
@@ -51,19 +51,21 @@
               "Kvaser",
               "Vector"
             ],
+            "complianceNote": "All proprietary software, firmware, system architecture, and internal tooling remain the intellectual property of Eaton. This project is presented externally only at a high-level, non-confidential abstraction.",
             "links": [
               {
                 "type": "github",
-                "label": "GitHub Repository",
+                "label": "Source Code (Internal)",
                 "url": "https://github.com/etn-industrial/FlexPDU_GUI_TPM_Flash_Tool",
-                "internal": true
+                "internal": true,
+                "note": "Available to Eaton employees with appropriate access"
               }
             ],
             "displayOrder": 1
           },
           {
             "id": 10,
-            "title": "Flex PDU HiL Testing",
+            "title": "Hardware-in-Loop (HiL) Validation – Enterprise EV Power Systems",
             "slug": "flex-pdu-testing",
             "tagline": "Hardware-in-Loop validation for a new OEM customer pursuit",
             "category": [
@@ -106,19 +108,21 @@
               "Fault Injection",
               "Microchip Toolchain"
             ],
+            "complianceNote": "All firmware, test infrastructure, hardware configurations, and validation artifacts remain the intellectual property of Eaton. This project is presented externally only at a high-level, non-confidential abstraction.",
             "links": [
               {
                 "type": "github",
-                "label": "GitHub Repository",
+                "label": "Source Code / Test Assets (Internal)",
                 "url": "https://github.com/etn-industrial/eMobPDnP_HIL_Stand",
-                "internal": true
+                "internal": true,
+                "note": "Available to Eaton employees with appropriate access"
               }
             ],
             "displayOrder": 2
           },
           {
             "id": 11,
-            "title": "ADBMS Battery Management System",
+            "title": "Battery Management System Validation (isoSPI)",
             "slug": "adbms",
             "tagline": "isoSPI validation for high-voltage battery monitoring",
             "category": [
@@ -159,12 +163,14 @@
               "I2C",
               "BMS Browser"
             ],
+            "complianceNote": "All firmware, validation procedures, documentation, and system details remain the intellectual property of Eaton. This project is presented externally only at a high-level, non-confidential abstraction.",
             "links": [
               {
                 "type": "github",
-                "label": "GitHub Repository",
+                "label": "Source Code / Documentation (Internal)",
                 "url": "https://github.com/etn-industrial/ADBMS_isoSPI",
-                "internal": true
+                "internal": true,
+                "note": "Available to Eaton employees with appropriate access"
               }
             ],
             "displayOrder": 3
@@ -180,7 +186,7 @@
         "projects": [
           {
             "id": 5,
-            "title": "Matter and Thread Protocol Analysis",
+            "title": "Matter & Thread Protocol Evaluation",
             "slug": "matter-thread",
             "tagline": "Evaluating the next innovation beyond Wi-Fi for Eaton's smart home roadmap",
             "category": [
@@ -191,7 +197,7 @@
             "ownershipIcon": "👤",
             "type": "Eaton",
             "description": "Conducted a hands-on evaluation of Matter and Thread protocols to assess readiness beyond Wi-Fi for enterprise smart-home applications. Built a functional multi-ecosystem test environment and translated technical findings into product and platform insights for cross-functional stakeholders.",
-            "cardOutcome": "Replaced speculation with a working Matter ecosystem — concrete chip and hub guidance delivered to 5 teams.",
+            "cardOutcome": "Replaced speculation with a working Matter ecosystem — concrete adoption guidance delivered to 5 teams.",
             "situation": "The existing smart-home product portfolio was centered on Wi-Fi-based architectures, while competitors had begun shipping Matter-compatible devices. Without internal, hands-on experience with Matter and Thread, teams lacked the technical grounding needed to evaluate adoption feasibility, platform implications, and interoperability risks.",
             "task": "Evaluate Matter and Thread as a next-generation connectivity option by building a working Matter + Thread ecosystem, comparing behavior across ecosystems and device types, and identifying platform-level considerations required for adoption.",
             "action": "Built a functional Matter + Thread test ecosystem using industry reference hardware and tooling. Commissioned devices and validated behavior across multiple smart-home ecosystems. Compared Wi-Fi-based and Thread-based device characteristics. Evaluated interoperability, commissioning flows, and security considerations at a system level. Benchmarked observations against competitor offerings to identify relative strengths and gaps. Synthesized findings into clear technical and strategic insights and shared them with multiple teams.",
@@ -221,12 +227,14 @@
               "Raspberry Pi",
               "Mesh Networking"
             ],
+            "complianceNote": "All internal analyses, platform evaluations, and roadmap-related insights remain the intellectual property of Eaton. This project is presented externally only at a high-level, non-confidential abstraction, consistent with Eaton's confidentiality and ethics guidance.",
             "links": [
               {
                 "type": "presentation",
-                "label": "Internal Presentation",
+                "label": "Presentations / Findings (Internal)",
                 "url": "https://eaton-my.sharepoint.com/:p:/r/personal/poorvibhaskar_eaton_com/Documents/Revolutionizing%20Home%20Living.pptx",
-                "internal": true
+                "internal": true,
+                "note": "Available to Eaton employees with appropriate access"
               }
             ],
             "displayOrder": 4
@@ -244,7 +252,7 @@
             "ownershipIcon": "👤",
             "type": "Eaton",
             "description": "Led end-to-end qualification testing for an enterprise smart-home Wi-Fi device portfolio, ensuring firmware readiness and system interoperability prior to product launch. The work covered provisioning, OTA updates, mobile app integration, and voice-assistant validation across a broad device lineup.",
-            "cardOutcome": "Caught firmware defects across 50+ devices before launch — test plan written from scratch with no prior reference.",
+            "cardOutcome": "Caught firmware defects across ~50 devices before launch — no prior test plan existed.",
             "situation": "A new firmware release introduced changes to device provisioning, OTA behavior, and application interoperability. No existing test plan covered the updated behavior across the full smart-device portfolio, creating risk ahead of product qualification and launch.",
             "task": "Validate the new firmware release across the complete smart-Wi-Fi product line by creating a comprehensive test strategy, executing qualification testing across multiple device categories, and ensuring app and voice-assistant interoperability prior to release.",
             "action": "Created and executed a comprehensive test plan covering BLE-assisted provisioning and Wi-Fi onboarding, OTA firmware update flows, device behavior and cloud communication, mobile application interoperability, and voice-assistant integration across major ecosystems. Performed testing across multiple smart-device form factors. Used vendor tooling and RTOS-level debugging to validate firmware behavior. Logged defects and worked directly with firmware engineers to prioritize and resolve issues before release.",
@@ -271,27 +279,28 @@
               "WiFi",
               "OTA",
               "Espressif IDE",
-              "Brightlayer Home",
-              "PX Green"
+              "Mobile App Integration",
+              "Voice Assistant Ecosystems"
             ],
+            "complianceNote": "All test plans, firmware artifacts, and internal tooling remain the intellectual property of Eaton. This project is presented externally only at a high-level, non-confidential abstraction.",
             "links": [
               {
                 "type": "internal",
                 "label": "Test Plan (Internal)",
                 "url": "https://eaton-corp.atlassian.net",
                 "internal": true,
-                "note": "Replace with actual Confluence or SharePoint test plan link"
+                "note": "Available to Eaton employees with appropriate access"
               }
             ],
             "displayOrder": 5
           },
           {
             "id": 2,
-            "title": "Recording Breaker Diagnostics",
+            "title": "Remote Diagnostic System for Field Fault Analysis",
             "slug": "recording-breaker",
-            "tagline": "Real-time fault capture that replaced $3K monthly site visits",
+            "tagline": "Remote diagnostics for a device class with zero prior fault visibility",
             "category": [
-              "Firmware"
+              "Embedded Diagnostics"
             ],
             "projectType": "Company Project",
             "ownership": "Individual Contributor",
@@ -314,7 +323,7 @@
               },
               {
                 "label": "COVERAGE",
-                "value": "Addressed ~15% of miscellaneous field issues"
+                "value": "Targeted a device class behind ~15% of field service calls"
               }
             ],
             "impact": "Reduced recurring ~$3K per on-site visit costs across field incidents. Addressed the core diagnostic gap behind a significant portion of field issues. Established the first remote diagnostic capability for this class of devices.",
@@ -328,12 +337,14 @@
               "Git",
               "STM Cube Monitor"
             ],
+            "complianceNote": "All firmware, diagnostic tooling, hardware configurations, and analysis artifacts remain the intellectual property of Eaton. This project is presented externally only at a high-level, non-confidential abstraction.",
             "links": [
               {
                 "type": "presentation",
-                "label": "End of Assignment Presentation",
+                "label": "Presentations / Artifacts (Internal)",
                 "url": "https://eaton-my.sharepoint.com/:p:/r/personal/poorvibhaskar_eaton_com/Documents/End%20of%20Assignment%20-%20poorvi%20%20(1).pptx",
-                "internal": true
+                "internal": true,
+                "note": "Available to Eaton employees with appropriate access"
               }
             ],
             "displayOrder": 6
@@ -349,9 +360,9 @@
         "projects": [
           {
             "id": 8,
-            "title": "Renode Simulation Platform",
+            "title": "Firmware Simulation & Test Infrastructure",
             "slug": "renode",
-            "tagline": "Eliminated hardware dependency, saving $5-7K annually across 4 teams",
+            "tagline": "What if firmware teams never needed a prototype board?",
             "category": [
               "Firmware",
               "DevOps"
@@ -361,7 +372,7 @@
             "ownershipIcon": "🔧",
             "type": "Eaton",
             "description": "Designed and enabled a simulation-based firmware validation infrastructure to eliminate dependency on physical hardware for embedded development. The platform accelerated test cycles, reduced hardware costs, and enabled CI-driven validation across multiple embedded teams.",
-            "cardOutcome": "4 teams now validate firmware without hardware access — 10-20 hours of lab debugging eliminated per cycle.",
+            "cardOutcome": "4 teams now validate firmware without hardware access — lab debugging time reduced from hours to near-zero per cycle.",
             "situation": "Embedded teams relied heavily on physical prototype boards for firmware validation, spending significant time in lab-based debugging. No software-in-the-loop testing existed, making every firmware change dependent on hardware availability and slowing development cycles.",
             "task": "Enable firmware validation without physical hardware by simulating embedded platforms and RTOS behavior, supporting automated, repeatable test execution, and integrating simulation into CI workflows.",
             "action": "Developed simulation platform configurations to emulate embedded firmware behavior. Executed firmware workloads in a simulated environment to validate functionality without lab access. Identified and resolved simulation gaps blocking accurate firmware behavior. Worked through appropriate channels to improve simulation model coverage. Integrated automated test hooks to enable CI-driven firmware validation. Drove adoption by enabling other teams to independently use the simulation infrastructure.",
@@ -390,27 +401,23 @@
               "RTOS",
               "Simulation"
             ],
+            "complianceNote": "All firmware, simulation configurations, infrastructure tooling, and validation artifacts remain the intellectual property of Eaton. This project is presented externally only at a high-level, non-confidential abstraction.",
             "links": [
               {
                 "type": "documentation",
-                "label": "Installation Guide",
+                "label": "Documentation / Presentations (Internal)",
                 "url": "https://eaton-corp.atlassian.net/wiki/spaces/ESASE/pages/453247237/Installation+of+Renode",
-                "internal": true
-              },
-              {
-                "type": "presentation",
-                "label": "Renode Presentation",
-                "url": "https://eaton-my.sharepoint.com/:p:/r/personal/poorvibhaskar_eaton_com/Documents/Renode%20(1).pptx",
-                "internal": true
+                "internal": true,
+                "note": "Available to Eaton employees with appropriate access"
               }
             ],
             "displayOrder": 7
           },
           {
             "id": 6,
-            "title": "Rust Embedded Development",
+            "title": "Memory-Safe Embedded Firmware Enablement (Rust)",
             "slug": "rust-embedded",
-            "tagline": "Proved Rust viability on Eaton hardware and cut onboarding time by 20-30%",
+            "tagline": "Can Rust work for safety-critical embedded firmware at Eaton?",
             "category": [
               "Firmware"
             ],
@@ -423,11 +430,11 @@
             "situation": "Embedded teams were primarily using C/C++ and wanted to evaluate memory-safe alternatives. There were no internal examples of Rust running on target hardware, no established patterns for mixed-language integration, and no standardized onboarding path for engineers new to Rust.",
             "task": "Research and validate Rust feasibility for embedded workflows by prototyping Rust firmware on embedded hardware, exploring integration approaches with existing C/C++ codebases, and creating reusable onboarding and CI foundations to enable team adoption.",
             "action": "Built embedded Rust prototypes and validated them on real hardware (proof-of-life firmware). Investigated and demonstrated C/C++ interoperability patterns to support incremental adoption rather than rewrite-everything. Created a starter repository with structured examples and setup guidance for embedded engineers. Implemented CI workflows and added unit-testing foundations to standardize repeatable validation. Delivered internal training content, including Introduction to Rust and related enablement materials.",
-            "result": "Established the first working Rust firmware proof-of-concept on embedded hardware within the team context. Demonstrated mixed-language feasibility through C/C++ + Rust integration. Enabled faster onboarding through structured documentation and examples (20-30% reduction). Provided reusable CI and testing patterns so others didn't need to start from scratch.",
+            "result": "Established the first working Rust firmware proof-of-concept on embedded hardware within the team context. Demonstrated mixed-language feasibility through C/C++ + Rust integration. Enabled faster onboarding through structured documentation, starter repo, and examples. Provided reusable CI and testing patterns so others didn't need to start from scratch.",
             "cardMetrics": [
               {
                 "label": "ONBOARDING",
-                "value": "20-30% reduction in new-language onboarding time"
+                "value": "Structured docs and starter repo reduced ramp-up friction"
               },
               {
                 "label": "INNOVATION",
@@ -448,18 +455,21 @@
               "GitHub Actions",
               "CI/CD"
             ],
+            "complianceNote": "All code, enablement assets, internal documentation, and hardware configurations remain the intellectual property of Eaton. This project is presented externally only at a high-level, non-confidential abstraction.",
             "links": [
               {
                 "type": "github",
-                "label": "GitHub Repository",
+                "label": "Starter Repo / CI Templates / Documentation (Internal)",
                 "url": "https://github.com/etn-electrical/se-rust-sandbox",
-                "internal": true
+                "internal": true,
+                "note": "Available to Eaton employees with appropriate access"
               },
               {
                 "type": "presentation",
-                "label": "Introduction to Rust",
+                "label": "Training Deck (Internal)",
                 "url": "https://eaton-my.sharepoint.com/:p:/r/personal/poorvibhaskar_eaton_com/Documents/Introduction%20to%20Rust.pptx",
-                "internal": true
+                "internal": true,
+                "note": "Introduction to Rust — available internally for onboarding and enablement"
               }
             ],
             "displayOrder": 8
@@ -467,22 +477,100 @@
         ]
       },
       {
-        "id": "passion-projects",
-        "title": "Passion Projects",
-        "description": "Personal builds, experiments, and self-driven engineering — outside of work hours",
-        "icon": "🚀",
-        "color": "#A78BFA",
-        "status": "coming-soon",
-        "projects": []
+        "id": "academic",
+        "title": "Academic & Research",
+        "description": "Coursework projects and published research from Georgia Tech and SRM University",
+        "icon": "🎓",
+        "color": "#B4A7D6",
+        "projects": [
+          {
+            "id": 12,
+            "title": "ENS160 Air Quality Sensor Driver for mbed",
+            "slug": "ens160-driver",
+            "tagline": "Open-source I2C driver contributed back to the mbed community",
+            "category": [
+              "Embedded",
+              "Open Source"
+            ],
+            "projectType": "Academic Project",
+            "ownership": "Team Project (4 members)",
+            "ownershipIcon": "👥",
+            "type": "Georgia Tech",
+            "description": "Developed a C++ I2C driver for the SparkFun ENS160 air quality sensor on the mbed LPC1768 as part of Georgia Tech's ECE 4180 Embedded Systems Design course. The driver and a demo application with uLCD display and pushbutton input were published to the mbed open-source repository. Also prototyped a Pi Pico port using the C++ SDK.",
+            "cardOutcome": "Published a working I2C driver library to the mbed community — open-source contribution from coursework.",
+            "situation": "The SparkFun ENS160 air quality sensor was recently launched and had no existing C++ driver for the mbed platform. The team wanted to contribute back to the mbed community that had supported their lab experiments throughout the course.",
+            "task": "Write a C++ I2C driver for the ENS160 sensor on the mbed LPC1768, build a demo application with display and user input, publish the library to the mbed repository, and attempt a Raspberry Pi Pico port.",
+            "action": "Wrote a C++ I2C driver library for the ENS160 sensor handling register-level communication, air quality index reads, and sensor configuration. Built a demo application integrating the ENS160 with a uLCD-144G2 display and pushbutton input on the mbed LPC1768. Published both the driver library and project code to the mbed open-source repository. Prototyped a Pi Pico C++ SDK port but encountered TinyUSB printf issues in SDK 1.4.0 that blocked full verification.",
+            "result": "Working ENS160 driver library published and available on the mbed repository. Demo application validated with live sensor reads displayed on uLCD. Pi Pico driver developed but not fully verified due to SDK limitations at the time.",
+            "cardMetrics": [
+              {
+                "label": "OPEN SOURCE",
+                "value": "Driver library published to mbed repository"
+              },
+              {
+                "label": "DEPTH",
+                "value": "Register-level I2C driver from datasheet to working code"
+              },
+              {
+                "label": "SCOPE",
+                "value": "mbed LPC1768 driver + Pi Pico port attempted"
+              }
+            ],
+            "impact": "Contributed a reusable open-source driver to the mbed community for a newly launched sensor. Demonstrated register-level embedded driver development from datasheet to published library.",
+            "technicalSkills": [
+              "C++",
+              "C",
+              "I2C",
+              "mbed LPC1768",
+              "uLCD-144G2",
+              "SparkFun ENS160",
+              "Raspberry Pi Pico",
+              "Pi Pico C++ SDK",
+              "CMake"
+            ],
+            "links": [
+              {
+                "type": "github",
+                "label": "GitHub Repository",
+                "url": "https://github.com/krishnamvs/ECE-4180-Final-Project-Fall-22",
+                "internal": false
+              },
+              {
+                "type": "code",
+                "label": "mbed Project Code",
+                "url": "https://os.mbed.com/users/krishnamvs/code/ECE4180FinalProjectFall22/",
+                "internal": false
+              },
+              {
+                "type": "code",
+                "label": "mbed ENS160 Library",
+                "url": "https://os.mbed.com/users/krishnamvs/code/ENS160_Library/",
+                "internal": false
+              },
+              {
+                "type": "video",
+                "label": "Demo Video",
+                "url": "https://www.youtube.com/watch?v=4Gfi7DoumOI",
+                "internal": false
+              }
+            ],
+            "displayOrder": 9
+          }
+        ]
       }
     ],
     "metadata": {
-      "totalProjects": 8,
+      "totalProjects": 9,
       "eatonProjects": 8,
+      "academicProjects": 1,
       "individuallyOwned": 4,
       "individualContributor": 4,
+      "teamProjects": 1,
       "passionProjects": 0,
-      "totalCostSavings": "$8-10K annually",
+      "costSavings": {
+        "simulationPlatform": "$5-7K estimated annual savings (hardware + engineering time)",
+        "remoteDiagnostics": "~$3K per on-site visit reduced (visit frequency varies)"
+      },
       "githubRepos": 4,
       "teamsImpacted": "4+ engineering teams",
       "devicesValidated": "~50 WiFi devices",
