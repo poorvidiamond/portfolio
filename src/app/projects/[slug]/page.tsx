@@ -8,6 +8,7 @@ interface ProjectLink {
     label: string;
     url: string;
     internal?: boolean;
+    note?: string;
 }
 
 interface CardMetric {
@@ -34,6 +35,7 @@ interface FlatProject {
     technicalSkills: string[];
     cardMetrics?: CardMetric[];
     links?: ProjectLink[];
+    complianceNote?: string;
     displayOrder?: number;
     domainId: string;
     domainTitle: string;
@@ -260,6 +262,15 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                         </div>
                     </section>
 
+                    {/* Compliance Note */}
+                    {(project as unknown as { complianceNote?: string }).complianceNote && (
+                        <section className="content-section">
+                            <div className="section-content" style={{ fontSize: '0.8rem', color: 'var(--color-foreground-secondary)', fontStyle: 'italic', borderLeft: '3px solid var(--color-border)', paddingLeft: '1rem' }}>
+                                <p>⚠️ {(project as unknown as { complianceNote: string }).complianceNote}</p>
+                            </div>
+                        </section>
+                    )}
+
 
                     {/* Resources & Links */}
                     {(project.links?.length ?? 0) > 0 && (
@@ -278,6 +289,9 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                                             {link.type === 'github' && '💻'}
                                             {link.type === 'documentation' && '📚'}
                                             {link.type === 'presentation' && '📊'}
+                                            {link.type === 'code' && '📦'}
+                                            {link.type === 'video' && '🎬'}
+                                            {link.type === 'internal' && '🔒'}
                                         </div>
                                         <div className="resource-info">
                                             <div className="resource-label">{link.label}</div>
@@ -347,6 +361,9 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                                             {link.type === 'github' && '💻 '}
                                             {link.type === 'documentation' && '📚 '}
                                             {link.type === 'presentation' && '📊 '}
+                                            {link.type === 'code' && '📦 '}
+                                            {link.type === 'video' && '🎬 '}
+                                            {link.type === 'internal' && '🔒 '}
                                             {link.label}
                                         </a>
                                     ))}

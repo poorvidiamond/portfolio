@@ -46,7 +46,7 @@ export default function ProjectsPage() {
                 {/* Impact Metrics Dashboard */}
                 <div className="metrics-dashboard">
                     {[
-                        { value: metadata.totalCostSavings, label: 'Cost Savings' },
+                        { value: `${metadata.totalProjects}`, label: 'Projects' },
                         { value: metadata.devicesValidated, label: 'Devices Validated' },
                         { value: metadata.githubRepos, label: 'GitHub Repos' },
                         { value: metadata.teamsImpacted, label: 'Teams Enabled' },
