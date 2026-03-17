@@ -16,7 +16,7 @@ export default function ExperiencePage() {
                 {/* Header */}
                 <div className="mb-12">
                     <h1 className="terminal-text text-3xl font-bold mb-4">
-                        <span className="text-primary">~/</span>experience
+                        Experience
                     </h1>
                     <p className="text-foreground-secondary max-w-2xl">
                         My journey through embedded systems, from internships to full-time roles.

@@ -37,7 +37,7 @@ export default function ProjectsPage() {
             {/* Hero Section */}
             <section className="hero-section">
                 <h1 className="terminal-text">
-                    <span className="text-primary">~/</span>featured engineering projects
+                    Featured Engineering Projects
                 </h1>
                 <p className="hero-subtitle">
                     Firmware, IoT, and E-Mobility solutions with measurable impact

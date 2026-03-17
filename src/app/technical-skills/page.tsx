@@ -44,7 +44,7 @@ export default function SkillsPage() {
                 {/* Header */}
                 <div className="mb-12 text-center">
                     <h1 className="terminal-text text-3xl font-bold mb-2">
-                        <span className="text-primary">~/</span>technical-skills
+                        Technical Skills
                     </h1>
                     <p className="text-foreground-secondary text-base">
                         The Embedded Systems Stack

@@ -44,7 +44,7 @@ export default function ContactPage() {
                     transition={{ duration: 0.5 }}
                 >
                     <h1 className="terminal-text text-4xl font-bold mb-4 text-center">
-                        <span className="text-primary">~/</span>contact
+                        Contact
                     </h1>
                     <p className="text-foreground-secondary text-lg mb-12 max-w-2xl mx-auto text-center">
                         I&apos;m always open to discussing new opportunities, collaborations, or just chatting about embedded systems.

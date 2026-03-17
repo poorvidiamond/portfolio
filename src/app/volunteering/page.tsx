@@ -20,7 +20,7 @@ export default function VolunteeringPage() {
                 {/* Header */}
                 <div className="mb-12">
                     <h1 className="terminal-text text-3xl font-bold mb-4">
-                        <span className="text-primary">~/</span>volunteering as strategic practice
+                        Volunteering as Strategic Practice
                     </h1>
                     <p className="text-foreground-secondary max-w-2xl leading-relaxed">
                         I approach community engagement the way I approach engineering:

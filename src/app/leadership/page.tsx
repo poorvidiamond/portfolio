@@ -18,7 +18,7 @@ export default function LeadershipPage() {
                 {/* Header */}
                 <div className="mb-12">
                     <h1 className="terminal-text text-3xl font-bold mb-4">
-                        <span className="text-primary">~/</span>leadership
+                        Leadership
                     </h1>
                     <p className="text-foreground-secondary max-w-2xl">
                         I lead technical initiatives that improve team efficiency and mentor
