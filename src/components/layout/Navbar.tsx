@@ -39,7 +39,7 @@ export default function Navbar() {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className={`terminal-text px-3 py-2 rounded-md text-sm transition-all ${pathname === link.href
+                                className={`terminal-text px-3 py-2 rounded-md text-sm font-medium transition-all ${pathname === link.href
                                     ? 'bg-primary/10 text-primary'
                                     : 'text-foreground-secondary hover:text-foreground hover:bg-surface-hover'
                                     }`}
@@ -108,7 +108,7 @@ export default function Navbar() {
                                     key={link.href}
                                     href={link.href}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className={`terminal-text px-3 py-2 rounded-md text-sm transition-all ${pathname === link.href
+                                    className={`terminal-text px-3 py-2 rounded-md text-sm font-medium transition-all ${pathname === link.href
                                         ? 'bg-primary/10 text-primary'
                                         : 'text-foreground-secondary hover:text-foreground hover:bg-surface-hover'
                                         }`}
