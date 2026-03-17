@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function ProfileHero() {
     return (
-        <section className="py-12 md:py-20 animate-fade-in relative overflow-hidden">
+        <section className="pt-6 pb-12 md:pt-10 md:pb-20 animate-fade-in relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Profile Image & Background Effect */}
