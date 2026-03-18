@@ -2,7 +2,7 @@
     {
         "id": 1,
         "school": "Georgia Institute of Technology",
-        "degree": "Master's degree",
+        "degree": "Master of Science",
         "major": "Electrical and Computer Engineering",
         "location": "Atlanta, USA",
         "startDate": "Aug 2022",
@@ -13,8 +13,8 @@
     {
         "id": 2,
         "school": "Georgia Tech Scheller College of Business",
-        "degree": "Management of Technology for Graduate Students",
-        "major": "",
+        "degree": "Certification",
+        "major": "Management of Technology for Graduate Students",
         "location": "Atlanta, USA",
         "startDate": "Jan 2023",
         "endDate": "May 2024",

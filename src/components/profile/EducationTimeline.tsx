@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { GraduationCap } from 'lucide-react';
+import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 import educationData from '@/data/education.json';
 
 // Type definition based on new JSON structure
@@ -26,10 +26,10 @@ export default function EducationTimeline() {
                             transition={{ delay: index * 0.1 }}
                             className="w-full"
                         >
-                            <div className="card-hover p-6 rounded-xl bg-surface border border-border flex flex-row gap-4 items-start">
+                            <div className="card-hover p-6 rounded-xl bg-surface border border-border flex flex-col sm:flex-row gap-6 items-start">
                                 {/* Logo/Icon Section */}
                                 {edu.logo && (
-                                    <div className="shrink-0 w-16 h-16 relative rounded overflow-hidden bg-white p-1 mt-3">
+                                    <div className="shrink-0 w-16 h-16 relative rounded overflow-hidden bg-white p-1 mt-1">
                                         <Image
                                             src={`/${edu.logo}`}
                                             alt={`${edu.school} Logo`}
@@ -38,20 +38,31 @@ export default function EducationTimeline() {
                                         />
                                     </div>
                                 )}
-                                <div className="flex-1 flex flex-col gap-1">
-                                    <h3 className="text-lg font-bold text-foreground">{edu.school}</h3>
-
-                                    <p className="text-foreground-secondary">
-                                        {edu.degree}{edu.major ? `, ${edu.major}` : ''}
-                                    </p>
-
-                                    <p className="text-sm text-foreground-secondary/80">
-                                        {edu.startDate} – {edu.endDate}
-                                    </p>
-
-                                    <p className="text-sm text-foreground-secondary/80">
-                                        Grade: {edu.gpa}
-                                    </p>
+                                <div className="flex-1 flex flex-col sm:flex-row justify-between gap-4 w-full">
+                                    <div className="flex flex-col gap-1.5">
+                                        <h3 className="text-xl font-bold text-foreground text-balance">
+                                            {edu.major ? edu.major : edu.degree}
+                                        </h3>
+    
+                                        <p className="text-foreground-secondary font-medium">
+                                            {edu.school}{edu.major ? ` • ${edu.degree}` : ""}
+                                        </p>
+    
+                                        <p className="text-sm text-foreground mt-2">
+                                            Grade: {edu.gpa}
+                                        </p>
+                                    </div>
+    
+                                    <div className="flex flex-col sm:items-end text-sm text-foreground-secondary gap-2 shrink-0 sm:mt-1">
+                                        <div className="flex items-center gap-1.5">
+                                            <Calendar className="w-4 h-4 opacity-70" />
+                                            <span>{edu.startDate} – {edu.endDate}</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5">
+                                            <MapPin className="w-4 h-4 opacity-70" />
+                                            <span>{edu.location}</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </motion.div>
