@@ -47,7 +47,6 @@ export default function ProjectsPage() {
                 <div className="metrics-dashboard">
                     {[
                         { value: `${metadata.totalProjects}`, label: 'Projects' },
-                        { value: metadata.devicesValidated, label: 'Devices Validated' },
                         { value: metadata.githubRepos, label: 'GitHub Repos' },
                         { value: metadata.teamsImpacted, label: 'Teams Enabled' },
                     ].map((metric, i) => (

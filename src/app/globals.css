@@ -269,7 +269,7 @@ body {
   background: var(--background-secondary);
 }
 
-/* Text-only chip (no logo) */
+/* Text-only chip (no logo) — intentionally styled differently */
 .skills-text-chip {
   display: flex;
   flex-direction: column;
@@ -279,13 +279,15 @@ body {
   padding: 6px 14px;
   border-radius: 6px;
   border: 1px solid var(--border);
+  border-left: 3px solid; /* color inherited from inline style */
   background: var(--background-secondary);
   cursor: default;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
 .skills-text-chip:hover {
   transform: translateY(-2px);
+  background: var(--surface-hover);
 }
 
 .skills-box-name {

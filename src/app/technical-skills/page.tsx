@@ -125,7 +125,7 @@ export default function SkillsPage() {
                                                 viewport={{ once: true }}
                                                 transition={{ delay: index * 0.07 + sIdx * 0.04 + 0.15 }}
                                                 className="skills-text-chip"
-                                                style={{ borderColor: `${color}40` }}
+                                                style={{ borderLeftColor: color }}
                                             >
                                                 <span className="skills-box-name">{skill.name}</span>
                                                 <div className="skills-box-proficiency">

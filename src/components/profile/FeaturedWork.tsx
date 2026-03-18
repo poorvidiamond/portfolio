@@ -94,7 +94,7 @@ export default function FeaturedWork() {
                                         </div>
                                     )}
 
-                                    <div className="flex flex-wrap gap-1.5 mt-auto">
+                                    <div className="flex flex-wrap gap-1.5">
                                         {project.technicalSkills.slice(0, 4).map((tech) => (
                                             <span
                                                 key={tech}
@@ -108,6 +108,11 @@ export default function FeaturedWork() {
                                                 +{project.technicalSkills.length - 4}
                                             </span>
                                         )}
+                                    </div>
+
+                                    <div className="mt-4 pt-3 border-t border-border flex items-center gap-1 text-sm font-medium text-primary group-hover:gap-2 transition-all">
+                                        View Case Study
+                                        <ArrowRight className="w-4 h-4" />
                                     </div>
                                 </div>
                             </Link>
