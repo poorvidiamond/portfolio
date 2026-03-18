@@ -2,19 +2,19 @@
     {
         "id": 1,
         "title": "Heliophile",
-        "description": "I love watching sunrises and sunsets. Chasing the golden hour is my therapy.",
+        "description": "Working across US, Poland, India, and China means I catch sunrises and sunsets in every time zone. Chasing golden hour is my reset button.",
         "icon": "Sun"
     },
     {
         "id": 2,
-        "title": "Hobbyist",
-        "description": "I enjoy exploring different activities and learning new things.",
+        "title": "Tinkerer",
+        "description": "From soldering weekend projects to exploring new dev tools — I learn by building, even outside work hours.",
         "icon": "Search"
     },
     {
         "id": 3,
-        "title": "Host",
-        "description": "Developing skills to serve as an event and technical host.",
+        "title": "Speaker & Host",
+        "description": "President of Toastmasters, Design Thinking facilitator, and developing my voice as a technical host and presenter.",
         "icon": "Mic"
     }
 ]

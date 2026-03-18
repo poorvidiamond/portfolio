@@ -49,13 +49,13 @@ export default function ProfileHero() {
 
                         <div className="prose prose-invert max-w-none text-foreground-secondary space-y-4 text-justify">
                             <p>
-                                Making hardware smart is my job. Making it reliable, testable, and production-ready is my drive. As an Embedded Systems Engineer in Eaton&apos;s Engineering &amp; Technology Leadership Development Program, I work across IoT connectivity, Power Systems, and E-mobility.
+                                Making firmware reliable, testable, and production-ready is my drive. As an Embedded Systems Engineer in Eaton&apos;s Engineering &amp; Technology Leadership Development Program, I work across IoT connectivity, Power Systems, and E-mobility.
                             </p>
                             <p>
                                 I combine cross-functional experience with expertise in embedded firmware, wireless protocols, and hardware validation. Collaborating with teams across the US, Poland, India, and China has exposed me to diverse engineering practices across the product lifecycle.
                             </p>
                             <p>
-                                I bring deep expertise in firmware design and embedded constraints, seeking a focused embedded engineering role with a path toward technical leadership.
+                                I bring cross-stack experience from hardware interfaces to CI/CD, and I&apos;m building toward a focused embedded engineering role with a path to technical leadership.
                             </p>
                         </div>
                     </motion.div>

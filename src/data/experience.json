@@ -40,7 +40,7 @@
         "video": "/videos/Renode.mp4",
         "linkLabel": "Click to view the open source",
         "metrics": [
-            "20\u201330% faster onboarding for new language adoption",
+            "Structured docs and starter repo reduced onboarding friction",
             "$5K\u2013$7K estimated annual cost savings",
             "Adoption across multiple embedded teams"
         ],
@@ -65,7 +65,7 @@
         "linkLabel": "Click to learn more",
         "metrics": [
             "~50 devices tested",
-            "~30% faster information lookup",
+            "Centralized product docs improved team onboarding",
             "Cross\u2011functional collaboration across firmware, BLE, and cybersecurity teams"
         ],
         "projects": []
@@ -119,7 +119,7 @@
         "role": "Guest Service Manager",
         "company": "Georgia Tech \u2013 Student Center",
         "location": "Atlanta, GA",
-        "startDate": "January 2023",
+        "startDate": "Jan 2023",
         "endDate": "May 2023",
         "type": "Student Job",
         "bullets": [
@@ -152,9 +152,8 @@
         "image": "/logos/fpga-board.png",
         "linkLabel": "View Sion FPGA services",
         "metrics": [
-            "Verilog RTL",
-            "Xilinx Artix\u20117",
-            "Synthesis & Timing"
+            "6-month production internship",
+            "RTL verification & synthesis optimization"
         ],
         "projects": []
     }

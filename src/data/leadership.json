@@ -9,7 +9,7 @@
         ],
         "type": "Technical",
         "metrics": [
-            "20\u201330% faster onboarding for new language adoption"
+            "Structured docs and starter repo reduced onboarding friction"
         ]
     },
     {
@@ -30,7 +30,7 @@
         "id": 3,
         "title": "Firmware Tooling & Workflow Automation",
         "description": [
-            "Architected cross\u2011platform Qt/C++ firmware tooling solution.",
+            "Designed and developed cross\u2011platform Qt/C++ firmware tooling solution.",
             "Implemented error\u2011proofing and configuration\u2011driven validation.",
             "Enabled non\u2011engineers to perform firmware updates independently."
         ],
@@ -50,7 +50,7 @@
         ],
         "type": "Technical",
         "metrics": [
-            "40+ engineers enabled",
+            "Multiple embedded teams enabled",
             "Engagement across distributed teams"
         ]
     },

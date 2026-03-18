@@ -119,12 +119,12 @@
                 {
                     "name": "Analog Devices",
                     "logo": "/logos/skills/analog devices.png",
-                    "proficiency": 5
+                    "proficiency": 3
                 },
                 {
                     "name": "CAN Bus",
                     "logo": "/logos/skills/CAN.png",
-                    "proficiency": 5
+                    "proficiency": 4
                 },
                 {
                     "name": "Microchip",
@@ -134,12 +134,12 @@
                 {
                     "name": "Kvaser",
                     "logo": "/logos/skills/kvaser.png",
-                    "proficiency": 5
+                    "proficiency": 4
                 },
                 {
                     "name": "Vector",
                     "logo": "/logos/skills/vector.png",
-                    "proficiency": 5
+                    "proficiency": 4
                 }
             ]
         },
