@@ -44,7 +44,7 @@ export default function ProfileHero() {
                         <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
                             Poorvi Bhaskar
                         </h1>
-                        <h2 className="text-3xl font-bold flex items-center gap-3 mb-6 text-foreground">
+                        <h2 className="text-3xl font-bold flex items-center gap-3 mb-8 text-foreground">
                             <User className="w-8 h-8 text-primary" />
                             Who am I
                         </h2>

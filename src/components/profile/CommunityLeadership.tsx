@@ -20,10 +20,10 @@ export default function CommunityLeadership() {
     return (
         <section className="py-12 md:py-20 px-4">
             <div className="max-w-5xl mx-auto">
-                <div className="flex items-center gap-3 mb-8">
+                <h2 className="text-3xl font-bold flex items-center gap-3 mb-8 text-foreground">
                     <Users className="w-8 h-8 text-primary" />
-                    <h2 className="text-3xl font-bold">Community & Leadership</h2>
-                </div>
+                    Community & Leadership
+                </h2>
 
                 <div className="grid md:grid-cols-2 gap-4">
                     {organizational.map((item, index) => (
