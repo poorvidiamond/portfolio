@@ -81,24 +81,24 @@ export default function FeaturedWork() {
                                     className="group block h-full"
                                 >
                                     <div
-                                        className="h-full p-5 rounded-xl bg-surface border border-border hover:border-primary/60 transition-all duration-200 flex flex-col"
+                                        className="h-full p-6 rounded-xl bg-surface border border-border hover:border-primary/60 transition-all duration-200 flex flex-col items-center text-center"
                                         style={{ borderTopColor: project.domainColor, borderTopWidth: '3px' }}
                                     >
                                         {/* Title */}
-                                        <div className="mb-2">
-                                            <span className="text-base mr-1.5">{project.domainIcon}</span>
-                                            <h3 className="inline text-base font-bold group-hover:text-primary transition-colors">
+                                        <div className="mb-3 flex items-center justify-center gap-2">
+                                            <span className="text-xl">{project.domainIcon}</span>
+                                            <h3 className="text-base font-bold group-hover:text-primary transition-colors">
                                                 {project.title}
                                             </h3>
                                         </div>
  
                                         {/* Hook tagline */}
-                                        <p className="text-sm text-foreground-secondary leading-relaxed mb-4 flex-grow">
+                                        <p className="text-sm text-foreground-secondary leading-relaxed mb-6 flex-grow">
                                             {tagline}
                                         </p>
  
                                         {/* 3 tech chips + arrow */}
-                                        <div className="flex items-center justify-between">
+                                        <div className="flex items-center justify-center w-full relative mt-auto pt-2">
                                             <div className="flex gap-1.5">
                                                 {skills.map((skill) => (
                                                     <span
@@ -109,7 +109,7 @@ export default function FeaturedWork() {
                                                     </span>
                                                 ))}
                                             </div>
-                                            <ArrowRight className="w-4 h-4 text-foreground-secondary group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0" />
+                                            <ArrowRight className="w-4 h-4 text-foreground-secondary group-hover:text-primary group-hover:translate-x-1 transition-all absolute right-0" />
                                         </div>
                                     </div>
                                 </Link>
