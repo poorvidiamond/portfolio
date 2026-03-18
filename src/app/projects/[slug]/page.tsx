@@ -43,7 +43,6 @@ interface FlatProject {
 
 const { portfolioProjects } = portfolioData;
 
-// Flatten all projects from all domains
 function getAllProjects() {
     const allProjects: FlatProject[] = [];
     portfolioProjects.domains.forEach((domain) => {
@@ -79,13 +78,22 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
 }
 
+const LINK_ICONS: Record<string, string> = {
+    github: '⌘',
+    documentation: '◈',
+    presentation: '◉',
+    code: '◆',
+    video: '▶',
+    internal: '◎',
+};
+
 export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const project = getProjectBySlug(slug);
 
     if (!project) {
         return (
-            <div className="project-not-found">
+            <div className="cs-not-found">
                 <h1>Project Not Found</h1>
                 <Link href="/projects">← Back to Projects</Link>
             </div>
@@ -93,264 +101,135 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
     }
 
     return (
-        <div className="project-detail-page">
-            {/* Breadcrumb Navigation */}
-            <nav className="breadcrumb">
+        <div className="cs-page">
+            <nav className="cs-breadcrumb">
                 <Link href="/">Home</Link>
-                <span className="separator">/</span>
+                <span>/</span>
                 <Link href="/projects">Projects</Link>
-                <span className="separator">/</span>
-                <span className="current">{project.title}</span>
+                <span>/</span>
+                <span className="cs-breadcrumb-current">{project.title}</span>
             </nav>
 
-            {/* Project Header */}
-            <header className="project-header" style={{ borderLeftColor: project.domainColor }}>
-                <div className="header-top">
-                    <div className="domain-badge" style={{ backgroundColor: project.domainColor }}>
-                        <span className="domain-icon">{project.domainIcon}</span>
-                        <span className="domain-name">{project.domainTitle}</span>
+            <header className="cs-header">
+                <div className="cs-header-top">
+                    <div className="cs-domain-pill" style={{ backgroundColor: project.domainColor }}>
+                        <span>{project.domainIcon}</span>
+                        <span>{project.domainTitle}</span>
                     </div>
-                    <div className="category-badges">
+                    <div className="cs-category-pills">
                         {project.category.map((cat: string) => (
-                            <span key={cat} className="category-badge">
-                                {cat}
-                            </span>
+                            <span key={cat} className="cs-cat-pill">{cat}</span>
                         ))}
                     </div>
                 </div>
-
-                <h1 className="project-title">{project.title}</h1>
-                <p className="project-tagline">{project.tagline}</p>
-
-                {/* Ownership Badge */}
-                {project.ownership && (
-                    <div className="quick-impact">
-                        <div className="impact-stat">
-                            <div className="impact-value">{project.ownershipIcon} {project.ownership}</div>
-                        </div>
-                    </div>
-                )}
-
-                {/* Measurable Outcomes */}
-                {project.cardMetrics && project.cardMetrics.length > 0 && (
-                    <div className="impact-breakdown" style={{ marginTop: '1.5rem' }}>
-                        <h3>Measurable Outcomes</h3>
-                        <div className="detail-impact-grid">
-                            {project.cardMetrics.map((metric: CardMetric) => (
-                                <div key={metric.label} className="detail-impact-card">
-                                    <div className="detail-impact-label">{metric.label}</div>
-                                    <div className="detail-impact-value">{metric.value}</div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                )}
+                <h1 className="cs-title">{project.title}</h1>
+                <p className="cs-tagline">{project.tagline}</p>
             </header>
 
-            {/* Main Content Area */}
-            <div className="project-content">
-                {/* Left Sidebar - TOC */}
-                <aside className="toc-sidebar">
-                    <div className="toc-sticky">
-                        <h3>On This Page</h3>
-                        <nav className="toc-nav">
-                            <a href="#situation">Situation</a>
-                            {project.task && <a href="#task">Task</a>}
-                            <a href="#action">Action Taken</a>
-                            <a href="#result">Results</a>
-                            <a href="#tech-stack">Tech Stack</a>
-                            {project.links && project.links.length > 0 && (
-                                <a href="#resources">Resources</a>
-                            )}
-                        </nav>
-                    </div>
-                </aside>
-
-                {/* Main Content */}
-                <main className="project-main">
-                    {/* Situation */}
-                    <section id="situation" className="content-section star-section">
-                        <div className="section-header">
-                            <div className="section-icon" style={{ backgroundColor: project.domainColor }}>
-                                📋
-                            </div>
-                            <h2>Situation</h2>
-                        </div>
-                        <div className="section-content">
-                            <p>{project.situation}</p>
-                        </div>
-                    </section>
-
-                    {/* Task */}
-                    {project.task && (
-                        <section id="task" className="content-section star-section">
-                            <div className="section-header">
-                                <div className="section-icon" style={{ backgroundColor: project.domainColor }}>
-                                    🎯
-                                </div>
-                                <h2>Task</h2>
-                            </div>
-                            <div className="section-content">
-                                <p>{project.task}</p>
+            <div className="cs-layout">
+                <main className="cs-main">
+                    {project.cardMetrics && project.cardMetrics.length > 0 && (
+                        <section className="cs-outcomes">
+                            <h2 className="cs-section-label">Measurable outcomes</h2>
+                            <div className="cs-outcomes-grid">
+                                {project.cardMetrics.map((metric: CardMetric) => (
+                                    <div key={metric.label} className="cs-outcome-card" style={{ borderTopColor: project.domainColor }}>
+                                        <span className="cs-outcome-label">{metric.label}</span>
+                                        <span className="cs-outcome-value">{metric.value}</span>
+                                    </div>
+                                ))}
                             </div>
                         </section>
                     )}
 
-                    {/* Action */}
-                    <section id="action" className="content-section star-section">
-                        <div className="section-header">
-                            <div className="section-icon" style={{ backgroundColor: project.domainColor }}>
-                                🔧
-                            </div>
-                            <h2>Action Taken</h2>
-                        </div>
-                        <div className="section-content">
-                            <p>{project.action}</p>
-                        </div>
-                    </section>
+                    <div className="cs-star-grid">
+                        <section className="cs-star-card">
+                            <div className="cs-star-icon" style={{ color: project.domainColor }}>◉</div>
+                            <h3>Situation</h3>
+                            <p>{project.situation}</p>
+                        </section>
 
-                    {/* Result */}
-                    <section id="result" className="content-section star-section">
-                        <div className="section-header">
-                            <div className="section-icon" style={{ backgroundColor: project.domainColor }}>
-                                ✅
-                            </div>
-                            <h2>Results & Impact</h2>
-                        </div>
-                        <div className="section-content">
-                            <ul className="result-list">
+                        {project.task && (
+                            <section className="cs-star-card">
+                                <div className="cs-star-icon" style={{ color: project.domainColor }}>◎</div>
+                                <h3>Task</h3>
+                                <p>{project.task}</p>
+                            </section>
+                        )}
+
+                        <section className="cs-star-card">
+                            <div className="cs-star-icon" style={{ color: project.domainColor }}>⬡</div>
+                            <h3>Action taken</h3>
+                            <p>{project.action}</p>
+                        </section>
+
+                        <section className="cs-star-card cs-star-result">
+                            <div className="cs-star-icon" style={{ color: project.domainColor }}>△</div>
+                            <h3>Result</h3>
+                            <ul>
                                 {project.result.map((item: string, i: number) => (
                                     <li key={i}>{item}</li>
                                 ))}
                             </ul>
-                        </div>
-                    </section>
+                        </section>
+                    </div>
 
-                    {/* Tech Stack */}
-                    <section id="tech-stack" className="content-section">
-                        <div className="section-header">
-                            <div className="section-icon" style={{ backgroundColor: project.domainColor }}>
-                                💻
-                            </div>
-                            <h2>Technology Stack</h2>
-                        </div>
-                        <div className="tech-stack-grid">
-                            {project.technicalSkills.map((tech: string) => (
-                                <div key={tech} className="tech-card">
-                                    <span className="tech-name">{tech}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </section>
-
-                    {/* Compliance Note */}
                     {(project as unknown as { complianceNote?: string }).complianceNote && (
-                        <section className="content-section">
-                            <div className="section-content" style={{ fontSize: '0.8rem', color: 'var(--color-foreground-secondary)', fontStyle: 'italic', borderLeft: '3px solid var(--color-border)', paddingLeft: '1rem' }}>
-                                <p>⚠️ {(project as unknown as { complianceNote: string }).complianceNote}</p>
-                            </div>
-                        </section>
+                        <aside className="cs-compliance">
+                            {(project as unknown as { complianceNote: string }).complianceNote}
+                        </aside>
                     )}
 
-
-                    {/* Resources & Links */}
-                    {(project.links?.length ?? 0) > 0 && (
-                        <section id="resources" className="content-section">
-                            <h2>Resources &amp; Links</h2>
-                            <div className="resources-grid">
-                                {project.links!.map((link: ProjectLink) => (
-                                    <a
-                                        key={link.url}
-                                        href={link.url}
-                                        className="resource-card"
-                                        target={link.internal ? '_self' : '_blank'}
-                                        rel={link.internal ? '' : 'noopener noreferrer'}
-                                    >
-                                        <div className="resource-icon">
-                                            {link.type === 'github' && '💻'}
-                                            {link.type === 'documentation' && '📚'}
-                                            {link.type === 'presentation' && '📊'}
-                                            {link.type === 'code' && '📦'}
-                                            {link.type === 'video' && '🎬'}
-                                            {link.type === 'internal' && '🔒'}
-                                        </div>
-                                        <div className="resource-info">
-                                            <div className="resource-label">{link.label}</div>
-                                            <div className="resource-type">{link.type}</div>
-                                        </div>
-                                        <div className="resource-arrow">→</div>
-                                    </a>
-                                ))}
-                            </div>
-                        </section>
-                    )}
-
-                    {/* Navigation */}
-                    <section className="project-navigation">
-                        <h3>Explore More Projects</h3>
-                        <div className="nav-buttons">
-                            <Link href="/projects" className="nav-btn">
-                                ← View All Projects
-                            </Link>
-                            <Link
-                                href={`/projects#${project.domainId}`}
-                                className="nav-btn"
-                                style={{ borderColor: project.domainColor }}
-                            >
-                                More {project.domainTitle} →
-                            </Link>
-                        </div>
+                    <section className="cs-nav-footer">
+                        <Link href="/projects" className="cs-nav-btn">← All projects</Link>
+                        <Link href={`/projects#${project.domainId}`} className="cs-nav-btn cs-nav-btn-domain" style={{ borderColor: project.domainColor, color: project.domainColor }}>
+                            More {project.domainTitle} →
+                        </Link>
                     </section>
                 </main>
 
-                {/* Right Sidebar */}
-                <aside className="info-sidebar">
-                    <div className="info-sticky">
-                        <div className="info-card">
-                            <h4>Project Type</h4>
-                            <p>{project.type}</p>
+                <aside className="cs-sidebar">
+                    <div className="cs-sidebar-sticky">
+                        {project.ownership && (
+                            <div className="cs-sidebar-card cs-sidebar-ownership" style={{ borderLeftColor: project.domainColor }}>
+                                <span className="cs-sidebar-heading">Ownership</span>
+                                <span className="cs-ownership-value">{project.ownershipIcon} {project.ownership}</span>
+                            </div>
+                        )}
+                        <div className="cs-sidebar-card">
+                            <span className="cs-sidebar-heading">Project type</span>
+                            <span className="cs-sidebar-value">{project.type}</span>
                         </div>
-
-                        <div className="info-card">
-                            <h4>Categories</h4>
-                            <div className="info-tags">
-                                {project.category.map((cat: string) => (
-                                    <span key={cat} className="info-tag">{cat}</span>
+                        <div className="cs-sidebar-card">
+                            <span className="cs-sidebar-heading">Tech stack</span>
+                            <div className="cs-sidebar-tech">
+                                {project.technicalSkills.map((tech: string) => (
+                                    <span key={tech} className="cs-tech-chip">{tech}</span>
                                 ))}
                             </div>
                         </div>
-
-                        {project.ownership && (
-                            <div className="info-card">
-                                <h4>Ownership</h4>
-                                <p>{project.ownershipIcon} {project.ownership}</p>
-                            </div>
-                        )}
-
                         {(project.links?.length ?? 0) > 0 && (
-                            <div className="info-card">
-                                <h4>Quick Links</h4>
-                                <div className="quick-links">
+                            <div className="cs-sidebar-card">
+                                <span className="cs-sidebar-heading">Resources</span>
+                                <div className="cs-sidebar-links">
                                     {project.links!.map((link: ProjectLink) => (
-                                        <a
-                                            key={link.url}
-                                            href={link.url}
-                                            className="quick-link"
-                                            target={link.internal ? '_self' : '_blank'}
-                                            rel={link.internal ? '' : 'noopener noreferrer'}
-                                        >
-                                            {link.type === 'github' && '💻 '}
-                                            {link.type === 'documentation' && '📚 '}
-                                            {link.type === 'presentation' && '📊 '}
-                                            {link.type === 'code' && '📦 '}
-                                            {link.type === 'video' && '🎬 '}
-                                            {link.type === 'internal' && '🔒 '}
-                                            {link.label}
+                                        <a key={link.url} href={link.url} className="cs-sidebar-link" target={link.internal ? '_self' : '_blank'} rel={link.internal ? '' : 'noopener noreferrer'}>
+                                            <span className="cs-link-icon">{LINK_ICONS[link.type] || '◆'}</span>
+                                            <span className="cs-link-label">{link.label}</span>
+                                            <span className="cs-link-arrow">→</span>
                                         </a>
                                     ))}
                                 </div>
                             </div>
                         )}
+                        <div className="cs-sidebar-card">
+                            <span className="cs-sidebar-heading">Categories</span>
+                            <div className="cs-sidebar-tech">
+                                {project.category.map((cat: string) => (
+                                    <span key={cat} className="cs-cat-chip">{cat}</span>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </aside>
             </div>
