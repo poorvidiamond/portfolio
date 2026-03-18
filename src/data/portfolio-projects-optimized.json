@@ -24,7 +24,7 @@
             "cardOutcome": "Replaced multiple CLI-based workflows with one GUI \u2014 field technicians now flash firmware without engineering support.",
             "situation": "Firmware updates required CLI expertise and direct engineering support. Updating multiple embedded controllers had no unified interface, making the process error-prone for manufacturing, validation, and field teams.",
             "task": "Create a production-grade flashing tool that abstracts firmware update complexity, prevents configuration errors, and enables non-engineers to perform updates independently.",
-            "action": "Built a Qt/C++ GUI from the ground up with CAN-based diagnostic workflows, configuration-driven flashing logic, real-time logging, and error-proofing. Incorporated cross-site feedback to standardize usability across U.S. and Poland teams.",
+            "action": "Built a Qt/C++ GUI from the ground up with CAN-based diagnostic workflows, configuration-driven flashing logic, real-time logging, and error-proofing. Incorporated cross-site feedback to standardize usability across global teams.",
             "result": [
               "Non-engineers now perform firmware updates independently",
               "Standardized workflows across global manufacturing and field teams",
@@ -81,11 +81,11 @@
             "cardOutcome": "Resolved setup blockers stalling a new OEM program \u2014 40+ fault types verified and regression suite running.",
             "situation": "A new OEM program required firmware changes beyond an existing baseline. Global teams were blocked by test setup issues, stalling regression testing and preventing automated HiL execution.",
             "task": "Execute regression and requirements-based HiL test suites, validate safety diagnostics and fault handling, and remove setup blockers impacting distributed engineering teams.",
-            "action": "Ran Python/pytest HiL test suites, configured communication interfaces, injected hardware-level faults across 40+ conditions, and resolved preconditions blocking remote teams from long-running automated tests.",
+            "action": "Ran Python/pytest HiL test suites, configured communication interfaces, and injected hardware-level faults across 40+ conditions. Resolved preconditions blocking remote teams from long-running automated test execution.",
             "result": [
-              "Firmware releases proceeded with confidence for OEM program",
+              "Enabled firmware releases to proceed with OEM confidence",
               "Confirmed reliable fault logging and diagnostic coverage",
-              "Unblocked globally distributed teams from stalled test execution",
+              "Unblocked globally distributed teams from stalled execution",
               "Improved HiL infrastructure readiness for future programs"
             ],
             "cardMetrics": [
@@ -141,7 +141,7 @@
             "cardOutcome": "Turned a blocking isoSPI ambiguity into a repeatable workflow \u2014 engineers now validate independently without SME support.",
             "situation": "No reproducible workflow existed for validating isoSPI communication in a safety-critical battery management context. Engineers were blocked by unclear sequencing and memory interactions, creating SME dependency.",
             "task": "Develop and document a reliable isoSPI validation flow that enables independent execution, confirms safety-critical communication paths, and removes configuration ambiguity.",
-            "action": "Validated isoSPI communication between host controller and battery monitoring IC hardware. Verified memory access, GPIO behavior, and protection-related configurations. Created reproducible engineering documentation and served as cross-team technical reference.",
+            "action": "Validated isoSPI communication, memory access, and GPIO behavior between host controller and battery monitoring IC hardware. Created reproducible engineering documentation and served as cross-team technical reference.",
             "result": [
               "Unblocked battery system development stalled on isoSPI issues",
               "Validation workflows became repeatable and self-serve",
@@ -208,7 +208,7 @@
             "cardOutcome": "Replaced speculation with a working Matter ecosystem \u2014 concrete adoption guidance delivered to 5 teams.",
             "situation": "The smart-home portfolio was Wi-Fi-only while competitors shipped Matter devices. Teams lacked hands-on experience to evaluate adoption feasibility and interoperability risks.",
             "task": "Build a working Matter + Thread ecosystem, compare behavior across ecosystems and device types, and identify platform-level considerations for adoption.",
-            "action": "Built a functional test ecosystem with industry reference hardware. Commissioned devices across multiple ecosystems, compared Wi-Fi vs. Thread characteristics, evaluated interoperability and security, and benchmarked against competitors. Synthesized findings for 5 cross-functional teams.",
+            "action": "Built a functional test ecosystem with industry reference hardware, commissioned devices across multiple ecosystems, and benchmarked against competitors. Synthesized findings into clear technical and strategic insights for 5 cross-functional teams.",
             "result": [
               "Enabled alignment across product, firmware, platform, and cybersecurity teams",
               "Replaced assumptions with validated hands-on technical data",
@@ -266,12 +266,12 @@
             "cardOutcome": "Caught firmware defects across ~50 devices before launch \u2014 no prior test plan existed.",
             "situation": "A new firmware release changed provisioning, OTA, and app interoperability. No test plan covered these changes across the full smart-device portfolio, creating launch risk.",
             "task": "Create a comprehensive test strategy, execute qualification testing across all device categories, and ensure app and voice-assistant interoperability before release.",
-            "action": "Built and executed test plans covering BLE provisioning, Wi-Fi onboarding, OTA updates, mobile app interop, and voice-assistant integration. Used vendor tooling and RTOS-level debugging. Logged defects and worked with firmware engineers to resolve before release.",
+            "action": "Created and executed test plans covering BLE provisioning, Wi-Fi onboarding, OTA updates, mobile app interop, and voice-assistant integration. Logged defects and worked with firmware engineers to resolve before release.",
             "result": [
               "Prevented firmware defects from reaching customers",
               "Enabled a clean product launch across the connected-home line",
-              "Validated device-to-app and voice-assistant interoperability at scale",
-              "Built the team's first structured qualification process for this product line"
+              "Validated device-to-app and voice-assistant interop at scale",
+              "Established the team's first structured qualification process"
             ],
             "cardMetrics": [
               {
@@ -449,7 +449,7 @@
             "cardOutcome": "First Rust firmware running on Eaton STM32 hardware \u2014 memory-safe embedded development proven viable for future projects.",
             "situation": "Embedded teams used C/C++ exclusively and wanted to evaluate memory-safe alternatives. No internal Rust examples, mixed-language patterns, or onboarding paths existed.",
             "task": "Prototype Rust firmware on embedded hardware, explore C/C++ interoperability, and create reusable onboarding and CI foundations for team adoption.",
-            "action": "Built Rust prototypes on real hardware, demonstrated C/C++ FFI integration patterns, created a starter repo with examples and setup guidance, implemented CI workflows with unit testing, and delivered internal Rust training content.",
+            "action": "Built Rust prototypes on real hardware, demonstrated C/C++ FFI integration, and created a starter repo with examples and setup guidance. Implemented CI workflows with unit testing and delivered internal Rust training content.",
             "result": [
               "Mixed-language C/C++ + Rust feasibility demonstrated",
               "Self-serve enablement materials reduced SME dependency",
@@ -527,8 +527,8 @@
             "result": [
               "Reusable driver library available for the mbed ecosystem",
               "Demo application validated with live sensor reads on uLCD",
-              "Pi Pico port developed but not fully verified due to SDK limitations",
-              "Full development lifecycle: datasheet study to published, tested library"
+              "Pi Pico port developed but blocked by SDK limitations",
+              "Full lifecycle: datasheet study to published, tested library"
             ],
             "cardMetrics": [
               {
