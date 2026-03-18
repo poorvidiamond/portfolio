@@ -26,12 +26,10 @@ interface FlatProject {
     ownership?: string;
     ownershipIcon?: string;
     type: string;
-    description: string;
     situation: string;
     task?: string;
     action: string;
-    result: string;
-    impact: string;
+    result: string[];
     technicalSkills: string[];
     cardMetrics?: CardMetric[];
     links?: ProjectLink[];
@@ -156,12 +154,10 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                     <div className="toc-sticky">
                         <h3>On This Page</h3>
                         <nav className="toc-nav">
-                            <a href="#overview">Overview</a>
                             <a href="#situation">Situation</a>
                             {project.task && <a href="#task">Task</a>}
                             <a href="#action">Action Taken</a>
                             <a href="#result">Results</a>
-                            <a href="#impact">Impact</a>
                             <a href="#tech-stack">Tech Stack</a>
                             {project.links && project.links.length > 0 && (
                                 <a href="#resources">Resources</a>
@@ -172,12 +168,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
                 {/* Main Content */}
                 <main className="project-main">
-                    {/* Overview */}
-                    <section id="overview" className="content-section">
-                        <h2>Project Overview</h2>
-                        <p className="overview-text">{project.description}</p>
-                    </section>
-
                     {/* Situation */}
                     <section id="situation" className="content-section star-section">
                         <div className="section-header">
@@ -225,23 +215,14 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                             <div className="section-icon" style={{ backgroundColor: project.domainColor }}>
                                 ✅
                             </div>
-                            <h2>Result</h2>
+                            <h2>Results & Impact</h2>
                         </div>
                         <div className="section-content">
-                            <p>{project.result}</p>
-                        </div>
-                    </section>
-
-                    {/* Impact */}
-                    <section id="impact" className="content-section star-section">
-                        <div className="section-header">
-                            <div className="section-icon" style={{ backgroundColor: project.domainColor }}>
-                                📊
-                            </div>
-                            <h2>Impact</h2>
-                        </div>
-                        <div className="section-content">
-                            <p>{project.impact}</p>
+                            <ul className="result-list">
+                                {project.result.map((item: string, i: number) => (
+                                    <li key={i}>{item}</li>
+                                ))}
+                            </ul>
                         </div>
                     </section>
 
