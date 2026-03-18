@@ -102,7 +102,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
     return (
         <div className="cs-page">
-            {/* Breadcrumb */}
             <nav className="cs-breadcrumb">
                 <Link href="/">Home</Link>
                 <span>/</span>
@@ -111,7 +110,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                 <span className="cs-breadcrumb-current">{project.title}</span>
             </nav>
 
-            {/* Header */}
             <header className="cs-header">
                 <div className="cs-header-top">
                     <div className="cs-domain-pill" style={{ backgroundColor: project.domainColor }}>
@@ -128,45 +126,46 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                 <p className="cs-tagline">{project.tagline}</p>
             </header>
 
-            {/* Measurable Outcomes — FULL WIDTH, above two-column split */}
-            {project.cardMetrics && project.cardMetrics.length > 0 && (
-                <section className="cs-outcomes">
-                    <h2 className="cs-section-label">Measurable outcomes</h2>
-                    <div className="cs-outcomes-grid">
-                        {project.cardMetrics.map((metric: CardMetric) => (
-                            <div key={metric.label} className="cs-outcome-card" style={{ borderTopColor: project.domainColor }}>
-                                <span className="cs-outcome-label">{metric.label}</span>
-                                <span className="cs-outcome-value">{metric.value}</span>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-            )}
-
-            {/* Two-Column: STAR left, Sidebar right — starts at same level */}
             <div className="cs-layout">
                 <main className="cs-main">
-                    {/* STAR — Vertical, icons inline */}
+                    {project.cardMetrics && project.cardMetrics.length > 0 && (
+                        <section className="cs-outcomes">
+                            <h2 className="cs-section-label">Measurable outcomes</h2>
+                            <div className="cs-outcomes-grid">
+                                {project.cardMetrics.map((metric: CardMetric) => (
+                                    <div key={metric.label} className="cs-outcome-card" style={{ borderTopColor: project.domainColor }}>
+                                        <span className="cs-outcome-label">{metric.label}</span>
+                                        <span className="cs-outcome-value">{metric.value}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+                    )}
+
                     <div className="cs-star-grid">
                         <section className="cs-star-card">
-                            <h3><span className="cs-star-emoji">📋</span> Situation</h3>
+                            <div className="cs-star-icon" style={{ color: project.domainColor }}>◉</div>
+                            <h3>Situation</h3>
                             <p>{project.situation}</p>
                         </section>
 
                         {project.task && (
                             <section className="cs-star-card">
-                                <h3><span className="cs-star-emoji">🎯</span> Task</h3>
+                                <div className="cs-star-icon" style={{ color: project.domainColor }}>◎</div>
+                                <h3>Task</h3>
                                 <p>{project.task}</p>
                             </section>
                         )}
 
                         <section className="cs-star-card">
-                            <h3><span className="cs-star-emoji">🔧</span> Action taken</h3>
+                            <div className="cs-star-icon" style={{ color: project.domainColor }}>⬡</div>
+                            <h3>Action taken</h3>
                             <p>{project.action}</p>
                         </section>
 
                         <section className="cs-star-card cs-star-result">
-                            <h3><span className="cs-star-emoji">📈</span> Result</h3>
+                            <div className="cs-star-icon" style={{ color: project.domainColor }}>△</div>
+                            <h3>Result</h3>
                             <ul>
                                 {project.result.map((item: string, i: number) => (
                                     <li key={i}>{item}</li>
@@ -175,14 +174,12 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                         </section>
                     </div>
 
-                    {/* Compliance Note */}
                     {(project as unknown as { complianceNote?: string }).complianceNote && (
                         <aside className="cs-compliance">
                             {(project as unknown as { complianceNote: string }).complianceNote}
                         </aside>
                     )}
 
-                    {/* Navigation */}
                     <section className="cs-nav-footer">
                         <Link href="/projects" className="cs-nav-btn">← All projects</Link>
                         <Link href={`/projects#${project.domainId}`} className="cs-nav-btn cs-nav-btn-domain" style={{ borderColor: project.domainColor, color: project.domainColor }}>
@@ -191,7 +188,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                     </section>
                 </main>
 
-                {/* Sidebar — starts parallel to Situation */}
                 <aside className="cs-sidebar">
                     <div className="cs-sidebar-sticky">
                         {project.ownership && (

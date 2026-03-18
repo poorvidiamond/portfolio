@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { User } from 'lucide-react';
 
 export default function ProfileHero() {
     return (
@@ -43,8 +44,9 @@ export default function ProfileHero() {
                         <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
                             Poorvi Bhaskar
                         </h1>
-                        <h2 className="text-xl md:text-2xl text-foreground-secondary terminal-text">
-                            who am i
+                        <h2 className="text-3xl font-bold flex items-center gap-3 mb-6 text-foreground">
+                            <User className="w-8 h-8 text-primary" />
+                            Who am I
                         </h2>
 
                         <div className="prose prose-invert max-w-none text-foreground-secondary space-y-4 text-justify">
@@ -52,7 +54,7 @@ export default function ProfileHero() {
                                 Making firmware reliable, testable, and production-ready is my drive. As an Embedded Systems Engineer in Eaton&apos;s Engineering &amp; Technology Leadership Development Program, I work across IoT connectivity, Power Systems, and E-mobility.
                             </p>
                             <p>
-                                I combine cross-functional experience with expertise in embedded firmware, wireless protocols, and hardware validation. Collaborating with teams across the US, Poland, India, and China has exposed me to diverse engineering practices across the product lifecycle.
+                                I combine cross-functional experience with hands-on skills in embedded firmware, wireless protocols, and hardware validation. Collaborating with teams across the US, Poland, India, and China has exposed me to diverse engineering practices across the product lifecycle.
                             </p>
                             <p>
                                 I bring cross-stack experience from hardware interfaces to CI/CD, and I&apos;m building toward a focused embedded engineering role with a path to technical leadership.

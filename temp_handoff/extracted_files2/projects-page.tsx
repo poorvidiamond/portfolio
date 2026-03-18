@@ -13,7 +13,7 @@ const HOOK_TAGLINES: Record<number, string> = {
     10: 'Ran regression suites and resolved setup blockers for a new OEM program',
     11: 'Turned ambiguous isoSPI docs into a repeatable validation workflow',
     5: 'Built a working Matter ecosystem to replace Wi-Fi speculation',
-    4: 'Qualified ~50 smart home devices with a test plan built for a new firmware release',
+    4: 'Qualified ~50 smart home devices before product launch — from scratch',
     2: 'Gave field engineers remote fault visibility for the first time',
     8: 'What if firmware teams never needed a prototype board?',
     6: 'Can Rust work for safety-critical embedded firmware at Eaton?',
@@ -96,9 +96,11 @@ export default function ProjectsPage() {
             {/* Legend */}
             <div className="pl-legend">
                 <div className="pl-legend-item">
+                    <div className="pl-legend-bar pl-legend-owned" />
                     <span>🔧 Individually Owned</span>
                 </div>
                 <div className="pl-legend-item">
+                    <div className="pl-legend-bar pl-legend-contributor" />
                     <span>👤 Individual Contributor</span>
                 </div>
             </div>
@@ -140,7 +142,7 @@ export default function ProjectsPage() {
                                         <Link
                                             key={project.id}
                                             href={`/projects/${project.slug}`}
-                                            className="pl-project-card"
+                                            className={`pl-project-card ${isOwned ? 'pl-card-owned' : ''}`}
                                             style={{ '--domain-color': domain.color } as React.CSSProperties}
                                         >
                                             <div className="pl-card-content">

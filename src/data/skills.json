@@ -45,7 +45,7 @@
                 {
                     "name": "STM32",
                     "logo": "/logos/skills/STM32.png",
-                    "proficiency": 5
+                    "proficiency": 4
                 },
                 {
                     "name": "ESP32",

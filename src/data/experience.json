@@ -8,7 +8,7 @@
         "endDate": "Present",
         "type": "Professional",
         "bullets": [
-            "Built a Qt/C++ firmware flashing tool to automate updates for an enterprise EV power distribution system, replacing manual, error\u2011prone workflows.",
+            "Built a Qt/C++ firmware flashing tool to automate updates for an enterprise EV power distribution system, replacing manual CLI-based workflows.",
             "Maintained hardware\u2011in\u2011loop (HIL) regression infrastructure and validated non\u2011volatile memory fault coverage for safety\u2011critical embedded systems.",
             "Verified battery management IC communication paths to support EV functional safety compliance."
         ],

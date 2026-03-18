@@ -1,268 +1,17 @@
 /* ========================================
-   PROJECTS LISTING PAGE — Accordion Layout
+   CASE STUDY PAGE — REDESIGNED LAYOUT
+   Replace everything from the old "PROJECT DETAIL PAGE STYLES"
+   comment to the end of the file with this.
    ======================================== */
 
-.pl-page {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 5.5rem 1.5rem 3rem;
-}
-
-/* Header */
-.pl-header {
-    text-align: center;
-    margin-bottom: 2.5rem;
-}
-.pl-header h1 {
-    font-size: 1.8rem;
-    font-weight: 800;
-    margin-bottom: 0.4rem;
-    letter-spacing: -0.3px;
-    color: var(--foreground);
-}
-.pl-header p {
-    font-size: 0.9rem;
-    color: var(--foreground-secondary);
-}
-
-/* Metrics */
-.pl-metrics {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-.pl-metric {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1rem 2rem;
-    text-align: center;
-    min-width: 120px;
-}
-.pl-metric-value {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--primary);
-    font-family: var(--font-mono);
-}
-.pl-metric-label {
-    font-size: 0.65rem;
-    color: var(--foreground-secondary);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-top: 0.2rem;
-}
-
-/* Legend */
-.pl-legend {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-    font-size: 0.72rem;
-    color: var(--foreground-secondary);
-}
-.pl-legend-item {
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
-}
-.pl-legend-bar {
-    width: 14px;
-    height: 3px;
-    border-radius: 2px;
-}
-.pl-legend-owned {
-    background: var(--primary);
-}
-.pl-legend-contributor {
-    background: var(--border);
-}
-
-/* Domain Accordion */
-.pl-domain {
-    margin-bottom: 0.5rem;
-}
-
-/* Domain header button */
-.pl-domain-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1rem 1.25rem;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    user-select: none;
-    color: var(--foreground);
-    font-family: inherit;
-    font-size: inherit;
-    text-align: left;
-}
-.pl-domain-header:hover {
-    border-color: var(--domain-color);
-}
-.pl-domain-open {
-    border-color: var(--domain-color);
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-color: transparent;
-}
-.pl-domain-left {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-.pl-domain-icon {
-    font-size: 1.6rem;
-}
-.pl-domain-info {
-    display: flex;
-    flex-direction: column;
-}
-.pl-domain-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--domain-color);
-}
-.pl-domain-desc {
-    font-size: 0.75rem;
-    color: var(--foreground-secondary);
-    margin-top: 0.1rem;
-}
-.pl-domain-right {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-.pl-domain-count {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--foreground-secondary);
-    background: var(--background-secondary);
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-}
-.pl-domain-chevron {
-    font-size: 1.5rem;
-    color: var(--foreground-secondary);
-    transition: transform 0.3s ease;
-}
-.pl-chevron-open {
-    transform: rotate(180deg);
-}
-
-/* Accordion content */
-.pl-domain-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.3s ease;
-    padding: 0 0.25rem;
-}
-.pl-content-open {
-    max-height: 800px;
-    padding: 0.75rem 0 1rem;
-}
-
-/* Project cards grid */
-.pl-cards-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-/* Project card — slim clickable row */
-.pl-project-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 1.25rem;
-    background: var(--background-secondary);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--domain-color);
-    border-radius: 8px;
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.2s ease;
-    gap: 1rem;
-}
-.pl-project-card:hover {
-    border-color: var(--primary);
-    border-left-color: var(--domain-color);
-    transform: translateX(4px);
-}
-
-.pl-card-content {
-    flex: 1;
-    min-width: 0;
-}
-
-/* Title row */
-.pl-card-title-row {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.2rem;
-}
-.pl-card-title {
-    font-size: 0.92rem;
-    font-weight: 700;
-    color: var(--foreground);
-}
-.pl-ownership-badge {
-    font-size: 0.8rem;
-    flex-shrink: 0;
-}
-.pl-contributor {
-    opacity: 0.5;
-}
-.pl-card-tagline {
-    font-size: 0.78rem;
-    color: var(--foreground-secondary);
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
-}
-.pl-card-skills {
-    display: flex;
-    gap: 0.3rem;
-    flex-wrap: wrap;
-}
-.pl-chip {
-    padding: 0.15rem 0.45rem;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    font-size: 0.68rem;
-    font-weight: 600;
-    font-family: var(--font-mono);
-    color: var(--primary);
-}
-.pl-card-arrow {
-    font-size: 1.1rem;
-    color: var(--foreground-secondary);
-    flex-shrink: 0;
-    transition: color 0.2s;
-}
-.pl-project-card:hover .pl-card-arrow {
-    color: var(--primary);
-}
-
-
-/* ========================================
-   CASE STUDY PAGE
-   ======================================== */
-
+/* ── Page Shell ── */
 .cs-page {
     max-width: 1120px;
     margin: 0 auto;
     padding: 5rem 1.5rem 3rem;
 }
 
-/* Breadcrumb */
+/* ── Breadcrumb ── */
 .cs-breadcrumb {
     display: flex;
     align-items: center;
@@ -279,7 +28,7 @@
 .cs-breadcrumb a:hover { text-decoration: underline; }
 .cs-breadcrumb-current { color: var(--foreground-secondary); }
 
-/* Header */
+/* ── Header ── */
 .cs-header {
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
@@ -330,10 +79,16 @@
     line-height: 1.5;
 }
 
-/* Outcomes — full width above two-column split */
-.cs-outcomes {
-    margin-bottom: 2rem;
+/* ── Two-Column Layout ── */
+.cs-layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 2.5rem;
+    align-items: start;
 }
+.cs-main { min-width: 0; }
+
+/* ── Section Label ── */
 .cs-section-label {
     font-size: 0.7rem;
     font-weight: 700;
@@ -341,8 +96,10 @@
     letter-spacing: 1.5px;
     color: var(--foreground-secondary);
     margin-bottom: 0.75rem;
-    text-align: center;
 }
+
+/* ── Measurable Outcomes ── */
+.cs-outcomes { margin-bottom: 2rem; }
 .cs-outcomes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -372,20 +129,11 @@
     line-height: 1.4;
 }
 
-/* Two-column layout — starts after outcomes */
-.cs-layout {
-    display: grid;
-    grid-template-columns: 1fr 280px;
-    gap: 2.5rem;
-    align-items: start;
-}
-.cs-main { min-width: 0; }
-
-/* Vertical STAR */
+/* ── STAR Grid (2×2) ── */
 .cs-star-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
     margin-bottom: 2rem;
 }
 .cs-star-card {
@@ -394,19 +142,18 @@
     border-radius: 10px;
     padding: 1.25rem;
 }
+.cs-star-icon {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    opacity: 0.7;
+}
 .cs-star-card h3 {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--foreground);
     margin-bottom: 0.6rem;
-}
-.cs-star-emoji {
-    font-size: 1rem;
 }
 .cs-star-card p {
     font-size: 0.85rem;
@@ -414,32 +161,31 @@
     color: var(--foreground-secondary);
 }
 
-/* Result — tick bullets */
+/* ── Result Bullets ── */
 .cs-star-result ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.45rem;
 }
 .cs-star-result li {
     font-size: 0.84rem;
     line-height: 1.5;
     color: var(--foreground-secondary);
-    padding-left: 1.4rem;
+    padding-left: 1rem;
     position: relative;
 }
 .cs-star-result li::before {
-    content: '✓';
+    content: '—';
     position: absolute;
     left: 0;
     color: var(--primary);
     font-weight: 700;
-    font-size: 0.85rem;
 }
 
-/* Compliance */
+/* ── Compliance Note ── */
 .cs-compliance {
     font-size: 0.75rem;
     line-height: 1.6;
@@ -451,7 +197,7 @@
     margin-bottom: 2rem;
 }
 
-/* Nav footer */
+/* ── Navigation Footer ── */
 .cs-nav-footer {
     display: flex;
     gap: 0.75rem;
@@ -478,7 +224,7 @@
     background: transparent;
 }
 
-/* Sidebar */
+/* ── Sidebar ── */
 .cs-sidebar { position: relative; }
 .cs-sidebar-sticky {
     position: sticky;
@@ -513,6 +259,8 @@
     font-weight: 700;
     color: var(--foreground);
 }
+
+/* ── Sidebar Tech Chips ── */
 .cs-sidebar-tech {
     display: flex;
     flex-wrap: wrap;
@@ -536,6 +284,8 @@
     font-weight: 500;
     color: var(--foreground-secondary);
 }
+
+/* ── Sidebar Links ── */
 .cs-sidebar-links {
     display: flex;
     flex-direction: column;
@@ -571,7 +321,7 @@
     color: var(--primary);
 }
 
-/* Not found */
+/* ── Not Found ── */
 .cs-not-found {
     text-align: center;
     padding: 6rem 1rem;
@@ -587,11 +337,7 @@
     font-weight: 600;
 }
 
-
-/* ========================================
-   RESPONSIVE
-   ======================================== */
-
+/* ── Responsive ── */
 @media (max-width: 960px) {
     .cs-layout {
         grid-template-columns: 1fr;
@@ -602,35 +348,17 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 0.6rem;
     }
-    .cs-outcomes-grid {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 @media (max-width: 640px) {
-    .pl-page {
-        padding: 4.5rem 1rem 2rem;
-    }
-    .pl-header h1 {
-        font-size: 1.4rem;
-    }
-    .pl-metrics {
-        flex-direction: column;
-        align-items: center;
-    }
-    .pl-domain-desc {
-        display: none;
-    }
-    .pl-legend {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
     .cs-page {
         padding: 4rem 1rem 2rem;
     }
     .cs-title {
         font-size: 1.4rem;
+    }
+    .cs-star-grid {
+        grid-template-columns: 1fr;
     }
     .cs-outcomes-grid {
         grid-template-columns: 1fr;

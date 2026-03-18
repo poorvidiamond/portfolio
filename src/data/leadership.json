@@ -5,7 +5,7 @@
         "description": [
             "Evaluated memory\u2011safe embedded development on ARM microcontrollers.",
             "Built mixed C/Rust workflows and reusable templates.",
-            "Validated production\u2011ready firmware patterns for safety."
+            "Validated embedded firmware patterns for safety evaluation."
         ],
         "type": "Technical",
         "metrics": [
@@ -45,7 +45,7 @@
         "title": "Engineering Enablement & Best Practices",
         "description": [
             "Facilitated embedded testing and CI/CD workshops.",
-            "Drove cross\u2011functional alignment on test\u2011driven development.",
+            "Supported cross\u2011functional alignment on test\u2011driven development.",
             "Created reusable training content for long\u2011term adoption."
         ],
         "type": "Technical",

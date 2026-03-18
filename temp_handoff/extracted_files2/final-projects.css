@@ -118,16 +118,15 @@
     gap: 0.75rem;
 }
 .pl-domain-icon {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 .pl-domain-info {
     display: flex;
     flex-direction: column;
 }
 .pl-domain-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
-    color: var(--domain-color);
 }
 .pl-domain-desc {
     font-size: 0.75rem;
@@ -140,7 +139,7 @@
     gap: 0.75rem;
 }
 .pl-domain-count {
-    font-size: 1rem;
+    font-size: 0.72rem;
     font-weight: 600;
     color: var(--foreground-secondary);
     background: var(--background-secondary);
@@ -148,7 +147,7 @@
     border-radius: 4px;
 }
 .pl-domain-chevron {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--foreground-secondary);
     transition: transform 0.3s ease;
 }
@@ -183,7 +182,7 @@
     padding: 1rem 1.25rem;
     background: var(--background-secondary);
     border: 1px solid var(--border);
-    border-left: 3px solid var(--domain-color);
+    border-left: 3px solid transparent;
     border-radius: 8px;
     text-decoration: none;
     color: inherit;
@@ -192,8 +191,16 @@
 }
 .pl-project-card:hover {
     border-color: var(--primary);
-    border-left-color: var(--domain-color);
+    border-left-color: var(--primary);
     transform: translateX(4px);
+}
+
+/* Owned projects — domain-colored left border */
+.pl-card-owned {
+    border-left: 3px solid var(--domain-color);
+}
+.pl-card-owned:hover {
+    border-left-color: var(--domain-color);
 }
 
 .pl-card-content {
