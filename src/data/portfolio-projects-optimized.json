@@ -599,7 +599,7 @@
         "remoteDiagnostics": "~$3K per on-site visit reduced (visit frequency varies)"
       },
       "githubRepos": 4,
-      "teamsImpacted": "4+ engineering teams",
+      "teamsImpacted": "4+",
       "devicesValidated": "~50 WiFi devices",
       "ownershipKey": {
         "Individually Owned": "Full end-to-end ownership \u2014 problem definition, solution design, and delivery",
