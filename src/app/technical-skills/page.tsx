@@ -40,9 +40,9 @@ export default function SkillsPage() {
 
     return (
         <section className="py-20 px-4 min-h-screen">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-5xl mx-auto">
                 {/* Header */}
-                <div className="mb-12 text-center">
+                <div className="mb-12">
                     <h1 className="terminal-text text-3xl font-bold mb-2">
                         Technical Skills
                     </h1>

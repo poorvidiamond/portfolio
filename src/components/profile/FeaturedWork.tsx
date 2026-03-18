@@ -48,7 +48,7 @@ export default function FeaturedWork() {
  
     return (
         <section className="py-12 md:py-20 px-4">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-5xl mx-auto">
                 <div className="flex items-center justify-between mb-8">
                     <h2 className="text-3xl font-bold flex items-center gap-3">
                         <span className="text-primary text-3xl">⚡</span>

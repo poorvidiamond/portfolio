@@ -46,7 +46,7 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
     }
 
     const cx = 130, cy = 130, r = 115;
-    const labelR = 72; // radius for label placement (between center hole and outer edge)
+    const labelR = 72;
 
     const togglePillar = (id: string) => {
         setExpandedPillar(expandedPillar === id ? '' : id);
@@ -56,8 +56,9 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
         <div className="space-y-10">
             {/* Top section: Pie chart + summary stats */}
             <div className="flex flex-col items-center gap-6">
-                <div className="relative">
-                    <svg width="260" height="260" viewBox="0 0 260 260" className="drop-shadow-lg">
+                <div className="relative w-full max-w-[260px]">
+                    <svg viewBox="0 0 260 260" className="w-full h-auto drop-shadow-lg">
+                        {/* Clickable pie segments */}
                         {segments.map(({ pillar, startAngle, endAngle }) => (
                             <path
                                 key={pillar.id}
@@ -65,18 +66,23 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
                                 fill={pillar.color}
                                 stroke="var(--color-background)"
                                 strokeWidth="2"
-                                className="transition-opacity duration-300"
+                                className="transition-opacity duration-300 cursor-pointer"
                                 style={{
                                     opacity: expandedPillar && expandedPillar !== pillar.id ? 0.35 : 1,
                                 }}
+                                onClick={() => togglePillar(pillar.id)}
                             />
                         ))}
-                        {/* Labels on segments */}
+                        {/* Labels on segments — also clickable */}
                         {segments.map(({ pillar, startAngle, endAngle, percentage }) => {
                             const midAngle = (startAngle + endAngle) / 2;
                             const labelPos = polarToCartesian(cx, cy, labelR, midAngle);
                             return (
-                                <g key={`label-${pillar.id}`}>
+                                <g
+                                    key={`label-${pillar.id}`}
+                                    className="cursor-pointer"
+                                    onClick={() => togglePillar(pillar.id)}
+                                >
                                     <text
                                         x={labelPos.x}
                                         y={labelPos.y - 5}
@@ -84,6 +90,7 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
                                         fontSize="13"
                                         fontWeight="bold"
                                         fill="var(--color-foreground)"
+                                        style={{ pointerEvents: 'none' }}
                                     >
                                         {pillar.hours}h
                                     </text>
@@ -93,6 +100,7 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
                                         textAnchor="middle"
                                         fontSize="11"
                                         fill="var(--color-foreground-secondary)"
+                                        style={{ pointerEvents: 'none' }}
                                     >
                                         {Math.round(percentage)}%
                                     </text>
@@ -138,11 +146,11 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
                                     style={{ backgroundColor: pillar.color }}
                                 />
                                 <span className="text-lg mr-1">{pillar.emoji}</span>
-                                <div className="flex-1">
+                                <div className="flex-1 min-w-0">
                                     <span className="font-semibold text-foreground">{pillar.title}</span>
                                 </div>
                                 <ChevronDown
-                                    className={`w-5 h-5 text-foreground-secondary transition-transform duration-300 ${
+                                    className={`w-5 h-5 text-foreground-secondary transition-transform duration-300 flex-shrink-0 ${
                                         isExpanded ? 'rotate-180' : ''
                                     }`}
                                 />
@@ -168,8 +176,8 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
                                                     <ul className="space-y-1.5">
                                                         {pillar.highlights.map((h, i) => (
                                                             <li key={i} className="text-sm text-foreground-secondary flex items-start gap-2">
-                                                                <span className="text-primary mt-0.5">▸</span>
-                                                                {h}
+                                                                <span className="text-primary mt-0.5 flex-shrink-0">▸</span>
+                                                                <span>{h}</span>
                                                             </li>
                                                         ))}
                                                     </ul>
@@ -181,8 +189,8 @@ export default function VolunteerPieChart({ pillars, totalHours, totalActivities
                                                     <ul className="space-y-1.5">
                                                         {pillar.whyItMatters.map((w, i) => (
                                                             <li key={i} className="text-sm text-foreground-secondary flex items-start gap-2">
-                                                                <span className="text-secondary mt-0.5">▸</span>
-                                                                {w}
+                                                                <span className="text-secondary mt-0.5 flex-shrink-0">▸</span>
+                                                                <span>{w}</span>
                                                             </li>
                                                         ))}
                                                     </ul>

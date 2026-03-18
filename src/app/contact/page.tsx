@@ -36,17 +36,17 @@ export default function ContactPage() {
     };
 
     return (
-        <section className="py-20 px-4">
-            <div className="max-w-4xl w-full mx-auto">
+        <section className="py-12 px-4">
+            <div className="max-w-5xl w-full mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h1 className="terminal-text text-4xl font-bold mb-4 text-center">
+                    <h1 className="terminal-text text-3xl font-bold mb-4">
                         Contact
                     </h1>
-                    <p className="text-foreground-secondary text-lg mb-12 max-w-2xl mx-auto text-center">
+                    <p className="text-foreground-secondary max-w-2xl mb-8">
                         I&apos;m always open to discussing new opportunities, collaborations, or just chatting about embedded systems.
                     </p>
 

@@ -1,6 +1,7 @@
 import ProfileHero from '@/components/profile/ProfileHero';
 import EducationTimeline from '@/components/profile/EducationTimeline';
 import FeaturedWork from '@/components/profile/FeaturedWork';
+import CommunityLeadership from '@/components/profile/CommunityLeadership';
 import InterestsGrid from '@/components/profile/InterestsGrid';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <ProfileHero />
       <EducationTimeline />
       <FeaturedWork />
+      <CommunityLeadership />
       <InterestsGrid />
     </main>
   );
