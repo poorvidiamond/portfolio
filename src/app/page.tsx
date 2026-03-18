@@ -1,5 +1,6 @@
 import ProfileHero from '@/components/profile/ProfileHero';
 import EducationTimeline from '@/components/profile/EducationTimeline';
+import FeaturedWork from '@/components/profile/FeaturedWork';
 import InterestsGrid from '@/components/profile/InterestsGrid';
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <main className="pt-16 min-h-screen">
       <ProfileHero />
       <EducationTimeline />
+      <FeaturedWork />
       <InterestsGrid />
     </main>
   );

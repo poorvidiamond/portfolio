@@ -3,13 +3,13 @@
         "id": 1,
         "role": "Firmware Engineer \u2013 E\u2011Mobility",
         "company": "Eaton",
-        "location": "Tualatin, OR (Hybrid)",
+        "location": "Tualatin, OR",
         "startDate": "Jul 2025",
         "endDate": "Present",
         "type": "Professional",
         "bullets": [
             "Built a Qt/C++ firmware flashing tool to automate updates for an enterprise EV power distribution system, replacing manual, error\u2011prone workflows.",
-            "Maintained hardware\u2011in\u2011loop (HiL) regression infrastructure and validated non\u2011volatile memory fault coverage for safety\u2011critical embedded systems.",
+            "Maintained hardware\u2011in\u2011loop (HIL) regression infrastructure and validated non\u2011volatile memory fault coverage for safety\u2011critical embedded systems.",
             "Verified battery management IC communication paths to support EV functional safety compliance."
         ],
         "url": "https://www.eaton.com/us/en-us/catalog/emobility/flex-pdu-ev.html",

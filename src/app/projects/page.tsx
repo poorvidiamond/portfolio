@@ -73,22 +73,22 @@ export default function ProjectsPage() {
                 ))}
             </section>
 
-            {/* View All Projects CTA */}
+            {/* Featured Case Studies CTA */}
             <section className="cta-section">
                 <div className="cta-content">
-                    <h2>Explore All Projects</h2>
+                    <h2>Dive Into Case Studies</h2>
                     <p>View detailed case studies, architecture diagrams, and technical deep-dives</p>
                     <div className="cta-buttons">
                         {domains.map((domain) => (
-                            <a
+                            <Link
                                 key={domain.id}
-                                href={`#${domain.id}`}
+                                href={`/projects/${domain.projects[0]?.slug}`}
                                 className="cta-btn"
                                 style={{ borderColor: domain.color }}
                             >
                                 <span className="cta-icon">{domain.icon}</span>
                                 {domain.title}
-                            </a>
+                            </Link>
                         ))}
                     </div>
                 </div>

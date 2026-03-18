@@ -69,7 +69,7 @@
                 },
                 {
                     "name": "Arduino",
-                    "logo": "/logos/skills/ardunio.png",
+                    "logo": "/logos/skills/arduino.png",
                     "proficiency": 4
                 }
             ]
@@ -207,7 +207,7 @@
                 },
                 {
                     "name": "Oscilloscope",
-                    "logo": "/logos/skills/oscillosocpe.png",
+                    "logo": "/logos/skills/oscilloscope.png",
                     "proficiency": 4
                 },
                 {

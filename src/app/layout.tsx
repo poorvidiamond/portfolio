@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     title: "Poorvi Bhaskar | Firmware Engineer",
     description: "Full-Stack Embedded Engineer bridging atoms and bits.",
     type: "website",
+    images: [{ url: "/profile.jpg", width: 800, height: 600, alt: "Poorvi Bhaskar" }],
   },
 };
 
