@@ -1,27 +1,25 @@
-Write-Host "Starting Local CI/CD Pipeline..." -ForegroundColor Cyan
+$ErrorActionPreference = "Stop"
 
-# 1. Lint
-Write-Host "Step 1: Linting..." -ForegroundColor Yellow
+Write-Host "==================================" -ForegroundColor Cyan
+Write-Host " Next.js Local Validation Pipeline" -ForegroundColor Cyan
+Write-Host "==================================" -ForegroundColor Cyan
+
+Write-Host "`n[1/3] Running Type Checking & Linter..." -ForegroundColor Yellow
 npm run lint
 if ($LASTEXITCODE -ne 0) {
-    Write-Error "Linting failed! Please fix the errors before proceeding."
+    Write-Host "Linting failed! Please fix formatting errors before deploying." -ForegroundColor Red
     exit $LASTEXITCODE
 }
-Write-Host "Linting passed." -ForegroundColor Green
 
-# 2. Build
-Write-Host "Step 2: Building..." -ForegroundColor Yellow
+Write-Host "`n[2/3] Building Production Bundle..." -ForegroundColor Yellow
 npm run build
 if ($LASTEXITCODE -ne 0) {
-    Write-Error "Build failed! Please check the build output."
+    Write-Host "Build failed! Please fix TypeScript/compilation errors before pushing to Vercel." -ForegroundColor Red
     exit $LASTEXITCODE
 }
-Write-Host "Build successful." -ForegroundColor Green
 
-# 3. Start and Open
-Write-Host "Step 3: Starting server and opening browser..." -ForegroundColor Green
-Write-Host "Opening http://localhost:3000 in your default browser..."
+Write-Host "`n[3/3] Build Successful! Starting Production Server..." -ForegroundColor Green
+Write-Host "Opening your specialized production build at http://localhost:3000" -ForegroundColor Gray
+
 Start-Process "http://localhost:3000"
-
-Write-Host "Starting Next.js server..."
 npm start
