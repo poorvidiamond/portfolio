@@ -43,10 +43,10 @@ export default function ContactPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h1 className="terminal-text text-3xl font-bold mb-4">
+                    <h1 className="terminal-text text-3xl font-bold mb-4 text-center md:text-left">
                         Contact
                     </h1>
-                    <p className="text-foreground-secondary max-w-2xl mb-8">
+                    <p className="text-foreground-secondary max-w-2xl mb-8 text-center md:text-left mx-auto md:mx-0">
                         I&apos;m always open to discussing new opportunities, collaborations, or just chatting about embedded systems.
                     </p>
 

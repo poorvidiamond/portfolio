@@ -49,14 +49,14 @@ export default function FeaturedWork() {
     return (
         <section className="py-12 md:py-20 px-4">
             <div className="max-w-5xl mx-auto">
-                <div className="flex items-center justify-between mb-8">
-                    <h2 className="text-3xl font-bold flex items-center gap-3 text-foreground">
+                <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4 md:gap-0">
+                    <h2 className="text-3xl font-bold flex items-center justify-center md:justify-start gap-3 text-foreground w-full md:w-auto">
                         <span className="text-primary text-3xl">⚡</span>
                         Featured Work
                     </h2>
                     <Link
                         href="/projects"
-                        className="group flex items-center gap-1 text-sm font-medium text-foreground-secondary hover:text-primary transition-colors"
+                        className="group flex items-center justify-center gap-1 text-sm font-medium text-foreground-secondary hover:text-primary transition-colors"
                     >
                         View all projects
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

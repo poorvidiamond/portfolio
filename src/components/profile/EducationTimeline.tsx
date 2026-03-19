@@ -11,7 +11,7 @@ export default function EducationTimeline() {
     return (
         <section className="py-12 bg-background-secondary/30">
             <div className="max-w-4xl mx-auto px-4">
-                <h2 className="text-3xl font-bold flex items-center gap-3 mb-8 text-foreground">
+                <h2 className="text-3xl font-bold flex items-center justify-center md:justify-start gap-3 mb-8 text-foreground">
                     <GraduationCap className="w-8 h-8 text-primary" />
                     Education
                 </h2>

@@ -39,12 +39,12 @@ export default function ProfileHero() {
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="space-y-6"
+                        className="space-y-6 text-center md:text-left"
                     >
                         <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
                             Poorvi Bhaskar
                         </h1>
-                        <h2 className="text-3xl font-bold flex items-center gap-3 mb-8 text-foreground">
+                        <h2 className="text-3xl font-bold flex items-center justify-center md:justify-start gap-3 mb-8 text-foreground">
                             <User className="w-8 h-8 text-primary" />
                             Who am I
                         </h2>
