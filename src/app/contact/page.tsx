@@ -25,9 +25,10 @@ export default function ContactPage() {
             }
 
             const templateParams = {
-                from_name: formData.name,
-                from_email: formData.email,
+                name: formData.name,
+                email: formData.email, // Make sure to add {{email}} somewhere in your template so you can reply!
                 message: formData.message,
+                time: new Date().toLocaleString(),
             };
 
             await emailjs.send(serviceID, templateID, templateParams, publicKey);
