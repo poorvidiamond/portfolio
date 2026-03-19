@@ -2,8 +2,6 @@
 
 A highly optimized, modular Next.js portfolio built to showcase cross-stack embedded engineering experience, technical leadership, and hardware/software projects. It leverages modern web frameworks to provide a completely static, lighting-fast experience with seamless animations.
 
-![Portfolio Preview](/public/profile.jpg)
-
 ## Tech Stack
 
 - **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
