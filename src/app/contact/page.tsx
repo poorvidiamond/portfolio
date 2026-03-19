@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Github, Linkedin, Mail, Send, CheckCircle, AlertCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -15,23 +16,28 @@ export default function ContactPage() {
         setErrorMsg('');
 
         try {
-            const res = await fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData),
-            });
+            const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+            const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+            const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-            const data = await res.json();
-
-            if (!res.ok) {
-                throw new Error(data.error || 'Something went wrong');
+            if (!serviceID || !templateID || !publicKey) {
+                throw new Error('EmailJS credentials are not configured.');
             }
+
+            const templateParams = {
+                from_name: formData.name,
+                from_email: formData.email,
+                message: formData.message,
+            };
+
+            await emailjs.send(serviceID, templateID, templateParams, publicKey);
 
             setStatus('success');
             setFormData({ name: '', email: '', message: '' });
-        } catch (err) {
+        } catch (err: any) {
+            console.error('EmailJS Error:', err);
             setStatus('error');
-            setErrorMsg(err instanceof Error ? err.message : 'Failed to send message');
+            setErrorMsg(err?.message || err?.text || 'Failed to send message via EmailJS');
         }
     };
 

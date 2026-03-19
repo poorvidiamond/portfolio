@@ -10,6 +10,7 @@
     "ci:local": "powershell -ExecutionPolicy Bypass -File ./local_pipeline.ps1"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@supabase/supabase-js": "^2.97.0",
     "framer-motion": "^12.33.0",
     "lucide-react": "^0.563.0",
