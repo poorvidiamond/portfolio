@@ -20,7 +20,7 @@ export default function CommunityLeadership() {
     return (
         <section className="py-12 md:py-20 px-4">
             <div className="max-w-5xl mx-auto">
-                <h2 className="text-3xl font-bold flex items-center gap-3 mb-8 text-foreground">
+                <h2 className="text-3xl font-bold flex items-center justify-center md:justify-start gap-3 mb-8 text-foreground w-full">
                     <Users className="w-8 h-8 text-primary" />
                     Community & Leadership
                 </h2>
